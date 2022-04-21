@@ -1786,3 +1786,994 @@ limit 500
 2022-04-21 02:06:14.453127 (Thread-121): handling status request
 2022-04-21 02:06:14.453506 (Thread-121): 02:06:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3ca8ef70>]}
 2022-04-21 02:06:14.453974 (Thread-121): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:06:16.961965 (Thread-122): 02:06:16  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:06:16.962300 (Thread-122): 02:06:16  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:06:16.966862 (Thread-122): 02:06:16  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:06:17.729677 (Thread-123): handling status request
+2022-04-21 02:06:17.730007 (Thread-123): 02:06:17  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3ca8bfa0>]}
+2022-04-21 02:06:17.730471 (Thread-123): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:06:17.796118 (Thread-124): handling status request
+2022-04-21 02:06:17.796369 (Thread-124): 02:06:17  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3ca8b820>]}
+2022-04-21 02:06:17.796770 (Thread-124): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:09:47.752708 (Thread-125): 02:09:47  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:09:47.754680 (Thread-125): 02:09:47  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:09:47.759364 (Thread-125): 02:09:47  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:09:48.717865 (Thread-126): handling status request
+2022-04-21 02:09:48.718191 (Thread-126): 02:09:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c962370>]}
+2022-04-21 02:09:48.718651 (Thread-126): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:09:48.749734 (Thread-127): handling status request
+2022-04-21 02:09:48.749956 (Thread-127): 02:09:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c962550>]}
+2022-04-21 02:09:48.750294 (Thread-127): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:09:58.192361 (Thread-128): 02:09:58  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:09:58.192749 (Thread-128): 02:09:58  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:09:58.197339 (Thread-128): 02:09:58  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:09:58.894065 (Thread-129): handling status request
+2022-04-21 02:09:58.894402 (Thread-129): 02:09:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c9fa2b0>]}
+2022-04-21 02:09:58.894884 (Thread-129): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:09:59.223254 (Thread-130): handling status request
+2022-04-21 02:09:59.223578 (Thread-130): 02:09:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c9fa040>]}
+2022-04-21 02:09:59.245019 (Thread-130): sending response (<Response 1298 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:11:12.325745 (Thread-131): 02:11:12  Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+2022-04-21 02:11:12.328086 (Thread-131): 02:11:12  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:11:12.328320 (Thread-131): 02:11:12  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:11:12.332992 (Thread-131): 02:11:12  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:11:13.338265 (Thread-132): handling status request
+2022-04-21 02:11:13.338627 (Thread-132): 02:11:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c9deb80>]}
+2022-04-21 02:11:13.339140 (Thread-132): sending response (<Response 1611 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:11:13.380022 (Thread-133): handling status request
+2022-04-21 02:11:13.380231 (Thread-133): 02:11:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c9de4c0>]}
+2022-04-21 02:11:13.380583 (Thread-133): sending response (<Response 1611 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:11:29.765977 (Thread-134): 02:11:29  Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+2022-04-21 02:11:29.766273 (Thread-134): 02:11:29  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:11:29.766440 (Thread-134): 02:11:29  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:11:29.766635 (Thread-134): 02:11:29  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:11:29.771245 (Thread-134): 02:11:29  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:11:30.731781 (Thread-135): handling status request
+2022-04-21 02:11:30.732125 (Thread-135): 02:11:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c96d850>]}
+2022-04-21 02:11:30.732687 (Thread-135): sending response (<Response 1926 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:11:30.780654 (Thread-136): handling status request
+2022-04-21 02:11:30.780878 (Thread-136): 02:11:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79e160>]}
+2022-04-21 02:11:30.781269 (Thread-136): sending response (<Response 1926 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:21:49.828908 (Thread-137): handling status request
+2022-04-21 02:21:49.830707 (Thread-137): 02:21:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79e6a0>]}
+2022-04-21 02:21:49.831207 (Thread-137): sending response (<Response 1926 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:21:50.185726 (Thread-138): handling run_sql request
+2022-04-21 02:21:50.186035 (Thread-138): 02:21:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79e7f0>]}
+2022-04-21 02:21:50.186426 (Thread-138): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:22:13.944242 (Thread-139): handling status request
+2022-04-21 02:22:13.944581 (Thread-139): 02:22:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79e730>]}
+2022-04-21 02:22:13.945599 (Thread-139): sending response (<Response 1926 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:22:14.280491 (Thread-140): handling run_sql request
+2022-04-21 02:22:14.280819 (Thread-140): 02:22:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c7c25e0>]}
+2022-04-21 02:22:14.281193 (Thread-140): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:22:43.011492 (Thread-141): 02:22:43  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:22:43.011817 (Thread-141): 02:22:43  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:22:43.011980 (Thread-141): 02:22:43  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:22:43.012186 (Thread-141): 02:22:43  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:22:43.012367 (Thread-141): 02:22:43  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:22:43.016765 (Thread-141): 02:22:43  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:22:43.019327 (Thread-141): 02:22:43  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:22:43.766752 (Thread-142): handling status request
+2022-04-21 02:22:43.767138 (Thread-142): 02:22:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c734430>]}
+2022-04-21 02:22:43.767682 (Thread-142): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:22:43.849741 (Thread-143): handling status request
+2022-04-21 02:22:43.850075 (Thread-143): 02:22:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c734c40>]}
+2022-04-21 02:22:43.850573 (Thread-143): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:22:48.142848 (Thread-144): handling status request
+2022-04-21 02:22:48.143214 (Thread-144): 02:22:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c9de790>]}
+2022-04-21 02:22:48.143714 (Thread-144): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:22:48.457292 (Thread-145): handling run_sql request
+2022-04-21 02:22:48.457649 (Thread-145): 02:22:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c734cd0>]}
+2022-04-21 02:22:48.458059 (Thread-145): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:26:29.812930 (Thread-146): 02:26:29  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:26:29.814951 (Thread-146): 02:26:29  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:26:29.815223 (Thread-146): 02:26:29  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:26:29.815426 (Thread-146): 02:26:29  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:26:29.815606 (Thread-146): 02:26:29  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:26:29.820205 (Thread-146): 02:26:29  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:26:29.822746 (Thread-146): 02:26:29  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:26:30.534087 (Thread-147): handling status request
+2022-04-21 02:26:30.534423 (Thread-147): 02:26:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c6c66d0>]}
+2022-04-21 02:26:30.534938 (Thread-147): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:26:30.558168 (Thread-148): handling status request
+2022-04-21 02:26:30.558458 (Thread-148): 02:26:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c6c6250>]}
+2022-04-21 02:26:30.558955 (Thread-148): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:27:15.249448 (Thread-149): 02:27:15  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:27:15.249774 (Thread-149): 02:27:15  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:27:15.249959 (Thread-149): 02:27:15  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:27:15.250155 (Thread-149): 02:27:15  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:27:15.250406 (Thread-149): 02:27:15  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:27:15.254442 (Thread-149): 02:27:15  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:27:15.256941 (Thread-149): 02:27:15  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:27:15.928438 (Thread-150): handling status request
+2022-04-21 02:27:15.928767 (Thread-150): 02:27:15  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c6b5910>]}
+2022-04-21 02:27:15.929265 (Thread-150): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:27:15.995904 (Thread-151): handling status request
+2022-04-21 02:27:15.996162 (Thread-151): 02:27:15  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c6e78b0>]}
+2022-04-21 02:27:15.996566 (Thread-151): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:27:27.050355 (Thread-152): handling status request
+2022-04-21 02:27:27.050713 (Thread-152): 02:27:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c6b5e20>]}
+2022-04-21 02:27:27.051276 (Thread-152): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:27:27.450588 (Thread-153): handling run_sql request
+2022-04-21 02:27:27.450856 (Thread-153): 02:27:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c6b5d90>]}
+2022-04-21 02:27:27.451241 (Thread-153): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:24.418025 (Thread-154): handling status request
+2022-04-21 02:28:24.418366 (Thread-154): 02:28:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e2700>]}
+2022-04-21 02:28:24.418865 (Thread-154): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:24.791039 (Thread-155): handling run_sql request
+2022-04-21 02:28:24.791317 (Thread-155): 02:28:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e2a90>]}
+2022-04-21 02:28:24.791647 (Thread-155): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:30.535404 (Thread-156): handling status request
+2022-04-21 02:28:30.535742 (Thread-156): 02:28:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e2b80>]}
+2022-04-21 02:28:30.536257 (Thread-156): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:30.911490 (Thread-157): handling run_sql request
+2022-04-21 02:28:30.911803 (Thread-157): 02:28:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e2e80>]}
+2022-04-21 02:28:30.912162 (Thread-157): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:33.784150 (Thread-158): handling status request
+2022-04-21 02:28:33.784479 (Thread-158): 02:28:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e9220>]}
+2022-04-21 02:28:33.784975 (Thread-158): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:34.137842 (Thread-159): handling compile_sql request
+2022-04-21 02:28:34.138139 (Thread-159): 02:28:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e9400>]}
+2022-04-21 02:28:34.138479 (Thread-159): sending response (<Response 703 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:52.771654 (Thread-160): 02:28:52  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:28:52.771973 (Thread-160): 02:28:52  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:28:52.772156 (Thread-160): 02:28:52  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:28:52.772350 (Thread-160): 02:28:52  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:28:52.772623 (Thread-160): 02:28:52  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:28:52.776674 (Thread-160): 02:28:52  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:28:52.779169 (Thread-160): 02:28:52  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:28:53.485455 (Thread-161): handling status request
+2022-04-21 02:28:53.485790 (Thread-161): 02:28:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c647130>]}
+2022-04-21 02:28:53.486292 (Thread-161): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:28:53.637906 (Thread-162): handling status request
+2022-04-21 02:28:53.638227 (Thread-162): 02:28:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c647730>]}
+2022-04-21 02:28:53.638753 (Thread-162): sending response (<Response 2549 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:29:42.943880 (Thread-163): 02:29:42  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:29:42.944211 (Thread-163): 02:29:42  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:29:42.944398 (Thread-163): 02:29:42  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:29:42.944599 (Thread-163): 02:29:42  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:29:42.944850 (Thread-163): 02:29:42  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:29:42.949023 (Thread-163): 02:29:42  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:29:42.951779 (Thread-163): 02:29:42  1603: static parser failed on _archive/stg_query.sql
+2022-04-21 02:29:43.718125 (Thread-164): handling status request
+2022-04-21 02:29:43.718466 (Thread-164): 02:29:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4fc5e0>]}
+2022-04-21 02:29:43.719005 (Thread-164): sending response (<Response 2552 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:29:43.821769 (Thread-165): handling status request
+2022-04-21 02:29:43.822009 (Thread-165): 02:29:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4fc820>]}
+2022-04-21 02:29:43.822447 (Thread-165): sending response (<Response 2552 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:29:49.542144 (Thread-166): handling status request
+2022-04-21 02:29:49.542473 (Thread-166): 02:29:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4fc1c0>]}
+2022-04-21 02:29:49.543006 (Thread-166): sending response (<Response 2552 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:29:49.914855 (Thread-167): handling run_sql request
+2022-04-21 02:29:49.915205 (Thread-167): 02:29:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c498bb0>]}
+2022-04-21 02:29:49.939854 (Thread-167): sending response (<Response 709 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:30:29.754642 (Thread-168): handling status request
+2022-04-21 02:30:29.755017 (Thread-168): 02:30:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c498d90>]}
+2022-04-21 02:30:29.755544 (Thread-168): sending response (<Response 2552 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:30:30.091580 (Thread-169): handling run_sql request
+2022-04-21 02:30:30.091920 (Thread-169): 02:30:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c49c1f0>]}
+2022-04-21 02:30:30.092295 (Thread-169): sending response (<Response 709 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:31:08.142186 (Thread-170): handling status request
+2022-04-21 02:31:08.142521 (Thread-170): 02:31:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c49cdc0>]}
+2022-04-21 02:31:08.143072 (Thread-170): sending response (<Response 2552 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:31:08.478591 (Thread-171): handling run_sql request
+2022-04-21 02:31:08.478925 (Thread-171): 02:31:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c49c0d0>]}
+2022-04-21 02:31:08.479349 (Thread-171): sending response (<Response 709 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:31:31.140923 (Thread-172): 02:31:31  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:31:31.141248 (Thread-172): 02:31:31  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:31:31.141435 (Thread-172): 02:31:31  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:31:31.141639 (Thread-172): 02:31:31  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:31:31.141891 (Thread-172): 02:31:31  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:31:31.280146 (Thread-172): 02:31:31  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:31:31.282153 (Thread-172): 02:31:31  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 02:31:31.820117 (Thread-173): handling status request
+2022-04-21 02:31:31.820452 (Thread-173): 02:31:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c458790>]}
+2022-04-21 02:31:31.820951 (Thread-173): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:31:32.035431 (Thread-174): handling status request
+2022-04-21 02:31:32.035777 (Thread-174): 02:31:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5ddd90>]}
+2022-04-21 02:31:32.036259 (Thread-174): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:31:33.458290 (Thread-175): handling status request
+2022-04-21 02:31:33.458601 (Thread-175): 02:31:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c458370>]}
+2022-04-21 02:31:33.459130 (Thread-175): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:31:33.854226 (Thread-176): handling run_sql request
+2022-04-21 02:31:33.854531 (Thread-176): 02:31:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c458040>]}
+2022-04-21 02:31:33.854900 (Thread-176): sending response (<Response 1375 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:32:28.190637 (Thread-177): 02:32:28  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:32:28.191168 (Thread-177): 02:32:28  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:32:28.191481 (Thread-177): 02:32:28  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:32:28.191782 (Thread-177): 02:32:28  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:32:28.192179 (Thread-177): 02:32:28  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:32:28.196491 (Thread-177): 02:32:28  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:32:28.198628 (Thread-177): 02:32:28  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 02:32:28.951114 (Thread-178): handling status request
+2022-04-21 02:32:28.951442 (Thread-178): 02:32:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f9880>]}
+2022-04-21 02:32:28.951933 (Thread-178): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:32:28.976455 (Thread-179): handling status request
+2022-04-21 02:32:28.976688 (Thread-179): 02:32:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f9b80>]}
+2022-04-21 02:32:28.977091 (Thread-179): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:32:48.740986 (Thread-180): handling status request
+2022-04-21 02:32:48.741319 (Thread-180): 02:32:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f91c0>]}
+2022-04-21 02:32:48.741811 (Thread-180): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:32:49.097572 (Thread-181): handling run_sql request
+2022-04-21 02:32:49.097916 (Thread-181): 02:32:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f9a60>]}
+2022-04-21 02:32:49.098269 (Thread-181): sending response (<Response 1375 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:32:58.698889 (Thread-182): handling status request
+2022-04-21 02:32:58.699231 (Thread-182): 02:32:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f9550>]}
+2022-04-21 02:32:58.699715 (Thread-182): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:32:59.048586 (Thread-183): handling run_sql request
+2022-04-21 02:32:59.048854 (Thread-183): 02:32:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5ec070>]}
+2022-04-21 02:32:59.049194 (Thread-183): sending response (<Response 1375 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:25.663415 (Thread-184): 02:33:25  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:33:25.663730 (Thread-184): 02:33:25  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:33:25.663917 (Thread-184): 02:33:25  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:33:25.664114 (Thread-184): 02:33:25  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:33:25.664364 (Thread-184): 02:33:25  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:33:25.667705 (Thread-184): 02:33:25  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:33:25.669559 (Thread-184): 02:33:25  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 02:33:26.383773 (Thread-185): handling status request
+2022-04-21 02:33:26.384106 (Thread-185): 02:33:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c8e8580>]}
+2022-04-21 02:33:26.384630 (Thread-185): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:26.428928 (Thread-186): handling status request
+2022-04-21 02:33:26.429202 (Thread-186): 02:33:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f9bb0>]}
+2022-04-21 02:33:26.429612 (Thread-186): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:28.033194 (Thread-187): 02:33:28  Partial parsing enabled: 0 files deleted, 2 files added, 2 files changed.
+2022-04-21 02:33:28.033509 (Thread-187): 02:33:28  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:33:28.033694 (Thread-187): 02:33:28  Partial parsing: added file: my_new_project://models/marts/_sources.yml
+2022-04-21 02:33:28.033888 (Thread-187): 02:33:28  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:33:28.034135 (Thread-187): 02:33:28  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:33:28.037511 (Thread-187): 02:33:28  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:33:28.039398 (Thread-187): 02:33:28  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 02:33:28.729046 (Thread-188): handling status request
+2022-04-21 02:33:28.729387 (Thread-188): 02:33:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c725370>]}
+2022-04-21 02:33:28.729907 (Thread-188): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:28.763933 (Thread-189): handling status request
+2022-04-21 02:33:28.764151 (Thread-189): 02:33:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c725df0>]}
+2022-04-21 02:33:28.764549 (Thread-189): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:33.528287 (Thread-190): handling status request
+2022-04-21 02:33:33.528605 (Thread-190): 02:33:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4f7d30>]}
+2022-04-21 02:33:33.529093 (Thread-190): sending response (<Response 2895 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:33.902017 (Thread-191): handling run_sql request
+2022-04-21 02:33:33.902374 (Thread-191): 02:33:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c648970>]}
+2022-04-21 02:33:33.902757 (Thread-191): sending response (<Response 1375 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:57.516043 (Thread-192): 02:33:57  Partial parsing enabled: 0 files deleted, 1 files added, 2 files changed.
+2022-04-21 02:33:57.516364 (Thread-192): 02:33:57  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:33:57.516578 (Thread-192): 02:33:57  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:33:57.516759 (Thread-192): 02:33:57  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:33:57.520185 (Thread-192): 02:33:57  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:33:57.522047 (Thread-192): 02:33:57  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 02:33:58.236254 (Thread-193): handling status request
+2022-04-21 02:33:58.236595 (Thread-193): 02:33:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c87c1f0>]}
+2022-04-21 02:33:58.237091 (Thread-193): sending response (<Response 2582 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:33:58.283528 (Thread-194): handling status request
+2022-04-21 02:33:58.283824 (Thread-194): 02:33:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c87cc40>]}
+2022-04-21 02:33:58.284294 (Thread-194): sending response (<Response 2582 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:05.081835 (Thread-195): handling status request
+2022-04-21 02:34:05.082168 (Thread-195): 02:34:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c87ca60>]}
+2022-04-21 02:34:05.082674 (Thread-195): sending response (<Response 2582 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:05.425470 (Thread-196): handling run_sql request
+2022-04-21 02:34:05.425767 (Thread-196): 02:34:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c87c190>]}
+2022-04-21 02:34:05.426130 (Thread-196): sending response (<Response 1375 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:28.515271 (Thread-197): 02:34:28  Partial parsing enabled: 0 files deleted, 1 files added, 2 files changed.
+2022-04-21 02:34:28.515586 (Thread-197): 02:34:28  Partial parsing: added file: my_new_project://models/staging/_sources.yml
+2022-04-21 02:34:28.515801 (Thread-197): 02:34:28  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:34:28.515982 (Thread-197): 02:34:28  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 02:34:28.519493 (Thread-197): 02:34:28  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:34:28.521396 (Thread-197): 02:34:28  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 02:34:28.572832 (Thread-197): 02:34:28  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c4fc400>]}
+2022-04-21 02:34:29.305945 (Thread-198): handling status request
+2022-04-21 02:34:29.306268 (Thread-198): 02:34:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cb65a00>]}
+2022-04-21 02:34:29.306764 (Thread-198): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:29.338196 (Thread-199): handling status request
+2022-04-21 02:34:29.338409 (Thread-199): 02:34:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cb65820>]}
+2022-04-21 02:34:29.338784 (Thread-199): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:31.972957 (Thread-200): handling status request
+2022-04-21 02:34:31.973282 (Thread-200): 02:34:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cb65670>]}
+2022-04-21 02:34:31.973769 (Thread-200): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:32.332110 (Thread-201): handling run_sql request
+2022-04-21 02:34:32.332381 (Thread-201): 02:34:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cb654c0>]}
+2022-04-21 02:34:34.543686 (Thread-201): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:34.567087 (MainThread): 02:34:34  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '46b3fb4e-30e3-4468-98e2-4a35f0009db4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2449ba56d0>]}
+2022-04-21 02:34:34.567571 (MainThread): 02:34:34  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 02:34:34.568741 (Thread-1): 02:34:34  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:34:34.568870 (Thread-1): 02:34:34  Began compiling node rpc.my_new_project.request
+2022-04-21 02:34:34.568957 (Thread-1): 02:34:34  Compiling rpc.my_new_project.request
+2022-04-21 02:34:34.569968 (Thread-1): 02:34:34  finished collecting timing info
+2022-04-21 02:34:34.570102 (Thread-1): 02:34:34  Began executing node rpc.my_new_project.request
+2022-04-21 02:34:34.570639 (Thread-1): 02:34:34  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:34:34.570729 (Thread-1): 02:34:34  On rpc.my_new_project.request: select * from raw.interview_sample_data.interview_orders
+-- select * from raw.interview_sample_data.interview_devices;
+-- select * from raw.interview_sample_data.interview_orders;
+-- select * from raw.interview_sample_data.interview_addresses;
+-- select * from raw.interview_sample_data.interview_payments
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 02:34:34.570811 (Thread-1): 02:34:34  Opening a new connection, currently in state init
+2022-04-21 02:34:34.925685 (Thread-202): handling poll request
+2022-04-21 02:34:34.926058 (Thread-202): 02:34:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cb7d9a0>]}
+2022-04-21 02:34:34.951072 (Thread-202): sending response (<Response 4039 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:34:35.632276 (Thread-1): 02:34:35  SQL status: SUCCESS 500 in 1.06 seconds
+2022-04-21 02:34:35.646647 (Thread-1): 02:34:35  finished collecting timing info
+2022-04-21 02:34:35.646880 (Thread-1): 02:34:35  On rpc.my_new_project.request: Close
+2022-04-21 02:34:36.329836 (Thread-203): handling poll request
+2022-04-21 02:34:36.330162 (Thread-203): 02:34:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3f0b3760>]}
+2022-04-21 02:34:36.333585 (Thread-203): sending response (<Response 63928 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:00.342404 (Thread-204): handling status request
+2022-04-21 02:35:00.342728 (Thread-204): 02:35:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3f0b34f0>]}
+2022-04-21 02:35:00.343283 (Thread-204): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:00.737041 (Thread-205): handling run_sql request
+2022-04-21 02:35:00.737353 (Thread-205): 02:35:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3f0b3b20>]}
+2022-04-21 02:35:02.947831 (Thread-205): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:02.971892 (MainThread): 02:35:02  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd0dd3730-4ff4-44b9-8f4d-81de05a12350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f65faf73cd0>]}
+2022-04-21 02:35:02.972404 (MainThread): 02:35:02  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 02:35:02.973638 (Thread-1): 02:35:02  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:35:02.973773 (Thread-1): 02:35:02  Began compiling node rpc.my_new_project.request
+2022-04-21 02:35:02.973865 (Thread-1): 02:35:02  Compiling rpc.my_new_project.request
+2022-04-21 02:35:02.974919 (Thread-1): 02:35:02  finished collecting timing info
+2022-04-21 02:35:02.975079 (Thread-1): 02:35:02  Began executing node rpc.my_new_project.request
+2022-04-21 02:35:02.975628 (Thread-1): 02:35:02  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:35:02.975719 (Thread-1): 02:35:02  On rpc.my_new_project.request: -- select * from raw.interview_sample_data.interview_orders
+select * from raw.interview_sample_data.interview_devices;
+2022-04-21 02:35:02.975800 (Thread-1): 02:35:02  Opening a new connection, currently in state init
+2022-04-21 02:35:03.275938 (Thread-206): handling poll request
+2022-04-21 02:35:03.276333 (Thread-206): 02:35:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cd0d040>]}
+2022-04-21 02:35:03.277242 (Thread-206): sending response (<Response 3786 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:05.049814 (Thread-207): handling poll request
+2022-04-21 02:35:05.050150 (Thread-207): 02:35:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cd0d610>]}
+2022-04-21 02:35:05.050634 (Thread-207): sending response (<Response 391 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:05.059697 (Thread-1): 02:35:05  SQL status: SUCCESS 4499 in 2.08 seconds
+2022-04-21 02:35:05.060008 (Thread-1): 02:35:05  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:35:05.060102 (Thread-1): 02:35:05  On rpc.my_new_project.request: -- select * from raw.interview_sample_data.interview_orders;
+-- select * from raw.interview_sample_data.interview_addresses;
+-- select * from raw.interview_sample_data.interview_payments
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 02:35:05.228274 (Thread-1): 02:35:05  Snowflake adapter: Snowflake query id: 01a3befb-0501-6083-0004-7d830483ca3e
+2022-04-21 02:35:05.228419 (Thread-1): 02:35:05  Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'limit'.
+2022-04-21 02:35:05.228599 (Thread-1): 02:35:05  finished collecting timing info
+2022-04-21 02:35:05.228766 (Thread-1): 02:35:05  On rpc.my_new_project.request: Close
+2022-04-21 02:35:05.442848 (Thread-1): Got an exception: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'limit'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'limit'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'limit'.
+2022-04-21 02:35:05.443811 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'limit'.", 'raw_sql': '-- select * from raw.interview_sample_data.interview_orders\r\nselect * from raw.interview_sample_data.interview_devices;\r\n-- select * from raw.interview_sample_data.interview_orders;\r\n-- select * from raw.interview_sample_data.interview_addresses;\r\n-- select * from raw.interview_sample_data.interview_payments\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': '-- select * from raw.interview_sample_data.interview_orders\r\nselect * from raw.interview_sample_data.interview_devices;\r\n-- select * from raw.interview_sample_data.interview_orders;\r\n-- select * from raw.interview_sample_data.interview_addresses;\r\n-- select * from raw.interview_sample_data.interview_payments\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'limit'.", 'raw_sql': '-- select * from raw.interview_sample_data.interview_orders\r\nselect * from raw.interview_sample_data.interview_devices;\r\n-- select * from raw.interview_sample_data.interview_orders;\r\n-- select * from raw.interview_sample_data.interview_addresses;\r\n-- select * from raw.interview_sample_data.interview_payments\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': '-- select * from raw.interview_sample_data.interview_orders\r\nselect * from raw.interview_sample_data.interview_devices;\r\n-- select * from raw.interview_sample_data.interview_orders;\r\n-- select * from raw.interview_sample_data.interview_addresses;\r\n-- select * from raw.interview_sample_data.interview_payments\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2022-04-21 02:35:06.425008 (Thread-208): handling poll request
+2022-04-21 02:35:06.425366 (Thread-208): 02:35:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cd0a580>]}
+2022-04-21 02:35:06.426046 (Thread-208): sending response (<Response 12946 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:18.309632 (Thread-209): handling status request
+2022-04-21 02:35:18.309959 (Thread-209): 02:35:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3ccff9d0>]}
+2022-04-21 02:35:18.310767 (Thread-209): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:18.727338 (Thread-210): handling run_sql request
+2022-04-21 02:35:18.727666 (Thread-210): 02:35:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cd0da30>]}
+2022-04-21 02:35:20.994383 (Thread-210): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:21.018233 (MainThread): 02:35:21  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf5f4af1-b825-4b82-8bb2-13f239e25587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6556a6d280>]}
+2022-04-21 02:35:21.018753 (MainThread): 02:35:21  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 02:35:21.019997 (Thread-1): 02:35:21  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:35:21.020128 (Thread-1): 02:35:21  Began compiling node rpc.my_new_project.request
+2022-04-21 02:35:21.020231 (Thread-1): 02:35:21  Compiling rpc.my_new_project.request
+2022-04-21 02:35:21.021284 (Thread-1): 02:35:21  finished collecting timing info
+2022-04-21 02:35:21.021413 (Thread-1): 02:35:21  Began executing node rpc.my_new_project.request
+2022-04-21 02:35:21.021958 (Thread-1): 02:35:21  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:35:21.022046 (Thread-1): 02:35:21  On rpc.my_new_project.request: -- select * from raw.interview_sample_data.interview_orders
+select * from raw.interview_sample_data.interview_devices
+-- select * from raw.interview_sample_data.interview_orders;
+-- select * from raw.interview_sample_data.interview_addresses;
+-- select * from raw.interview_sample_data.interview_payments
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 02:35:21.022125 (Thread-1): 02:35:21  Opening a new connection, currently in state init
+2022-04-21 02:35:21.320668 (Thread-211): handling poll request
+2022-04-21 02:35:21.321072 (Thread-211): 02:35:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e31dca0>]}
+2022-04-21 02:35:21.321966 (Thread-211): sending response (<Response 4038 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:35:22.208335 (Thread-1): 02:35:22  SQL status: SUCCESS 500 in 1.19 seconds
+2022-04-21 02:35:22.220196 (Thread-1): 02:35:22  finished collecting timing info
+2022-04-21 02:35:22.220429 (Thread-1): 02:35:22  On rpc.my_new_project.request: Close
+2022-04-21 02:35:22.651602 (Thread-212): handling poll request
+2022-04-21 02:35:22.651940 (Thread-212): 02:35:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e389220>]}
+2022-04-21 02:35:22.654679 (Thread-212): sending response (<Response 31637 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:19.354940 (Thread-213): handling status request
+2022-04-21 02:36:19.355340 (Thread-213): 02:36:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e389b80>]}
+2022-04-21 02:36:19.355893 (Thread-213): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:19.733108 (Thread-214): handling run_sql request
+2022-04-21 02:36:19.733423 (Thread-214): 02:36:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c9476d220>]}
+2022-04-21 02:36:21.939618 (Thread-214): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:21.963604 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 125, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 50, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1275, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1243, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 924, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 651, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 454, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.my_new_project.request' (from remote system) depends on a source named 'interview_sample_data.orders' which was not found
+2022-04-21 02:36:22.332226 (Thread-215): handling poll request
+2022-04-21 02:36:22.332652 (Thread-215): 02:36:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cf9e5b0>]}
+2022-04-21 02:36:22.333382 (Thread-215): sending response (<Response 2869 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:37.023044 (Thread-216): handling status request
+2022-04-21 02:36:37.023397 (Thread-216): 02:36:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cf9e070>]}
+2022-04-21 02:36:37.024019 (Thread-216): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:37.379852 (Thread-217): handling run_sql request
+2022-04-21 02:36:37.380127 (Thread-217): 02:36:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3f0a7610>]}
+2022-04-21 02:36:39.634111 (Thread-217): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:39.658174 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 125, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 50, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1275, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1243, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 924, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 651, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 454, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.my_new_project.request' (from remote system) depends on a source named 'interview_sample_data.intrview_orders' which was not found
+2022-04-21 02:36:39.988355 (Thread-218): handling poll request
+2022-04-21 02:36:39.988746 (Thread-218): 02:36:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3a79d0>]}
+2022-04-21 02:36:39.989440 (Thread-218): sending response (<Response 2896 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:50.644980 (Thread-219): handling status request
+2022-04-21 02:36:50.645319 (Thread-219): 02:36:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3a7820>]}
+2022-04-21 02:36:50.645914 (Thread-219): sending response (<Response 2504 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:51.007969 (Thread-220): handling run_sql request
+2022-04-21 02:36:51.008242 (Thread-220): 02:36:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3a7e80>]}
+2022-04-21 02:36:53.231557 (Thread-220): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:53.256944 (MainThread): 02:36:53  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a24544ca-347b-4c1b-b860-b2217c1f521b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd3937e2e0>]}
+2022-04-21 02:36:53.258093 (MainThread): 02:36:53  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 02:36:53.258666 (Thread-1): 02:36:53  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:36:53.258798 (Thread-1): 02:36:53  Began compiling node rpc.my_new_project.request
+2022-04-21 02:36:53.258890 (Thread-1): 02:36:53  Compiling rpc.my_new_project.request
+2022-04-21 02:36:53.260959 (Thread-1): 02:36:53  finished collecting timing info
+2022-04-21 02:36:53.261097 (Thread-1): 02:36:53  Began executing node rpc.my_new_project.request
+2022-04-21 02:36:53.261643 (Thread-1): 02:36:53  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 02:36:53.261732 (Thread-1): 02:36:53  On rpc.my_new_project.request: -- select * from raw.interview_sample_data.interview_orders
+-- select * from raw.interview_sample_data.interview_devices
+-- select * from raw.interview_sample_data.interview_orders
+-- select * from raw.interview_sample_data.interview_addresses
+-- select * from raw.interview_sample_data.interview_payments
+
+select * from raw.interview_sample_data.interview_orders
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 02:36:53.261813 (Thread-1): 02:36:53  Opening a new connection, currently in state init
+2022-04-21 02:36:53.569121 (Thread-221): handling poll request
+2022-04-21 02:36:53.569541 (Thread-221): 02:36:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6d2ca280>]}
+2022-04-21 02:36:53.570501 (Thread-221): sending response (<Response 4091 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:36:54.292674 (Thread-1): 02:36:54  SQL status: SUCCESS 500 in 1.03 seconds
+2022-04-21 02:36:54.308446 (Thread-1): 02:36:54  finished collecting timing info
+2022-04-21 02:36:54.308766 (Thread-1): 02:36:54  On rpc.my_new_project.request: Close
+2022-04-21 02:36:54.972832 (Thread-222): handling poll request
+2022-04-21 02:36:54.973150 (Thread-222): 02:36:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6d2f0640>]}
+2022-04-21 02:36:54.976514 (Thread-222): sending response (<Response 64293 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:37:39.343495 (Thread-223): 02:37:39  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:37:39.343923 (Thread-223): 02:37:39  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:37:39.348009 (Thread-223): 02:37:39  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:37:39.389309 (Thread-223): 02:37:39  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cd1dc70>]}
+2022-04-21 02:37:40.122140 (Thread-224): handling status request
+2022-04-21 02:37:40.122479 (Thread-224): 02:37:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e306bb0>]}
+2022-04-21 02:37:40.123029 (Thread-224): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:37:40.192056 (Thread-225): handling status request
+2022-04-21 02:37:40.192386 (Thread-225): 02:37:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e306dc0>]}
+2022-04-21 02:37:40.192879 (Thread-225): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:39:35.038775 (Thread-226): handling status request
+2022-04-21 02:39:35.039665 (Thread-226): 02:39:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e306a30>]}
+2022-04-21 02:39:35.040160 (Thread-226): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:39:35.370456 (Thread-227): handling compile_sql request
+2022-04-21 02:39:35.370788 (Thread-227): 02:39:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e306a60>]}
+2022-04-21 02:39:37.706141 (Thread-227): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:39:37.721180 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as ( select * from {{source('interview_sample_data', 'interview_'{{t}} ),
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as ( select * from {{source('interview_sample_data', 'interview_'{{t}} ),
+2022-04-21 02:39:38.047086 (Thread-228): handling poll request
+2022-04-21 02:39:38.047498 (Thread-228): 02:39:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3fc400>]}
+2022-04-21 02:39:38.048245 (Thread-228): sending response (<Response 4511 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:40:06.279999 (Thread-229): handling status request
+2022-04-21 02:40:06.280371 (Thread-229): 02:40:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3fcb50>]}
+2022-04-21 02:40:06.280922 (Thread-229): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:40:06.616815 (Thread-230): handling compile_sql request
+2022-04-21 02:40:06.617175 (Thread-230): 02:40:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3fcbb0>]}
+2022-04-21 02:40:08.872309 (Thread-230): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:40:08.887165 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}} }} ),
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}} }} ),
+2022-04-21 02:40:09.193409 (Thread-231): handling poll request
+2022-04-21 02:40:09.193833 (Thread-231): 02:40:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e320850>]}
+2022-04-21 02:40:09.194599 (Thread-231): sending response (<Response 4454 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:41:07.463026 (Thread-232): handling status request
+2022-04-21 02:41:07.463365 (Thread-232): 02:41:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e377430>]}
+2022-04-21 02:41:07.487693 (Thread-232): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:41:07.823226 (Thread-233): handling compile_sql request
+2022-04-21 02:41:07.823573 (Thread-233): 02:41:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cc03eb0>]}
+2022-04-21 02:41:10.066288 (Thread-233): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:41:10.081174 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} ),
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} ),
+2022-04-21 02:41:10.378375 (Thread-234): handling poll request
+2022-04-21 02:41:10.378769 (Thread-234): 02:41:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c656fd0>]}
+2022-04-21 02:41:10.379543 (Thread-234): sending response (<Response 4458 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:41:36.547705 (Thread-235): handling status request
+2022-04-21 02:41:36.548050 (Thread-235): 02:41:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6d2ce6a0>]}
+2022-04-21 02:41:36.548579 (Thread-235): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:41:36.889959 (Thread-236): handling compile_sql request
+2022-04-21 02:41:36.890316 (Thread-236): 02:41:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6d2ced60>]}
+2022-04-21 02:41:39.133848 (Thread-236): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:41:39.159321 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 125, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 50, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1275, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1243, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 924, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 651, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 454, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.my_new_project.request' (from remote system) depends on a source named 'interview_sample_data.interview_{{t}}' which was not found
+2022-04-21 02:41:39.455366 (Thread-237): handling poll request
+2022-04-21 02:41:39.455790 (Thread-237): 02:41:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e3208e0>]}
+2022-04-21 02:41:39.456531 (Thread-237): sending response (<Response 3030 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:16.331745 (Thread-238): handling status request
+2022-04-21 02:42:16.332106 (Thread-238): 02:42:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e306940>]}
+2022-04-21 02:42:16.332689 (Thread-238): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:16.712732 (Thread-239): handling compile_sql request
+2022-04-21 02:42:16.713000 (Thread-239): 02:42:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e306130>]}
+2022-04-21 02:42:18.929860 (Thread-239): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:18.944242 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} ),
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} ),
+2022-04-21 02:42:19.257640 (Thread-240): handling poll request
+2022-04-21 02:42:19.258085 (Thread-240): 02:42:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cc6fc40>]}
+2022-04-21 02:42:19.258832 (Thread-240): sending response (<Response 4458 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:32.028756 (Thread-241): handling status request
+2022-04-21 02:42:32.029109 (Thread-241): 02:42:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cc9fe80>]}
+2022-04-21 02:42:32.029649 (Thread-241): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:32.388791 (Thread-242): handling compile_sql request
+2022-04-21 02:42:32.389084 (Thread-242): 02:42:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cc9f550>]}
+2022-04-21 02:42:34.648961 (Thread-242): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:34.663545 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} )
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} )
+2022-04-21 02:42:34.969776 (Thread-243): handling poll request
+2022-04-21 02:42:34.970189 (Thread-243): 02:42:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e307880>]}
+2022-04-21 02:42:34.970914 (Thread-243): sending response (<Response 4454 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:42:59.827191 (Thread-244): handling status request
+2022-04-21 02:42:59.827547 (Thread-244): 02:42:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6e307850>]}
+2022-04-21 02:42:59.828099 (Thread-244): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:00.205881 (Thread-245): handling compile_sql request
+2022-04-21 02:43:00.206164 (Thread-245): 02:43:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cc97e50>]}
+2022-04-21 02:43:02.437716 (Thread-245): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:02.452119 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} ,)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as ( select * from {{ source('interview_sample_data', 'interview_'{{t}}) }} ,)
+2022-04-21 02:43:02.785333 (Thread-246): handling poll request
+2022-04-21 02:43:02.785754 (Thread-246): 02:43:02  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cc97f10>]}
+2022-04-21 02:43:02.786514 (Thread-246): sending response (<Response 4458 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:21.769334 (Thread-247): 02:43:21  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:43:21.769705 (Thread-247): 02:43:21  Partial parsing: updated file: my_new_project://models/_archive/test_conn.sql
+2022-04-21 02:43:21.774458 (Thread-247): 02:43:21  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 02:43:21.816605 (Thread-247): 02:43:21  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c9052b0>]}
+2022-04-21 02:43:22.490313 (Thread-248): handling status request
+2022-04-21 02:43:22.490640 (Thread-248): 02:43:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79e2b0>]}
+2022-04-21 02:43:22.491150 (Thread-248): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:22.596782 (Thread-249): handling status request
+2022-04-21 02:43:22.597065 (Thread-249): 02:43:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79ee50>]}
+2022-04-21 02:43:22.604373 (Thread-249): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:26.528859 (Thread-250): handling status request
+2022-04-21 02:43:26.529226 (Thread-250): 02:43:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c532fd0>]}
+2022-04-21 02:43:26.529686 (Thread-250): sending response (<Response 1566 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:26.843280 (Thread-251): handling compile_sql request
+2022-04-21 02:43:26.843599 (Thread-251): 02:43:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c79e790>]}
+2022-04-21 02:43:29.085570 (Thread-251): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:43:29.100014 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as select * from {{ source('interview_sample_data', 'interview_'{{t}}) }}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as select * from {{ source('interview_sample_data', 'interview_'{{t}}) }}
+2022-04-21 02:43:29.446450 (Thread-252): handling poll request
+2022-04-21 02:43:29.446824 (Thread-252): 02:43:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c5e2700>]}
+2022-04-21 02:43:29.447559 (Thread-252): sending response (<Response 4438 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:45:06.677166 (Thread-253): 02:45:06  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:45:06.679416 (Thread-253): 02:45:06  Partial parsing: updated file: my_new_project://models/_archive/test_loop.sql
+2022-04-21 02:45:06.683248 (Thread-253): 02:45:06  1603: static parser failed on _archive/test_loop.sql
+2022-04-21 02:45:07.392038 (Thread-254): handling status request
+2022-04-21 02:45:07.392378 (Thread-254): 02:45:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c65e100>]}
+2022-04-21 02:45:07.392862 (Thread-254): sending response (<Response 1317 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:45:07.420001 (Thread-255): handling status request
+2022-04-21 02:45:07.420250 (Thread-255): 02:45:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c6d2ca3a0>]}
+2022-04-21 02:45:07.420594 (Thread-255): sending response (<Response 1317 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:45:32.929445 (Thread-256): handling status request
+2022-04-21 02:45:32.929780 (Thread-256): 02:45:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c65e1f0>]}
+2022-04-21 02:45:32.930247 (Thread-256): sending response (<Response 1317 bytes [200 OK]>) to 10.0.26.132

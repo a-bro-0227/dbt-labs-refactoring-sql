@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: interview_sample_data
+    database: raw
+    tables:
+        - name: interview_orders
+        - name: interview_devices
+        - name: interview_addresses
+        - name: interview_payments

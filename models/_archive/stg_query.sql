@@ -20,12 +20,11 @@ a couple of errors that were resolved in the set up:
     
 */
 
-{% set tables = ['orders', 'devices', 'orders', 'addresses', 'payments']}
-
-
 -- logical cte's
 -- final cte's
 -- select statement
+
+/*
 
 select
   *,
@@ -138,3 +137,4 @@ from (
     ) pa on pa.order_id = o.order_id
   )
 
+*/
