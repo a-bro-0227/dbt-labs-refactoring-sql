@@ -3,11 +3,12 @@
   
    as (
     with
-  o as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders ),
-  do as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),
-  fo as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order ),
-  pa as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),
-  ct as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),
+  o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),
+  fo as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),
+  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),
+  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),
+  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),
 
   -- final cte's
 
@@ -26,26 +27,20 @@
         o.shipping_method,
         do.purchase_device_type,
         do.device as purchase_device,
-        case
-          when fo.first_order_id = o.order_id then 'new'
-          else 'repeat'
-        end as user_type,
+        ut.user_type,
         o.amount_total_cents,
         pa.gross_total_amount_cents,
-        case
-          when o.currency = 'usd' then o.amount_total_cents
-          else pa.gross_total_amount_cents
-        end as total_amount_cents,
+        pa.total_amount_cents,
         pa.gross_tax_amount_cents,
         pa.gross_amount_cents,
-        pa.gross_shipping_amount_cents
+        pa.gross_amount_shipping_cents
       from o
 
       left join do
         on do.order_id = o.order_id
 
-      left join fo
-        on o.user_id = fo.user_id
+      left join ut
+        on o.order_id = ut.order_id
 
       left join ct 
         on ct.order_id = o.order_id
@@ -64,7 +59,7 @@ select
   total_amount_cents/ 100 as total_amount,
   gross_tax_amount_cents/ 100 as gross_tax_amount,
   gross_amount_cents/ 100 as gross_amount,
-  gross_shipping_amount_cents/ 100 as gross_shipping_amount
+  gross_amount_shipping_cents/ 100 as gross_shipping_amount
 
 from final
   );

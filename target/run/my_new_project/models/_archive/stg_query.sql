@@ -85,7 +85,7 @@ with
     sum(case
           when status = 'completed' then amount_shipping_cents else 0
         end
-      ) as gross_shipping_amount_cents,
+      ) as gross_shipping_amount_cents, -- minor change to name here
     sum(case
           when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
         end
