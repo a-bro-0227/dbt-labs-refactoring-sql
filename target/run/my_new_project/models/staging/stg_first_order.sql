@@ -3,7 +3,7 @@
   
    as (
     with
-    o as (select * from raw.interview_sample_data.interview_orders),
+    o as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
 
     fo as (
         select

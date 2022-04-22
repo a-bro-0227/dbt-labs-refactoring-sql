@@ -3,11 +3,11 @@
   
    as (
     with
-  o as (select * from raw.interview_sample_data.interview_orders),
+  o as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders ),
   do as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),
-  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order ),
-  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),
-  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),
+  fo as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order ),
+  pa as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),
+  ct as ( select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),
 
   -- final cte's
 
@@ -20,15 +20,8 @@
         o.updated_at,
         o.shipped_at,
         o.currency,
-        o.status as order_status,
-        case
-          when o.status in (
-            'paid',
-            'completed',
-            'shipped'
-          ) then 'completed'
-          else o.status
-        end as order_status_category,
+        o.order_status,
+        o.order_status_category,
         ct.country_type,
         o.shipping_method,
         do.purchase_device_type,

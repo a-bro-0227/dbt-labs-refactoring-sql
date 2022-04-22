@@ -17,15 +17,8 @@ with
         o.updated_at,
         o.shipped_at,
         o.currency,
-        o.status as order_status,
-        case
-          when o.status in (
-            'paid',
-            'completed',
-            'shipped'
-          ) then 'completed'
-          else o.status
-        end as order_status_category,
+        o.order_status,
+        o.order_status_category,
         ct.country_type,
         o.shipping_method,
         do.purchase_device_type,

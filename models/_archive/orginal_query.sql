@@ -1,3 +1,5 @@
+{#
+
 SELECT
   *,
   amount_total_cents / 100 as amount_total,
@@ -108,3 +110,5 @@ FROM (
         GROUP BY order_id
     ) pa ON pa.order_id = o.order_id
   )
+
+#}

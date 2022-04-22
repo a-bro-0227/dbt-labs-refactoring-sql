@@ -1,6 +1,6 @@
 
 with
-    o as (select * from {{ source('interview_sample_data', 'interview_orders') }}),
+    o as (select * from {{ ref('stg_orders') }}),
 
     fo as (
         select
