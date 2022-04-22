@@ -20643,3 +20643,696 @@ There are 1 unused configuration paths:
 2022-04-22 21:12:43.649286 (Thread-236): handling status request
 2022-04-22 21:12:43.650639 (Thread-236): 21:12:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae63520>]}
 2022-04-22 21:12:43.651139 (Thread-236): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:12:47.648130 (Thread-237): 21:12:47  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 21:12:47.648359 (Thread-237): 21:12:47  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 21:12:47.648863 (Thread-237): 21:12:47  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:12:47.654162 (Thread-237): 21:12:47  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead4c970>]}
+2022-04-22 21:12:48.466023 (Thread-238): handling status request
+2022-04-22 21:12:48.466557 (Thread-238): 21:12:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaef0e20>]}
+2022-04-22 21:12:48.467076 (Thread-238): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:12:48.507151 (Thread-239): handling status request
+2022-04-22 21:12:48.507599 (Thread-239): 21:12:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaef00a0>]}
+2022-04-22 21:12:48.508064 (Thread-239): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:21.117997 (Thread-240): handling status request
+2022-04-22 21:34:21.119348 (Thread-240): 21:34:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaef8880>]}
+2022-04-22 21:34:21.119867 (Thread-240): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:21.447613 (Thread-241): handling run_sql request
+2022-04-22 21:34:21.448034 (Thread-241): 21:34:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaea62e0>]}
+2022-04-22 21:34:24.056609 (Thread-241): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:24.084173 (MainThread): 21:34:24  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '630fe297-18bd-496e-a6db-baa2e6b538c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff6a2b2de80>]}
+2022-04-22 21:34:24.084791 (MainThread): 21:34:24  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:34:24.085418 (Thread-1): 21:34:24  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:34:24.085555 (Thread-1): 21:34:24  Began compiling node rpc.my_new_project.request
+2022-04-22 21:34:24.085682 (Thread-1): 21:34:24  Compiling rpc.my_new_project.request
+2022-04-22 21:34:24.088119 (Thread-1): 21:34:24  finished collecting timing info
+2022-04-22 21:34:24.088262 (Thread-1): 21:34:24  Began executing node rpc.my_new_project.request
+2022-04-22 21:34:24.089144 (Thread-1): 21:34:24  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:34:24.089234 (Thread-1): 21:34:24  On rpc.my_new_project.request: with
+    d as (select * from raw.interview_sample_data.interview_devices),
+
+    do as (
+    select distinct
+        cast(d.type_id as float) as order_id,
+        first_value(d.device) over (
+        partition by d.type_id
+        order by
+        d.created_at rows between unbounded preceding
+        and unbounded following
+        ) as device
+    from d
+    where d.type = 'order'
+    )
+
+select * from do
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:34:24.089312 (Thread-1): 21:34:24  Opening a new connection, currently in state init
+2022-04-22 21:34:24.391795 (Thread-242): handling poll request
+2022-04-22 21:34:24.392264 (Thread-242): 21:34:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae8fca0>]}
+2022-04-22 21:34:24.393185 (Thread-242): sending response (<Response 4155 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:25.713850 (Thread-243): handling poll request
+2022-04-22 21:34:25.714287 (Thread-243): 21:34:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae8f220>]}
+2022-04-22 21:34:25.714818 (Thread-243): sending response (<Response 402 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:27.058773 (Thread-244): handling poll request
+2022-04-22 21:34:27.059161 (Thread-244): 21:34:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae8f040>]}
+2022-04-22 21:34:27.059679 (Thread-244): sending response (<Response 402 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:27.177239 (Thread-1): 21:34:27  SQL status: SUCCESS 500 in 3.09 seconds
+2022-04-22 21:34:27.184559 (Thread-1): 21:34:27  finished collecting timing info
+2022-04-22 21:34:27.184813 (Thread-1): 21:34:27  On rpc.my_new_project.request: Close
+2022-04-22 21:34:28.389543 (Thread-245): handling poll request
+2022-04-22 21:34:28.389939 (Thread-245): 21:34:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaeaa6a0>]}
+2022-04-22 21:34:28.391588 (Thread-245): sending response (<Response 15274 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:39.696450 (Thread-246): handling status request
+2022-04-22 21:34:39.696836 (Thread-246): 21:34:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaf98b80>]}
+2022-04-22 21:34:39.697358 (Thread-246): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:40.021657 (Thread-247): handling run_sql request
+2022-04-22 21:34:40.022076 (Thread-247): 21:34:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae8f250>]}
+2022-04-22 21:34:42.586850 (Thread-247): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:42.611280 (MainThread): 21:34:42  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e15f03cb-9799-43c0-8ae0-efcda48d5a5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f38b65acdf0>]}
+2022-04-22 21:34:42.611831 (MainThread): 21:34:42  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:34:42.612453 (Thread-1): 21:34:42  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:34:42.612591 (Thread-1): 21:34:42  Began compiling node rpc.my_new_project.request
+2022-04-22 21:34:42.612685 (Thread-1): 21:34:42  Compiling rpc.my_new_project.request
+2022-04-22 21:34:42.614908 (Thread-1): 21:34:42  finished collecting timing info
+2022-04-22 21:34:42.615039 (Thread-1): 21:34:42  Began executing node rpc.my_new_project.request
+2022-04-22 21:34:42.615901 (Thread-1): 21:34:42  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:34:42.615992 (Thread-1): 21:34:42  On rpc.my_new_project.request: with
+    d as (select * from raw.interview_sample_data.interview_devices),
+
+    do as (
+    select distinct
+        cast(d.type_id as float) as order_id,
+        first_value(d.device) over (
+        partition by d.type_id
+        order by
+        d.created_at rows between unbounded preceding
+        and unbounded following
+        ) as device
+    from d
+    where d.type = 'order'
+    )
+
+select count(*) from do
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:34:42.616068 (Thread-1): 21:34:42  Opening a new connection, currently in state init
+2022-04-22 21:34:42.912637 (Thread-248): handling poll request
+2022-04-22 21:34:42.913088 (Thread-248): 21:34:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaef1dc0>]}
+2022-04-22 21:34:42.914097 (Thread-248): sending response (<Response 4163 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:44.034060 (Thread-1): 21:34:44  SQL status: SUCCESS 1 in 1.42 seconds
+2022-04-22 21:34:44.036072 (Thread-1): 21:34:44  finished collecting timing info
+2022-04-22 21:34:44.036293 (Thread-1): 21:34:44  On rpc.my_new_project.request: Close
+2022-04-22 21:34:44.226672 (Thread-249): handling poll request
+2022-04-22 21:34:44.227060 (Thread-249): 21:34:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaef1d90>]}
+2022-04-22 21:34:44.227601 (Thread-249): sending response (<Response 1380 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:45.576001 (Thread-250): handling poll request
+2022-04-22 21:34:45.576409 (Thread-250): 21:34:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae3f370>]}
+2022-04-22 21:34:45.577311 (Thread-250): sending response (<Response 4201 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:51.986480 (Thread-251): handling status request
+2022-04-22 21:34:51.986868 (Thread-251): 21:34:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae3f6d0>]}
+2022-04-22 21:34:51.987386 (Thread-251): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:52.378829 (Thread-252): handling run_sql request
+2022-04-22 21:34:52.379215 (Thread-252): 21:34:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feae3fd90>]}
+2022-04-22 21:34:54.990477 (Thread-252): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:55.015837 (MainThread): 21:34:55  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4e1f0a11-b607-40fc-8447-51479748f878', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efcfe977eb0>]}
+2022-04-22 21:34:55.016424 (MainThread): 21:34:55  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:34:55.017036 (Thread-1): 21:34:55  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:34:55.017170 (Thread-1): 21:34:55  Began compiling node rpc.my_new_project.request
+2022-04-22 21:34:55.017281 (Thread-1): 21:34:55  Compiling rpc.my_new_project.request
+2022-04-22 21:34:55.019571 (Thread-1): 21:34:55  finished collecting timing info
+2022-04-22 21:34:55.019702 (Thread-1): 21:34:55  Began executing node rpc.my_new_project.request
+2022-04-22 21:34:55.020788 (Thread-1): 21:34:55  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:34:55.020881 (Thread-1): 21:34:55  On rpc.my_new_project.request: with
+    d as (select * from raw.interview_sample_data.interview_devices),
+
+    do as (
+    select distinct
+        cast(d.type_id as float) as order_id,
+        first_value(d.device) over (
+        partition by d.type_id
+        order by
+        d.created_at rows between unbounded preceding
+        and unbounded following
+        ) as device,
+        case
+            when d.device = 'web' then 'desktop'
+            when d.device in ('ios-app', 'android-app') then 'mobile-app'
+            when d.device in ('mobile', 'tablet') then 'mobile-web'
+            when nullif(d.device, '') is null then 'unknown'
+            else 'error'
+        end as purchase_device_type
+    from d
+    where d.type = 'order'
+    )
+
+select count(*) from do
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:34:55.020962 (Thread-1): 21:34:55  Opening a new connection, currently in state init
+2022-04-22 21:34:55.333708 (Thread-253): handling poll request
+2022-04-22 21:34:55.334193 (Thread-253): 21:34:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaed5430>]}
+2022-04-22 21:34:55.335167 (Thread-253): sending response (<Response 4497 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:56.667145 (Thread-254): handling poll request
+2022-04-22 21:34:56.667550 (Thread-254): 21:34:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaed53d0>]}
+2022-04-22 21:34:56.668064 (Thread-254): sending response (<Response 402 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:34:56.962854 (Thread-1): 21:34:56  SQL status: SUCCESS 1 in 1.94 seconds
+2022-04-22 21:34:56.964844 (Thread-1): 21:34:56  finished collecting timing info
+2022-04-22 21:34:56.965066 (Thread-1): 21:34:56  On rpc.my_new_project.request: Close
+2022-04-22 21:34:57.983689 (Thread-255): handling poll request
+2022-04-22 21:34:57.984100 (Thread-255): 21:34:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaed5250>]}
+2022-04-22 21:34:57.985038 (Thread-255): sending response (<Response 6515 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:09.732272 (Thread-256): 21:37:09  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 21:37:09.733643 (Thread-256): 21:37:09  Partial parsing: updated file: my_new_project://models/marts/fct_final.sql
+2022-04-22 21:37:09.738537 (Thread-256): 21:37:09  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 21:37:09.773413 (Thread-256): 21:37:09  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:37:09.779580 (Thread-256): 21:37:09  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead38f40>]}
+2022-04-22 21:37:10.631261 (Thread-257): handling status request
+2022-04-22 21:37:10.631669 (Thread-257): 21:37:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead11ee0>]}
+2022-04-22 21:37:10.632236 (Thread-257): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:10.669742 (Thread-258): handling status request
+2022-04-22 21:37:10.670116 (Thread-258): 21:37:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead11d30>]}
+2022-04-22 21:37:10.670594 (Thread-258): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:20.462235 (Thread-259): handling status request
+2022-04-22 21:37:20.462635 (Thread-259): 21:37:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead11c70>]}
+2022-04-22 21:37:20.463113 (Thread-259): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:20.776097 (Thread-260): handling run_sql request
+2022-04-22 21:37:20.776498 (Thread-260): 21:37:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaecadf0>]}
+2022-04-22 21:37:23.330407 (Thread-260): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:23.357018 (MainThread): 21:37:23  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6011e49b-b8e6-4785-b9f0-d414bb518474', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa459fb3f10>]}
+2022-04-22 21:37:23.357638 (MainThread): 21:37:23  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:37:23.358258 (Thread-1): 21:37:23  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:37:23.358397 (Thread-1): 21:37:23  Began compiling node rpc.my_new_project.request
+2022-04-22 21:37:23.358491 (Thread-1): 21:37:23  Compiling rpc.my_new_project.request
+2022-04-22 21:37:23.361863 (Thread-1): 21:37:23  finished collecting timing info
+2022-04-22 21:37:23.362004 (Thread-1): 21:37:23  Began executing node rpc.my_new_project.request
+2022-04-22 21:37:23.364126 (Thread-1): 21:37:23  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:37:23.364228 (Thread-1): 21:37:23  On rpc.my_new_project.request: with
+  o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),
+  fo as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),
+  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),
+  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),
+  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),
+
+  final as (
+
+    select
+        o.order_id,
+        o.user_id,
+        o.created_at,
+        o.updated_at,
+        o.shipped_at,
+        o.currency,
+        o.order_status,
+        o.order_status_category,
+        ct.country_type,
+        o.shipping_method,
+        do.purchase_device_type,
+        do.device as purchase_device,
+        ut.user_type,
+        o.amount_total_cents,
+        pa.gross_total_amount_cents,
+        pa.total_amount_cents,
+        pa.gross_tax_amount_cents,
+        pa.gross_amount_cents,
+        pa.gross_amount_shipping_cents
+      from o
+
+      left join do
+        on do.order_id = o.order_id
+
+      left join ut
+        on o.order_id = ut.order_id
+
+      left join ct 
+        on ct.order_id = o.order_id
+
+      left join pa
+        on pa.order_id = o.order_id
+  )
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_amount_shipping_cents/ 100 as gross_shipping_amount
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:37:23.364311 (Thread-1): 21:37:23  Opening a new connection, currently in state init
+2022-04-22 21:37:23.679940 (Thread-261): handling poll request
+2022-04-22 21:37:23.680393 (Thread-261): 21:37:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead21370>]}
+2022-04-22 21:37:23.681365 (Thread-261): sending response (<Response 5374 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:25.010638 (Thread-262): handling poll request
+2022-04-22 21:37:25.011032 (Thread-262): 21:37:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead21550>]}
+2022-04-22 21:37:25.011540 (Thread-262): sending response (<Response 388 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:26.171122 (Thread-1): 21:37:26  SQL status: SUCCESS 500 in 2.81 seconds
+2022-04-22 21:37:26.344296 (Thread-263): handling poll request
+2022-04-22 21:37:26.344683 (Thread-263): 21:37:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fead21250>]}
+2022-04-22 21:37:26.345201 (Thread-263): sending response (<Response 667 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:26.685094 (Thread-1): 21:37:26  finished collecting timing info
+2022-04-22 21:37:26.685390 (Thread-1): 21:37:26  On rpc.my_new_project.request: Close
+2022-04-22 21:37:27.678094 (Thread-264): handling poll request
+2022-04-22 21:37:27.678493 (Thread-264): 21:37:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30800e11c0>]}
+2022-04-22 21:37:27.687620 (Thread-264): sending response (<Response 142460 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:29.844205 (Thread-265): handling status request
+2022-04-22 21:37:29.844599 (Thread-265): 21:37:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30800e1790>]}
+2022-04-22 21:37:29.845133 (Thread-265): sending response (<Response 1979 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:29.850812 (Thread-266): handling status request
+2022-04-22 21:37:29.851325 (Thread-266): 21:37:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30800e12b0>]}
+2022-04-22 21:37:29.851815 (Thread-267): handling list request
+2022-04-22 21:37:29.852396 (Thread-266): sending response (<Response 1979 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:29.852732 (Thread-267): 21:37:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30800e1d90>]}
+2022-04-22 21:37:29.881282 (Thread-267): 21:37:29  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feb14d0a0>]}
+2022-04-22 21:37:29.859850 (Thread-268): handling list request
+2022-04-22 21:37:29.881767 (Thread-267): 21:37:29  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:37:29.860338 (Thread-268): 21:37:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feb2a5c70>]}
+2022-04-22 21:37:29.882550 (Thread-268): 21:37:29  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feb1474c0>]}
+2022-04-22 21:37:29.889337 (Thread-267): sending response (<Response 6678 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:37:29.882849 (Thread-268): 21:37:29  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:37:29.890380 (Thread-268): sending response (<Response 2927 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:39:52.778570 (Thread-269): 21:39:52  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 21:39:52.779890 (Thread-269): 21:39:52  Partial parsing: updated file: my_new_project://models/marts/fct_final.sql
+2022-04-22 21:39:52.784651 (Thread-269): 21:39:52  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 21:39:52.818330 (Thread-269): 21:39:52  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:39:52.824553 (Thread-269): 21:39:52  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab3c070>]}
+2022-04-22 21:39:53.412426 (Thread-270): handling status request
+2022-04-22 21:39:53.412828 (Thread-270): 21:39:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab31fa0>]}
+2022-04-22 21:39:53.413339 (Thread-270): sending response (<Response 1979 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:39:53.427418 (Thread-271): handling list request
+2022-04-22 21:39:53.427776 (Thread-271): 21:39:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab31e80>]}
+2022-04-22 21:39:53.455663 (Thread-271): 21:39:53  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feb150a00>]}
+2022-04-22 21:39:53.456056 (Thread-271): 21:39:53  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:39:53.459572 (Thread-271): sending response (<Response 6795 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:39:53.579776 (Thread-272): handling status request
+2022-04-22 21:39:53.580183 (Thread-272): 21:39:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab31a60>]}
+2022-04-22 21:39:53.580669 (Thread-272): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:39:53.619406 (Thread-273): handling status request
+2022-04-22 21:39:53.619788 (Thread-273): 21:39:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab31ca0>]}
+2022-04-22 21:39:53.620276 (Thread-273): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:02.429219 (Thread-274): handling status request
+2022-04-22 21:40:02.429648 (Thread-274): 21:40:02  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab196d0>]}
+2022-04-22 21:40:02.430142 (Thread-274): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:02.745685 (Thread-275): handling run_sql request
+2022-04-22 21:40:02.746087 (Thread-275): 21:40:02  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab19520>]}
+2022-04-22 21:40:05.346078 (Thread-275): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:05.372521 (MainThread): 21:40:05  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '330fa186-b63f-4d89-b3b1-b327fb803849', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd76c32beb0>]}
+2022-04-22 21:40:05.373098 (MainThread): 21:40:05  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:40:05.373722 (Thread-1): 21:40:05  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:40:05.373852 (Thread-1): 21:40:05  Began compiling node rpc.my_new_project.request
+2022-04-22 21:40:05.373943 (Thread-1): 21:40:05  Compiling rpc.my_new_project.request
+2022-04-22 21:40:05.377183 (Thread-1): 21:40:05  finished collecting timing info
+2022-04-22 21:40:05.377318 (Thread-1): 21:40:05  Began executing node rpc.my_new_project.request
+2022-04-22 21:40:05.379407 (Thread-1): 21:40:05  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:40:05.379508 (Thread-1): 21:40:05  On rpc.my_new_project.request: with
+  o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),
+  -- fo as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),
+  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),
+  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),
+  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),
+
+  final as (
+
+    select
+        o.order_id,
+        o.user_id,
+        o.created_at,
+        o.updated_at,
+        o.shipped_at,
+        o.currency,
+        o.order_status,
+        o.order_status_category,
+        ct.country_type,
+        o.shipping_method,
+        do.purchase_device_type,
+        do.device as purchase_device,
+        ut.user_type,
+        o.amount_total_cents,
+        pa.gross_total_amount_cents,
+        pa.total_amount_cents,
+        pa.gross_tax_amount_cents,
+        pa.gross_amount_cents,
+        pa.gross_amount_shipping_cents
+      from o
+
+      left join do
+        on do.order_id = o.order_id
+
+      left join ut
+        on o.order_id = ut.order_id
+
+      left join ct 
+        on ct.order_id = o.order_id
+
+      left join pa
+        on pa.order_id = o.order_id
+  )
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_amount_shipping_cents/ 100 as gross_shipping_amount
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:40:05.379589 (Thread-1): 21:40:05  Opening a new connection, currently in state init
+2022-04-22 21:40:05.664841 (Thread-276): handling poll request
+2022-04-22 21:40:05.665292 (Thread-276): 21:40:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab3c190>]}
+2022-04-22 21:40:05.666274 (Thread-276): sending response (<Response 5376 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:07.122305 (Thread-277): handling poll request
+2022-04-22 21:40:07.122710 (Thread-277): 21:40:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab37760>]}
+2022-04-22 21:40:07.123227 (Thread-277): sending response (<Response 388 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:08.431110 (Thread-278): handling poll request
+2022-04-22 21:40:08.431525 (Thread-278): 21:40:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab377f0>]}
+2022-04-22 21:40:08.432095 (Thread-278): sending response (<Response 388 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:09.171144 (Thread-1): 21:40:09  SQL status: SUCCESS 500 in 3.79 seconds
+2022-04-22 21:40:09.738513 (Thread-1): 21:40:09  finished collecting timing info
+2022-04-22 21:40:09.738807 (Thread-1): 21:40:09  On rpc.my_new_project.request: Close
+2022-04-22 21:40:09.751189 (Thread-279): handling poll request
+2022-04-22 21:40:09.751558 (Thread-279): 21:40:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab37160>]}
+2022-04-22 21:40:09.752128 (Thread-279): sending response (<Response 1368 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:40:11.074936 (Thread-280): handling poll request
+2022-04-22 21:40:11.075333 (Thread-280): 21:40:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feabe7e80>]}
+2022-04-22 21:40:11.084263 (Thread-280): sending response (<Response 141563 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:41:18.756097 (Thread-281): handling status request
+2022-04-22 21:41:18.756513 (Thread-281): 21:41:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaafe130>]}
+2022-04-22 21:41:18.757051 (Thread-281): sending response (<Response 1979 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:41:18.762805 (Thread-282): handling list request
+2022-04-22 21:41:18.763089 (Thread-282): 21:41:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaafe1c0>]}
+2022-04-22 21:41:18.798967 (Thread-282): 21:41:18  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab32c10>]}
+2022-04-22 21:41:18.799372 (Thread-282): 21:41:18  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:41:18.807647 (Thread-282): sending response (<Response 4004 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:42:42.409340 (Thread-283): 21:42:42  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 21:42:42.409595 (Thread-283): 21:42:42  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 21:42:42.410143 (Thread-283): 21:42:42  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:42:42.415514 (Thread-283): 21:42:42  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe90bd4f0>]}
+2022-04-22 21:42:43.132361 (Thread-284): handling status request
+2022-04-22 21:42:43.132765 (Thread-284): 21:42:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe9116070>]}
+2022-04-22 21:42:43.133270 (Thread-284): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:42:43.194509 (Thread-285): handling status request
+2022-04-22 21:42:43.194916 (Thread-285): 21:42:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe9138850>]}
+2022-04-22 21:42:43.195393 (Thread-285): sending response (<Response 1685 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:22.999697 (Thread-286): 21:43:22  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 21:43:23.000177 (Thread-286): 21:43:23  Partial parsing: updated file: my_new_project://models/marts/fct_final.sql
+2022-04-22 21:43:23.004684 (Thread-286): 21:43:23  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 21:43:23.038402 (Thread-286): 21:43:23  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:43:23.044431 (Thread-286): 21:43:23  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe906b460>]}
+2022-04-22 21:43:23.692457 (Thread-287): handling status request
+2022-04-22 21:43:23.692849 (Thread-287): 21:43:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe91385b0>]}
+2022-04-22 21:43:23.693347 (Thread-287): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:23.703496 (Thread-288): handling status request
+2022-04-22 21:43:23.703783 (Thread-288): 21:43:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe91383d0>]}
+2022-04-22 21:43:23.704212 (Thread-288): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:26.748393 (Thread-289): handling status request
+2022-04-22 21:43:26.748801 (Thread-289): 21:43:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe9138280>]}
+2022-04-22 21:43:26.749303 (Thread-289): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:27.027562 (Thread-290): handling run_sql request
+2022-04-22 21:43:27.027946 (Thread-290): 21:43:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe9138370>]}
+2022-04-22 21:43:29.620151 (Thread-290): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:29.647049 (MainThread): 21:43:29  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2728a269-8839-4fa7-9b51-2c62c3f27cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9dd1d6ef10>]}
+2022-04-22 21:43:29.647663 (MainThread): 21:43:29  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:43:29.648293 (Thread-1): 21:43:29  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:43:29.648429 (Thread-1): 21:43:29  Began compiling node rpc.my_new_project.request
+2022-04-22 21:43:29.648522 (Thread-1): 21:43:29  Compiling rpc.my_new_project.request
+2022-04-22 21:43:29.651735 (Thread-1): 21:43:29  finished collecting timing info
+2022-04-22 21:43:29.651878 (Thread-1): 21:43:29  Began executing node rpc.my_new_project.request
+2022-04-22 21:43:29.653961 (Thread-1): 21:43:29  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:43:29.654062 (Thread-1): 21:43:29  On rpc.my_new_project.request: with
+  o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),
+  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),
+  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),
+  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),
+
+  final as (
+
+    select
+        o.order_id,
+        o.user_id,
+        o.created_at,
+        o.updated_at,
+        o.shipped_at,
+        o.currency,
+        o.order_status,
+        o.order_status_category,
+        ct.country_type,
+        o.shipping_method,
+        do.purchase_device_type,
+        do.device as purchase_device,
+        ut.user_type,
+        o.amount_total_cents,
+        pa.gross_total_amount_cents,
+        pa.total_amount_cents,
+        pa.gross_tax_amount_cents,
+        pa.gross_amount_cents,
+        pa.gross_amount_shipping_cents
+      from o
+
+      left join do
+        on do.order_id = o.order_id
+
+      left join ut
+        on o.order_id = ut.order_id
+
+      left join ct 
+        on ct.order_id = o.order_id
+
+      left join pa
+        on pa.order_id = o.order_id
+  )
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_amount_shipping_cents/ 100 as gross_shipping_amount
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:43:29.654146 (Thread-1): 21:43:29  Opening a new connection, currently in state init
+2022-04-22 21:43:29.974873 (Thread-291): handling poll request
+2022-04-22 21:43:29.975335 (Thread-291): 21:43:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab32d30>]}
+2022-04-22 21:43:29.976312 (Thread-291): sending response (<Response 5296 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:31.284367 (Thread-292): handling poll request
+2022-04-22 21:43:31.284745 (Thread-292): 21:43:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab326d0>]}
+2022-04-22 21:43:31.285222 (Thread-292): sending response (<Response 388 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:32.559767 (Thread-1): 21:43:32  SQL status: SUCCESS 500 in 2.91 seconds
+2022-04-22 21:43:32.618489 (Thread-293): handling poll request
+2022-04-22 21:43:32.618878 (Thread-293): 21:43:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab13be0>]}
+2022-04-22 21:43:32.619388 (Thread-293): sending response (<Response 668 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:43:33.100145 (Thread-1): 21:43:33  finished collecting timing info
+2022-04-22 21:43:33.100444 (Thread-1): 21:43:33  On rpc.my_new_project.request: Close
+2022-04-22 21:43:33.929928 (Thread-294): handling poll request
+2022-04-22 21:43:33.930321 (Thread-294): 21:43:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe917a790>]}
+2022-04-22 21:43:33.939332 (Thread-294): sending response (<Response 141645 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:38.155409 (Thread-295): 21:45:38  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 21:45:38.156804 (Thread-295): 21:45:38  Partial parsing: updated file: my_new_project://models/marts/fct_final.sql
+2022-04-22 21:45:38.161426 (Thread-295): 21:45:38  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 21:45:38.196848 (Thread-295): 21:45:38  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:45:38.202204 (Thread-295): 21:45:38  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe86db7c0>]}
+2022-04-22 21:45:38.820431 (Thread-296): handling status request
+2022-04-22 21:45:38.820836 (Thread-296): 21:45:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe86bbb20>]}
+2022-04-22 21:45:38.821344 (Thread-296): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:39.000997 (Thread-297): handling status request
+2022-04-22 21:45:39.001405 (Thread-297): 21:45:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe86bb9a0>]}
+2022-04-22 21:45:39.025031 (Thread-297): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:40.066670 (Thread-298): handling status request
+2022-04-22 21:45:40.067072 (Thread-298): 21:45:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe86bb940>]}
+2022-04-22 21:45:40.067561 (Thread-298): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:40.359706 (Thread-299): handling run_sql request
+2022-04-22 21:45:40.360123 (Thread-299): 21:45:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe86bb790>]}
+2022-04-22 21:45:42.893787 (Thread-299): sending response (<Response 138 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:42.920197 (MainThread): 21:45:42  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a1251d6-d808-4f7b-b1c4-71f61b5331e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb642f74f40>]}
+2022-04-22 21:45:42.920792 (MainThread): 21:45:42  Found 10 models, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 21:45:42.921415 (Thread-1): 21:45:42  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:45:42.921551 (Thread-1): 21:45:42  Began compiling node rpc.my_new_project.request
+2022-04-22 21:45:42.921676 (Thread-1): 21:45:42  Compiling rpc.my_new_project.request
+2022-04-22 21:45:42.924839 (Thread-1): 21:45:42  finished collecting timing info
+2022-04-22 21:45:42.924974 (Thread-1): 21:45:42  Began executing node rpc.my_new_project.request
+2022-04-22 21:45:42.926982 (Thread-1): 21:45:42  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 21:45:42.927083 (Thread-1): 21:45:42  On rpc.my_new_project.request: with
+  -- o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),
+  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),
+  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),
+  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),
+
+  final as (
+
+    select
+        o.order_id,
+        o.user_id,
+        o.created_at,
+        o.updated_at,
+        o.shipped_at,
+        o.currency,
+        o.order_status,
+        o.order_status_category,
+        ct.country_type,
+        o.shipping_method,
+        do.purchase_device_type,
+        do.device as purchase_device,
+        ut.user_type,
+        o.amount_total_cents,
+        pa.gross_total_amount_cents,
+        pa.total_amount_cents,
+        pa.gross_tax_amount_cents,
+        pa.gross_amount_cents,
+        pa.gross_amount_shipping_cents
+      from o
+
+      left join do
+        on do.order_id = o.order_id
+
+      left join ut
+        on o.order_id = ut.order_id
+
+      left join ct 
+        on ct.order_id = o.order_id
+
+      left join pa
+        on pa.order_id = o.order_id
+  )
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_amount_shipping_cents/ 100 as gross_shipping_amount
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 21:45:42.927166 (Thread-1): 21:45:42  Opening a new connection, currently in state init
+2022-04-22 21:45:43.264819 (Thread-300): handling poll request
+2022-04-22 21:45:43.265265 (Thread-300): 21:45:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe90bde50>]}
+2022-04-22 21:45:43.266263 (Thread-300): sending response (<Response 5299 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:43.939072 (Thread-1): 21:45:43  Snowflake adapter: Snowflake query id: 01a3c919-0501-616b-0004-7d83048cadea
+2022-04-22 21:45:43.939305 (Thread-1): 21:45:43  Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+2022-04-22 21:45:43.939493 (Thread-1): 21:45:43  finished collecting timing info
+2022-04-22 21:45:43.939694 (Thread-1): 21:45:43  On rpc.my_new_project.request: Close
+2022-04-22 21:45:44.407008 (Thread-1): Got an exception: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+2022-04-22 21:45:44.408370 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n  -- o  as (select * from {{ ref('stg_orders') }}),\r\n  do as (select * from {{ ref('stg_device_orders') }}),\r\n  ct as (select * from {{ ref('stg_ctry_type') }}),\r\n  pa as (select * from {{ ref('int_payments') }}),\r\n  ut as (select * from {{ ref('int_user_type')}}),\r\n\r\n  final as (\r\n\r\n    select\r\n        o.order_id,\r\n        o.user_id,\r\n        o.created_at,\r\n        o.updated_at,\r\n        o.shipped_at,\r\n        o.currency,\r\n        o.order_status,\r\n        o.order_status_category,\r\n        ct.country_type,\r\n        o.shipping_method,\r\n        do.purchase_device_type,\r\n        do.device as purchase_device,\r\n        ut.user_type,\r\n        o.amount_total_cents,\r\n        pa.gross_total_amount_cents,\r\n        pa.total_amount_cents,\r\n        pa.gross_tax_amount_cents,\r\n        pa.gross_amount_cents,\r\n        pa.gross_amount_shipping_cents\r\n      from o\r\n\r\n      left join do\r\n        on do.order_id = o.order_id\r\n\r\n      left join ut\r\n        on o.order_id = ut.order_id\r\n\r\n      left join ct \r\n        on ct.order_id = o.order_id\r\n\r\n      left join pa\r\n        on pa.order_id = o.order_id\r\n  )\r\n\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_amount_shipping_cents/ 100 as gross_shipping_amount\r\n\r\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': 'with\n  -- o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),\n  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),\n  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),\n  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),\n  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),\n\n  final as (\n\n    select\n        o.order_id,\n        o.user_id,\n        o.created_at,\n        o.updated_at,\n        o.shipped_at,\n        o.currency,\n        o.order_status,\n        o.order_status_category,\n        ct.country_type,\n        o.shipping_method,\n        do.purchase_device_type,\n        do.device as purchase_device,\n        ut.user_type,\n        o.amount_total_cents,\n        pa.gross_total_amount_cents,\n        pa.total_amount_cents,\n        pa.gross_tax_amount_cents,\n        pa.gross_amount_cents,\n        pa.gross_amount_shipping_cents\n      from o\n\n      left join do\n        on do.order_id = o.order_id\n\n      left join ut\n        on o.order_id = ut.order_id\n\n      left join ct \n        on ct.order_id = o.order_id\n\n      left join pa\n        on pa.order_id = o.order_id\n  )\n\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_amount_shipping_cents/ 100 as gross_shipping_amount\n\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n  -- o  as (select * from {{ ref('stg_orders') }}),\r\n  do as (select * from {{ ref('stg_device_orders') }}),\r\n  ct as (select * from {{ ref('stg_ctry_type') }}),\r\n  pa as (select * from {{ ref('int_payments') }}),\r\n  ut as (select * from {{ ref('int_user_type')}}),\r\n\r\n  final as (\r\n\r\n    select\r\n        o.order_id,\r\n        o.user_id,\r\n        o.created_at,\r\n        o.updated_at,\r\n        o.shipped_at,\r\n        o.currency,\r\n        o.order_status,\r\n        o.order_status_category,\r\n        ct.country_type,\r\n        o.shipping_method,\r\n        do.purchase_device_type,\r\n        do.device as purchase_device,\r\n        ut.user_type,\r\n        o.amount_total_cents,\r\n        pa.gross_total_amount_cents,\r\n        pa.total_amount_cents,\r\n        pa.gross_tax_amount_cents,\r\n        pa.gross_amount_cents,\r\n        pa.gross_amount_shipping_cents\r\n      from o\r\n\r\n      left join do\r\n        on do.order_id = o.order_id\r\n\r\n      left join ut\r\n        on o.order_id = ut.order_id\r\n\r\n      left join ct \r\n        on ct.order_id = o.order_id\r\n\r\n      left join pa\r\n        on pa.order_id = o.order_id\r\n  )\r\n\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_amount_shipping_cents/ 100 as gross_shipping_amount\r\n\r\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': 'with\n  -- o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),\n  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),\n  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),\n  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),\n  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),\n\n  final as (\n\n    select\n        o.order_id,\n        o.user_id,\n        o.created_at,\n        o.updated_at,\n        o.shipped_at,\n        o.currency,\n        o.order_status,\n        o.order_status_category,\n        ct.country_type,\n        o.shipping_method,\n        do.purchase_device_type,\n        do.device as purchase_device,\n        ut.user_type,\n        o.amount_total_cents,\n        pa.gross_total_amount_cents,\n        pa.total_amount_cents,\n        pa.gross_tax_amount_cents,\n        pa.gross_amount_cents,\n        pa.gross_amount_shipping_cents\n      from o\n\n      left join do\n        on do.order_id = o.order_id\n\n      left join ut\n        on o.order_id = ut.order_id\n\n      left join ct \n        on ct.order_id = o.order_id\n\n      left join pa\n        on pa.order_id = o.order_id\n  )\n\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_amount_shipping_cents/ 100 as gross_shipping_amount\n\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2022-04-22 21:45:44.585288 (Thread-301): handling poll request
+2022-04-22 21:45:44.585716 (Thread-301): 21:45:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab37220>]}
+2022-04-22 21:45:44.586362 (Thread-301): sending response (<Response 13105 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:45.926121 (Thread-302): handling poll request
+2022-04-22 21:45:45.926542 (Thread-302): 21:45:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab37ca0>]}
+2022-04-22 21:45:45.927260 (Thread-302): sending response (<Response 21212 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:51.591051 (Thread-303): 21:45:51  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 21:45:51.591541 (Thread-303): 21:45:51  Partial parsing: updated file: my_new_project://models/marts/fct_final.sql
+2022-04-22 21:45:51.596347 (Thread-303): 21:45:51  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 21:45:51.632486 (Thread-303): 21:45:51  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2022-04-22 21:45:51.638055 (Thread-303): 21:45:51  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe8675df0>]}
+2022-04-22 21:45:52.376687 (Thread-304): handling status request
+2022-04-22 21:45:52.377102 (Thread-304): 21:45:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe8641f10>]}
+2022-04-22 21:45:52.377665 (Thread-304): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:45:52.439324 (Thread-305): handling status request
+2022-04-22 21:45:52.439727 (Thread-305): 21:45:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaee6df0>]}
+2022-04-22 21:45:52.440243 (Thread-305): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
+2022-04-22 21:46:32.955509 (Thread-306): handling status request
+2022-04-22 21:46:32.955915 (Thread-306): 21:46:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'aea8c735-4b46-4b0f-b5ea-82801e109fdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fe8641c40>]}
+2022-04-22 21:46:32.956416 (Thread-306): sending response (<Response 2001 bytes [200 OK]>) to 10.0.12.113
