@@ -2777,3 +2777,1796 @@ dbt.exceptions.CompilationException: Compilation Error in rpc request (from remo
 2022-04-21 02:45:32.929445 (Thread-256): handling status request
 2022-04-21 02:45:32.929780 (Thread-256): 02:45:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3c65e1f0>]}
 2022-04-21 02:45:32.930247 (Thread-256): sending response (<Response 1317 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:45:35.711384 (Thread-257): 02:45:35  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 02:45:35.711742 (Thread-257): 02:45:35  Partial parsing: updated file: my_new_project://models/_archive/test_loop.sql
+2022-04-21 02:45:35.715347 (Thread-257): 02:45:35  1603: static parser failed on _archive/test_loop.sql
+2022-04-21 02:45:36.523791 (Thread-258): handling status request
+2022-04-21 02:45:36.524128 (Thread-258): 02:45:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3cce4ee0>]}
+2022-04-21 02:45:36.524597 (Thread-258): sending response (<Response 1317 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 02:45:36.589418 (Thread-259): handling status request
+2022-04-21 02:45:36.589679 (Thread-259): 02:45:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e198575e-6fe8-469d-99f7-f2625cd635f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c3ccbf040>]}
+2022-04-21 02:45:36.590084 (Thread-259): sending response (<Response 1317 bytes [200 OK]>) to 10.0.26.132
+2022-04-21 23:07:31.062993 (MainThread): Running with dbt=1.0.5
+2022-04-21 23:07:31.645791 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-04-21 23:07:31.655353 (MainThread): Tracking: tracking
+2022-04-21 23:07:31.655686 (MainThread): 23:07:31  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ad1b16670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d5a790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d65d60>]}
+2022-04-21 23:07:31.656819 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-04-21 23:07:31.661791 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-04-21 23:07:31.662027 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-04-21 23:07:31.683342 (Thread-12): 23:07:31  Unable to do partial parsing because of a dbt version mismatch. Saved manifest version: 1.0.4. Current version: 1.0.5.
+2022-04-21 23:07:31.683648 (Thread-12): 23:07:31  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d2ed60>]}
+2022-04-21 23:07:31.786132 (Thread-12): 23:07:31  Parsing macros/adapters.sql
+2022-04-21 23:07:31.824450 (Thread-12): 23:07:31  Parsing macros/catalog.sql
+2022-04-21 23:07:31.826382 (Thread-12): 23:07:31  Parsing macros/materializations/table.sql
+2022-04-21 23:07:31.829389 (Thread-12): 23:07:31  Parsing macros/materializations/seed.sql
+2022-04-21 23:07:31.834340 (Thread-12): 23:07:31  Parsing macros/materializations/incremental.sql
+2022-04-21 23:07:31.842576 (Thread-12): 23:07:31  Parsing macros/materializations/merge.sql
+2022-04-21 23:07:31.846193 (Thread-12): 23:07:31  Parsing macros/materializations/snapshot.sql
+2022-04-21 23:07:31.847147 (Thread-12): 23:07:31  Parsing macros/materializations/view.sql
+2022-04-21 23:07:31.848452 (Thread-12): 23:07:31  Parsing macros/adapters/metadata.sql
+2022-04-21 23:07:31.855521 (Thread-12): 23:07:31  Parsing macros/adapters/columns.sql
+2022-04-21 23:07:31.865118 (Thread-12): 23:07:31  Parsing macros/adapters/freshness.sql
+2022-04-21 23:07:31.867928 (Thread-12): 23:07:31  Parsing macros/adapters/persist_docs.sql
+2022-04-21 23:07:31.872155 (Thread-12): 23:07:31  Parsing macros/adapters/relation.sql
+2022-04-21 23:07:31.881239 (Thread-12): 23:07:31  Parsing macros/adapters/schema.sql
+2022-04-21 23:07:31.883344 (Thread-12): 23:07:31  Parsing macros/adapters/indexes.sql
+2022-04-21 23:07:31.885915 (Thread-12): 23:07:31  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-04-21 23:07:31.888284 (Thread-12): 23:07:31  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-04-21 23:07:31.889732 (Thread-12): 23:07:31  Parsing macros/get_custom_name/get_custom_database.sql
+2022-04-21 23:07:31.891257 (Thread-12): 23:07:31  Parsing macros/etc/datetime.sql
+2022-04-21 23:07:31.899350 (Thread-12): 23:07:31  Parsing macros/etc/statement.sql
+2022-04-21 23:07:31.903603 (Thread-12): 23:07:31  Parsing macros/generic_test_sql/unique.sql
+2022-04-21 23:07:31.904309 (Thread-12): 23:07:31  Parsing macros/generic_test_sql/not_null.sql
+2022-04-21 23:07:31.904864 (Thread-12): 23:07:31  Parsing macros/generic_test_sql/accepted_values.sql
+2022-04-21 23:07:31.906181 (Thread-12): 23:07:31  Parsing macros/generic_test_sql/relationships.sql
+2022-04-21 23:07:31.907071 (Thread-12): 23:07:31  Parsing macros/materializations/configs.sql
+2022-04-21 23:07:31.909296 (Thread-12): 23:07:31  Parsing macros/materializations/hooks.sql
+2022-04-21 23:07:31.912969 (Thread-12): 23:07:31  Parsing macros/materializations/models/table/table.sql
+2022-04-21 23:07:31.920197 (Thread-12): 23:07:31  Parsing macros/materializations/models/table/create_table_as.sql
+2022-04-21 23:07:31.922945 (Thread-12): 23:07:31  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-04-21 23:07:31.925524 (Thread-12): 23:07:31  Parsing macros/materializations/models/view/helpers.sql
+2022-04-21 23:07:31.926818 (Thread-12): 23:07:31  Parsing macros/materializations/models/view/create_view_as.sql
+2022-04-21 23:07:31.929043 (Thread-12): 23:07:31  Parsing macros/materializations/models/view/view.sql
+2022-04-21 23:07:31.935890 (Thread-12): 23:07:31  Parsing macros/materializations/models/incremental/incremental.sql
+2022-04-21 23:07:31.945466 (Thread-12): 23:07:31  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-04-21 23:07:31.960663 (Thread-12): 23:07:31  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-04-21 23:07:31.962178 (Thread-12): 23:07:31  Parsing macros/materializations/models/incremental/merge.sql
+2022-04-21 23:07:31.973025 (Thread-12): 23:07:31  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-04-21 23:07:31.977365 (Thread-12): 23:07:31  Parsing macros/materializations/seeds/helpers.sql
+2022-04-21 23:07:31.993005 (Thread-12): 23:07:31  Parsing macros/materializations/seeds/seed.sql
+2022-04-21 23:07:31.998744 (Thread-12): 23:07:31  Parsing macros/materializations/tests/helpers.sql
+2022-04-21 23:07:32.000579 (Thread-12): 23:07:32  Parsing macros/materializations/tests/test.sql
+2022-04-21 23:07:32.004796 (Thread-12): 23:07:32  Parsing macros/materializations/tests/where_subquery.sql
+2022-04-21 23:07:32.006557 (Thread-12): 23:07:32  Parsing macros/materializations/snapshots/helpers.sql
+2022-04-21 23:07:32.017951 (Thread-12): 23:07:32  Parsing macros/materializations/snapshots/strategies.sql
+2022-04-21 23:07:32.033891 (Thread-12): 23:07:32  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-04-21 23:07:32.035534 (Thread-12): 23:07:32  Parsing macros/materializations/snapshots/snapshot.sql
+2022-04-21 23:07:32.046719 (Thread-12): 23:07:32  Parsing tests/generic/builtin.sql
+2022-04-21 23:07:32.237655 (Thread-12): 23:07:32  1699: static parser successfully parsed example/my_second_dbt_model.sql
+2022-04-21 23:07:32.249440 (Thread-12): 23:07:32  1699: static parser successfully parsed example/my_first_dbt_model.sql
+2022-04-21 23:07:32.251536 (Thread-12): 23:07:32  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 23:07:32.253418 (Thread-12): 23:07:32  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 23:07:32.255360 (Thread-12): 23:07:32  1603: static parser failed on _archive/test_loop.sql
+2022-04-21 23:07:34.751009 (Thread-13): handling status request
+2022-04-21 23:07:34.751420 (Thread-13): 23:07:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4617160>]}
+2022-04-21 23:07:34.752466 (Thread-13): sending response (<Response 16289 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:34.760560 (Thread-14): handling status request
+2022-04-21 23:07:34.760890 (Thread-14): 23:07:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab45f14c0>]}
+2022-04-21 23:07:34.761703 (Thread-14): sending response (<Response 16289 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:35.119757 (Thread-15): handling status request
+2022-04-21 23:07:35.120149 (Thread-15): 23:07:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4617820>]}
+2022-04-21 23:07:35.120991 (Thread-15): sending response (<Response 16289 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:35.154433 (Thread-16): handling ps request
+2022-04-21 23:07:35.154833 (Thread-16): 23:07:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d03bb0>]}
+2022-04-21 23:07:35.155309 (Thread-16): sending response (<Response 105 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:36.920966 (Thread-17): handling status request
+2022-04-21 23:07:36.921389 (Thread-17): 23:07:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d028b0>]}
+2022-04-21 23:07:36.922220 (Thread-17): sending response (<Response 16289 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:46.969657 (Thread-18): handling status request
+2022-04-21 23:07:46.971283 (Thread-18): 23:07:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab460d7c0>]}
+2022-04-21 23:07:46.972125 (Thread-18): sending response (<Response 16267 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:48.244281 (Thread-19): handling status request
+2022-04-21 23:07:48.244668 (Thread-19): 23:07:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab460df10>]}
+2022-04-21 23:07:48.245528 (Thread-19): sending response (<Response 16267 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:50.510061 (Thread-20): handling status request
+2022-04-21 23:07:50.510514 (Thread-20): 23:07:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d03c10>]}
+2022-04-21 23:07:50.511355 (Thread-20): sending response (<Response 16267 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:07:54.796011 (Thread-21): handling status request
+2022-04-21 23:07:54.796366 (Thread-21): 23:07:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d65580>]}
+2022-04-21 23:07:54.797169 (Thread-21): sending response (<Response 16267 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:10.830993 (Thread-22): handling status request
+2022-04-21 23:08:10.832649 (Thread-22): 23:08:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4617160>]}
+2022-04-21 23:08:10.833506 (Thread-22): sending response (<Response 16289 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:11.157724 (Thread-23): handling run_sql request
+2022-04-21 23:08:11.158118 (Thread-23): 23:08:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4617610>]}
+2022-04-21 23:08:11.158587 (Thread-23): sending response (<Response 741 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:28.772124 (Thread-24): 23:08:28  Unable to do partial parsing because of a dbt version mismatch. Saved manifest version: 1.0.4. Current version: 1.0.5.
+2022-04-21 23:08:28.772444 (Thread-24): 23:08:28  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6cbf310>]}
+2022-04-21 23:08:28.838587 (Thread-24): 23:08:28  Parsing macros/adapters.sql
+2022-04-21 23:08:28.875726 (Thread-24): 23:08:28  Parsing macros/catalog.sql
+2022-04-21 23:08:28.877608 (Thread-24): 23:08:28  Parsing macros/materializations/table.sql
+2022-04-21 23:08:28.881185 (Thread-24): 23:08:28  Parsing macros/materializations/seed.sql
+2022-04-21 23:08:28.886163 (Thread-24): 23:08:28  Parsing macros/materializations/incremental.sql
+2022-04-21 23:08:28.894380 (Thread-24): 23:08:28  Parsing macros/materializations/merge.sql
+2022-04-21 23:08:28.898017 (Thread-24): 23:08:28  Parsing macros/materializations/snapshot.sql
+2022-04-21 23:08:28.898992 (Thread-24): 23:08:28  Parsing macros/materializations/view.sql
+2022-04-21 23:08:28.900305 (Thread-24): 23:08:28  Parsing macros/adapters/metadata.sql
+2022-04-21 23:08:28.907097 (Thread-24): 23:08:28  Parsing macros/adapters/columns.sql
+2022-04-21 23:08:28.916542 (Thread-24): 23:08:28  Parsing macros/adapters/freshness.sql
+2022-04-21 23:08:28.919349 (Thread-24): 23:08:28  Parsing macros/adapters/persist_docs.sql
+2022-04-21 23:08:28.923532 (Thread-24): 23:08:28  Parsing macros/adapters/relation.sql
+2022-04-21 23:08:28.932596 (Thread-24): 23:08:28  Parsing macros/adapters/schema.sql
+2022-04-21 23:08:28.934705 (Thread-24): 23:08:28  Parsing macros/adapters/indexes.sql
+2022-04-21 23:08:28.937271 (Thread-24): 23:08:28  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-04-21 23:08:28.939664 (Thread-24): 23:08:28  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-04-21 23:08:28.941095 (Thread-24): 23:08:28  Parsing macros/get_custom_name/get_custom_database.sql
+2022-04-21 23:08:28.942628 (Thread-24): 23:08:28  Parsing macros/etc/datetime.sql
+2022-04-21 23:08:28.950576 (Thread-24): 23:08:28  Parsing macros/etc/statement.sql
+2022-04-21 23:08:28.954793 (Thread-24): 23:08:28  Parsing macros/generic_test_sql/unique.sql
+2022-04-21 23:08:28.955497 (Thread-24): 23:08:28  Parsing macros/generic_test_sql/not_null.sql
+2022-04-21 23:08:28.956095 (Thread-24): 23:08:28  Parsing macros/generic_test_sql/accepted_values.sql
+2022-04-21 23:08:28.957424 (Thread-24): 23:08:28  Parsing macros/generic_test_sql/relationships.sql
+2022-04-21 23:08:28.958301 (Thread-24): 23:08:28  Parsing macros/materializations/configs.sql
+2022-04-21 23:08:28.960536 (Thread-24): 23:08:28  Parsing macros/materializations/hooks.sql
+2022-04-21 23:08:28.964257 (Thread-24): 23:08:28  Parsing macros/materializations/models/table/table.sql
+2022-04-21 23:08:28.971435 (Thread-24): 23:08:28  Parsing macros/materializations/models/table/create_table_as.sql
+2022-04-21 23:08:28.974159 (Thread-24): 23:08:28  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-04-21 23:08:28.976719 (Thread-24): 23:08:28  Parsing macros/materializations/models/view/helpers.sql
+2022-04-21 23:08:28.977990 (Thread-24): 23:08:28  Parsing macros/materializations/models/view/create_view_as.sql
+2022-04-21 23:08:28.980244 (Thread-24): 23:08:28  Parsing macros/materializations/models/view/view.sql
+2022-04-21 23:08:28.987104 (Thread-24): 23:08:28  Parsing macros/materializations/models/incremental/incremental.sql
+2022-04-21 23:08:28.997013 (Thread-24): 23:08:28  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-04-21 23:08:29.012221 (Thread-24): 23:08:29  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-04-21 23:08:29.013695 (Thread-24): 23:08:29  Parsing macros/materializations/models/incremental/merge.sql
+2022-04-21 23:08:29.024657 (Thread-24): 23:08:29  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-04-21 23:08:29.028937 (Thread-24): 23:08:29  Parsing macros/materializations/seeds/helpers.sql
+2022-04-21 23:08:29.044558 (Thread-24): 23:08:29  Parsing macros/materializations/seeds/seed.sql
+2022-04-21 23:08:29.050261 (Thread-24): 23:08:29  Parsing macros/materializations/tests/helpers.sql
+2022-04-21 23:08:29.051998 (Thread-24): 23:08:29  Parsing macros/materializations/tests/test.sql
+2022-04-21 23:08:29.056254 (Thread-24): 23:08:29  Parsing macros/materializations/tests/where_subquery.sql
+2022-04-21 23:08:29.058003 (Thread-24): 23:08:29  Parsing macros/materializations/snapshots/helpers.sql
+2022-04-21 23:08:29.068972 (Thread-24): 23:08:29  Parsing macros/materializations/snapshots/strategies.sql
+2022-04-21 23:08:29.085177 (Thread-24): 23:08:29  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-04-21 23:08:29.086968 (Thread-24): 23:08:29  Parsing macros/materializations/snapshots/snapshot.sql
+2022-04-21 23:08:29.098210 (Thread-24): 23:08:29  Parsing tests/generic/builtin.sql
+2022-04-21 23:08:29.309228 (Thread-24): 23:08:29  1699: static parser successfully parsed example/my_second_dbt_model.sql
+2022-04-21 23:08:29.312624 (Thread-24): 23:08:29  1699: static parser successfully parsed example/my_first_dbt_model.sql
+2022-04-21 23:08:29.315340 (Thread-24): 23:08:29  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 23:08:29.318341 (Thread-24): 23:08:29  1699: static parser successfully parsed _archive/test_conn.sql
+2022-04-21 23:08:29.321561 (Thread-24): 23:08:29  1603: static parser failed on _archive/test_loop.sql
+2022-04-21 23:08:29.325868 (Thread-24): 23:08:29  1602: parser fallback to jinja rendering on _archive/test_loop.sql
+2022-04-21 23:08:29.327413 (Thread-24): 23:08:29  1699: static parser successfully parsed _archive/orginal_query.sql
+2022-04-21 23:08:29.461253 (Thread-24): 23:08:29  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab45e4400>]}
+2022-04-21 23:08:29.502996 (Thread-25): handling status request
+2022-04-21 23:08:29.503413 (Thread-25): 23:08:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab45310d0>]}
+2022-04-21 23:08:29.504287 (Thread-25): sending response (<Response 17141 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:29.523423 (Thread-26): handling status request
+2022-04-21 23:08:29.523757 (Thread-26): 23:08:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4531dc0>]}
+2022-04-21 23:08:29.524575 (Thread-26): sending response (<Response 17141 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:31.673576 (Thread-27): handling status request
+2022-04-21 23:08:31.673975 (Thread-27): 23:08:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4617340>]}
+2022-04-21 23:08:31.674900 (Thread-27): sending response (<Response 17141 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:31.979619 (Thread-28): handling run_sql request
+2022-04-21 23:08:31.980007 (Thread-28): 23:08:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab46174f0>]}
+2022-04-21 23:08:34.487878 (Thread-28): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:34.511822 (MainThread): 23:08:34  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '595be687-5662-44f7-982f-1f2451ea1475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9abea424f0>]}
+2022-04-21 23:08:34.512373 (MainThread): 23:08:34  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:08:34.512961 (Thread-1): 23:08:34  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:08:34.513099 (Thread-1): 23:08:34  Began compiling node rpc.my_new_project.request
+2022-04-21 23:08:34.513192 (Thread-1): 23:08:34  Compiling rpc.my_new_project.request
+2022-04-21 23:08:34.514464 (Thread-1): 23:08:34  finished collecting timing info
+2022-04-21 23:08:34.514592 (Thread-1): 23:08:34  Began executing node rpc.my_new_project.request
+2022-04-21 23:08:34.518222 (Thread-1): 23:08:34  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:08:34.518348 (Thread-1): 23:08:34  On rpc.my_new_project.request: -- import cte's
+/*
+
+step notes:
+
+pull out source tables into cte's
+create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
+extract cte's we found in query:
+    `dbt-public.interview_task.orders` o
+    `dbt-public.interview_task.devices` d
+    `dbt-public.interview_task.orders` as fo -- potentially redunant
+    `dbt-public.interview_task.addresses` oa 
+    `dbt-public.interview_task.payments`
+
+a couple of errors that were resolved in the set up:
+  data type `int64` to `float`
+  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  transform to lower case (using command pallet -- F1)
+    
+*/
+
+-- logical cte's
+-- final cte's
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount 
+
+from (
+    
+    select
+      o.order_id,
+      o.user_id,
+      o.created_at,
+      o.updated_at,
+      o.shipped_at,
+      o.currency,
+      o.status as order_status,
+      case
+        when o.status in (
+          'paid',
+          'completed',
+          'shipped'
+        ) then 'completed'
+        else o.status
+      end as order_status_category,
+      case
+        when oa.country_code is null then 'null country'
+        when oa.country_code = 'us' then 'us'
+        when oa.country_code != 'us' then 'international'
+      end as country_type,
+      o.shipping_method,
+      case
+        when d.device = 'web' then 'desktop'
+        when d.device in ('ios-app', 'android-app') then 'mobile-app'
+        when d.device in ('mobile', 'tablet') then 'mobile-web'
+        when nullif(d.device, '') is null then 'unknown'
+        else 'error'
+      end as purchase_device_type,
+      d.device as purchase_device,
+      case
+        when fo.first_order_id = o.order_id then 'new'
+        else 'repeat'
+      end as user_type,
+      o.amount_total_cents,
+      pa.gross_total_amount_cents,
+      case
+        when o.currency = 'usd' then o.amount_total_cents
+        else pa.gross_total_amount_cents
+      end as total_amount_cents,
+      pa.gross_tax_amount_cents,
+      pa.gross_amount_cents,
+      pa.gross_shipping_amount_cents
+    from raw.interview_sample_data.interview_orders o
+    left join (
+        select
+          distinct cast(d.type_id as float) as order_id,
+          first_value(d.device) over (
+            partition by d.type_id
+            order by
+              d.created_at rows between unbounded preceding
+              and unbounded following
+          ) as device
+        from raw.interview_sample_data.interview_devices d
+        where d.type = 'order'
+    ) d on d.order_id = o.order_id
+    left join (
+        select
+          fo.user_id,
+          min(fo.order_id) as first_order_id
+        from raw.interview_sample_data.interview_orders as fo
+        where
+          fo.status != 'cancelled'
+        group by
+          fo.user_id
+      ) fo on o.user_id = fo.user_id
+    left join raw.interview_sample_data.interview_addresses oa 
+      on oa.order_id = o.order_id
+    left join (
+        select
+          order_id,
+          sum(
+            case
+              when status = 'completed' then tax_amount_cents
+              else 0
+            end
+          ) as gross_tax_amount_cents,
+          sum(
+            case
+              when status = 'completed' then amount_cents
+              else 0
+            end
+          ) as gross_amount_cents,
+          sum(
+            case
+              when status = 'completed' then amount_shipping_cents
+              else 0
+            end
+        ) as gross_shipping_amount_cents,
+          sum(
+            case
+              when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents
+              else 0
+            end
+          ) as gross_total_amount_cents
+        from raw.interview_sample_data.interview_payments
+        group by order_id
+    ) pa on pa.order_id = o.order_id
+  )
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 23:08:34.518443 (Thread-1): 23:08:34  Opening a new connection, currently in state init
+2022-04-21 23:08:34.828042 (Thread-29): handling poll request
+2022-04-21 23:08:34.828492 (Thread-29): 23:08:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4533c70>]}
+2022-04-21 23:08:34.829412 (Thread-29): sending response (<Response 8257 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:36.129006 (Thread-30): handling poll request
+2022-04-21 23:08:36.129439 (Thread-30): 23:08:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4533880>]}
+2022-04-21 23:08:36.129901 (Thread-30): sending response (<Response 391 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:37.438818 (Thread-31): handling poll request
+2022-04-21 23:08:37.439305 (Thread-31): 23:08:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4533220>]}
+2022-04-21 23:08:37.439830 (Thread-31): sending response (<Response 391 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:38.016187 (Thread-1): 23:08:38  SQL status: SUCCESS 500 in 3.5 seconds
+2022-04-21 23:08:38.574387 (Thread-1): 23:08:38  finished collecting timing info
+2022-04-21 23:08:38.574666 (Thread-1): 23:08:38  On rpc.my_new_project.request: Close
+2022-04-21 23:08:38.748603 (Thread-32): handling poll request
+2022-04-21 23:08:38.748989 (Thread-32): 23:08:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4533a90>]}
+2022-04-21 23:08:38.749494 (Thread-32): sending response (<Response 1367 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:08:40.048512 (Thread-33): handling poll request
+2022-04-21 23:08:40.048914 (Thread-33): 23:08:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4653460>]}
+2022-04-21 23:08:40.057786 (Thread-33): sending response (<Response 152628 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:10:00.799065 (Thread-34): handling status request
+2022-04-21 23:10:00.801022 (Thread-34): 23:10:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4653f10>]}
+2022-04-21 23:10:00.801932 (Thread-34): sending response (<Response 17141 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:10:01.120626 (Thread-35): handling compile_sql request
+2022-04-21 23:10:01.121016 (Thread-35): 23:10:01  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4617580>]}
+2022-04-21 23:10:03.716329 (Thread-35): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:10:03.743626 (MainThread): 23:10:03  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c4d08e11-3a7d-495a-96d4-7c5268d8a0ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ffe7695e0>]}
+2022-04-21 23:10:03.744157 (MainThread): 23:10:03  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:10:03.744742 (Thread-1): 23:10:03  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:10:03.744880 (Thread-1): 23:10:03  Began compiling node rpc.my_new_project.request
+2022-04-21 23:10:03.744976 (Thread-1): 23:10:03  Compiling rpc.my_new_project.request
+2022-04-21 23:10:03.747515 (Thread-1): 23:10:03  finished collecting timing info
+2022-04-21 23:10:03.747644 (Thread-1): 23:10:03  Began executing node rpc.my_new_project.request
+2022-04-21 23:10:03.747741 (Thread-1): 23:10:03  finished collecting timing info
+2022-04-21 23:10:04.026094 (Thread-36): handling poll request
+2022-04-21 23:10:04.026573 (Thread-36): 23:10:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6cb4160>]}
+2022-04-21 23:10:04.027702 (Thread-36): sending response (<Response 7044 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:11:55.175339 (Thread-37): handling status request
+2022-04-21 23:11:55.177156 (Thread-37): 23:11:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d12340>]}
+2022-04-21 23:11:55.178224 (Thread-37): sending response (<Response 17141 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:11:55.505439 (Thread-38): handling compile_sql request
+2022-04-21 23:11:55.505832 (Thread-38): 23:11:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d5adc0>]}
+2022-04-21 23:11:57.972226 (Thread-38): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:11:57.986308 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 516, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 19, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got '{'
+  line 19
+    {{t}} as select * from {{ source('interview_sample_data', 'interview_'{{t}}) }}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 124, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/parser/rpc.py", line 47, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 401, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 376, in render_update
+    context = self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 267, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 590, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 543, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 519, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  expected token ',', got '{'
+    line 19
+      {{t}} as select * from {{ source('interview_sample_data', 'interview_'{{t}}) }}
+2022-04-21 23:11:58.336736 (Thread-39): handling poll request
+2022-04-21 23:11:58.337183 (Thread-39): 23:11:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d2ea30>]}
+2022-04-21 23:11:58.360583 (Thread-39): sending response (<Response 4437 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:12:22.801213 (Thread-40): 23:12:22  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 23:12:22.801673 (Thread-40): 23:12:22  Partial parsing: updated file: my_new_project://models/_archive/test_loop.sql
+2022-04-21 23:12:22.805878 (Thread-40): 23:12:22  1603: static parser failed on _archive/test_loop.sql
+2022-04-21 23:12:22.810053 (Thread-40): 23:12:22  1602: parser fallback to jinja rendering on _archive/test_loop.sql
+2022-04-21 23:12:22.851627 (Thread-40): 23:12:22  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1d0f400>]}
+2022-04-21 23:12:23.578768 (Thread-41): handling status request
+2022-04-21 23:12:23.579149 (Thread-41): 23:12:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d02700>]}
+2022-04-21 23:12:23.579634 (Thread-41): sending response (<Response 1859 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:12:23.820343 (Thread-42): handling status request
+2022-04-21 23:12:23.820732 (Thread-42): 23:12:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6d02df0>]}
+2022-04-21 23:12:23.821192 (Thread-42): sending response (<Response 1859 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:13:29.203091 (Thread-43): 23:13:29  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 23:13:29.204736 (Thread-43): 23:13:29  Partial parsing: updated file: my_new_project://models/_archive/test_loop.sql
+2022-04-21 23:13:29.209086 (Thread-43): 23:13:29  1603: static parser failed on _archive/test_loop.sql
+2022-04-21 23:13:29.212539 (Thread-43): 23:13:29  1602: parser fallback to jinja rendering on _archive/test_loop.sql
+2022-04-21 23:13:29.254123 (Thread-43): 23:13:29  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf61d3a0>]}
+2022-04-21 23:13:29.881429 (Thread-44): handling status request
+2022-04-21 23:13:29.881830 (Thread-44): 23:13:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4648370>]}
+2022-04-21 23:13:29.882358 (Thread-44): sending response (<Response 1859 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:13:29.957323 (Thread-45): handling status request
+2022-04-21 23:13:29.957705 (Thread-45): 23:13:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab46485e0>]}
+2022-04-21 23:13:29.958193 (Thread-45): sending response (<Response 1859 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:36:53.385181 (Thread-46): 23:36:53  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 23:36:53.387059 (Thread-46): 23:36:53  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 23:36:53.391208 (Thread-46): 23:36:53  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 23:36:53.436242 (Thread-46): 23:36:53  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf5fadf0>]}
+2022-04-21 23:36:54.230210 (Thread-47): handling status request
+2022-04-21 23:36:54.230631 (Thread-47): 23:36:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9cf27a60>]}
+2022-04-21 23:36:54.231114 (Thread-47): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:36:54.518331 (Thread-48): handling status request
+2022-04-21 23:36:54.518738 (Thread-48): 23:36:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9cf278b0>]}
+2022-04-21 23:36:54.519215 (Thread-48): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:37:00.993415 (Thread-49): handling status request
+2022-04-21 23:37:00.993811 (Thread-49): 23:37:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4659400>]}
+2022-04-21 23:37:00.994300 (Thread-49): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:37:01.310014 (Thread-50): handling run_sql request
+2022-04-21 23:37:01.310476 (Thread-50): 23:37:01  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab4607b50>]}
+2022-04-21 23:37:03.824083 (Thread-50): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:37:03.851241 (MainThread): 23:37:03  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f6f7ecb4-23c9-4cdb-9cb7-14ba417c1b1b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41cb0a8ca0>]}
+2022-04-21 23:37:03.851816 (MainThread): 23:37:03  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:37:03.852424 (Thread-1): 23:37:03  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:37:03.852559 (Thread-1): 23:37:03  Began compiling node rpc.my_new_project.request
+2022-04-21 23:37:03.852650 (Thread-1): 23:37:03  Compiling rpc.my_new_project.request
+2022-04-21 23:37:03.856202 (Thread-1): 23:37:03  finished collecting timing info
+2022-04-21 23:37:03.856335 (Thread-1): 23:37:03  Began executing node rpc.my_new_project.request
+2022-04-21 23:37:03.859886 (Thread-1): 23:37:03  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:37:03.859986 (Thread-1): 23:37:03  On rpc.my_new_project.request: -- import cte's
+
+/*
+
+step notes:
+
+pull out source tables into cte's
+create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
+extract cte's we found in query:
+    `dbt-public.interview_task.orders` o
+    `dbt-public.interview_task.devices` d
+    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order
+    `dbt-public.interview_task.addresses` oa 
+    `dbt-public.interview_task.payments`
+
+a couple of errors that were resolved in the set up:
+  data type `int64` to `float`
+  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  transform to lower case (using command pallet -- F1)
+  changed `oa` to `a` for standarization
+    
+*/
+
+with 
+o as (select * from raw.interview_sample_data.interview_orders),
+d as (select * from raw.interview_sample_data.interview_devices),
+a as (select * from raw.interview_sample_data.interview_addresses),
+p as (select * from raw.interview_sample_data.interview_payments),
+
+-- logical cte's
+
+/*
+
+there are a lot of left join sub-queries, here is where we will try to simplify those
+
+*/
+
+d as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+),
+
+fo as (
+  select
+    fo.user_id,
+    min(fo.order_id) as first_order_id
+  from o as fo
+  where fo.status != 'cancelled'
+  group by fo.user_id
+),
+
+pa as (
+  select
+    order_id,
+  sum(case
+        when status = 'completed' then tax_amount_cents else 0
+      end
+    ) as gross_tax_amount_cents,
+  sum(case
+        when status = 'completed' then amount_cents else 0
+      end
+    ) as gross_amount_cents,
+  sum(case
+        when status = 'completed' then amount_shipping_cents else 0
+      end
+    ) as gross_shipping_amount_cents,
+  sum(case
+        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
+      end
+    ) as gross_total_amount_cents
+  from p
+  group by order_id
+)
+
+
+
+
+
+-- final cte's
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount 
+
+from (
+    
+    select
+      o.order_id,
+      o.user_id,
+      o.created_at,
+      o.updated_at,
+      o.shipped_at,
+      o.currency,
+      o.status as order_status,
+      case
+        when o.status in (
+          'paid',
+          'completed',
+          'shipped'
+        ) then 'completed'
+        else o.status
+      end as order_status_category,
+      case
+        when a.country_code is null then 'null country'
+        when a.country_code = 'us' then 'us'
+        when a.country_code != 'us' then 'international'
+      end as country_type,
+      o.shipping_method,
+      case
+        when d.device = 'web' then 'desktop'
+        when d.device in ('ios-app', 'android-app') then 'mobile-app'
+        when d.device in ('mobile', 'tablet') then 'mobile-web'
+        when nullif(d.device, '') is null then 'unknown'
+        else 'error'
+      end as purchase_device_type,
+      d.device as purchase_device,
+      case
+        when fo.first_order_id = o.order_id then 'new'
+        else 'repeat'
+      end as user_type,
+      o.amount_total_cents,
+      pa.gross_total_amount_cents,
+      case
+        when o.currency = 'usd' then o.amount_total_cents
+        else pa.gross_total_amount_cents
+      end as total_amount_cents,
+      pa.gross_tax_amount_cents,
+      pa.gross_amount_cents,
+      pa.gross_shipping_amount_cents
+    from o
+
+    left join d
+      on d.order_id = o.order_id
+
+    left join fo
+      on o.user_id = fo.user_id
+
+    left join a 
+      on a.order_id = o.order_id
+
+    left join pa
+      on pa.order_id = o.order_id
+  )
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 23:37:03.860066 (Thread-1): 23:37:03  Opening a new connection, currently in state init
+2022-04-21 23:37:04.148073 (Thread-51): handling poll request
+2022-04-21 23:37:04.148516 (Thread-51): 23:37:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1cb8f10>]}
+2022-04-21 23:37:04.149452 (Thread-51): sending response (<Response 7896 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:37:04.919144 (Thread-1): 23:37:04  Snowflake adapter: Snowflake query id: 01a3c3e9-0501-5fd8-0004-7d8304880916
+2022-04-21 23:37:04.919376 (Thread-1): 23:37:04  Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 125 at position 9
+invalid identifier 'D.ORDER_ID'
+2022-04-21 23:37:04.919568 (Thread-1): 23:37:04  finished collecting timing info
+2022-04-21 23:37:04.919771 (Thread-1): 23:37:04  On rpc.my_new_project.request: Close
+2022-04-21 23:37:05.103428 (Thread-1): Got an exception: Database Error
+  000904 (42000): SQL compilation error: error line 125 at position 9
+  invalid identifier 'D.ORDER_ID'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 125 at position 9
+invalid identifier 'D.ORDER_ID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  000904 (42000): SQL compilation error: error line 125 at position 9
+  invalid identifier 'D.ORDER_ID'
+2022-04-21 23:37:05.104513 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  000904 (42000): SQL compilation error: error line 125 at position 9\n  invalid identifier 'D.ORDER_ID'", 'raw_sql': "-- import cte's\r\n\r\n/*\r\n\r\nstep notes:\r\n\r\npull out source tables into cte's\r\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\r\nextract cte's we found in query:\r\n    `dbt-public.interview_task.orders` o\r\n    `dbt-public.interview_task.devices` d\r\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\r\n    `dbt-public.interview_task.addresses` oa \r\n    `dbt-public.interview_task.payments`\r\n\r\na couple of errors that were resolved in the set up:\r\n  data type `int64` to `float`\r\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\r\n  transform to lower case (using command pallet -- F1)\r\n  changed `oa` to `a` for standarization\r\n    \r\n*/\r\n\r\nwith \r\no as (select * from {{ source('interview_sample_data', 'interview_orders') }}),\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\na as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),\r\np as (select * from {{ source('interview_sample_data', 'interview_payments')}}),\r\n\r\n-- logical cte's\r\n\r\n/*\r\n\r\nthere are a lot of left join sub-queries, here is where we will try to simplify those\r\n\r\n*/\r\n\r\nd as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n),\r\n\r\nfo as (\r\n  select\r\n    fo.user_id,\r\n    min(fo.order_id) as first_order_id\r\n  from o as fo\r\n  where fo.status != 'cancelled'\r\n  group by fo.user_id\r\n),\r\n\r\npa as (\r\n  select\r\n    order_id,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents else 0\r\n      end\r\n    ) as gross_tax_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_cents else 0\r\n      end\r\n    ) as gross_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_shipping_cents else 0\r\n      end\r\n    ) as gross_shipping_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\r\n      end\r\n    ) as gross_total_amount_cents\r\n  from p\r\n  group by order_id\r\n)\r\n\r\n\r\n\r\n\r\n\r\n-- final cte's\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \r\n\r\nfrom (\r\n    \r\n    select\r\n      o.order_id,\r\n      o.user_id,\r\n      o.created_at,\r\n      o.updated_at,\r\n      o.shipped_at,\r\n      o.currency,\r\n      o.status as order_status,\r\n      case\r\n        when o.status in (\r\n          'paid',\r\n          'completed',\r\n          'shipped'\r\n        ) then 'completed'\r\n        else o.status\r\n      end as order_status_category,\r\n      case\r\n        when a.country_code is null then 'null country'\r\n        when a.country_code = 'us' then 'us'\r\n        when a.country_code != 'us' then 'international'\r\n      end as country_type,\r\n      o.shipping_method,\r\n      case\r\n        when d.device = 'web' then 'desktop'\r\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\r\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\r\n        when nullif(d.device, '') is null then 'unknown'\r\n        else 'error'\r\n      end as purchase_device_type,\r\n      d.device as purchase_device,\r\n      case\r\n        when fo.first_order_id = o.order_id then 'new'\r\n        else 'repeat'\r\n      end as user_type,\r\n      o.amount_total_cents,\r\n      pa.gross_total_amount_cents,\r\n      case\r\n        when o.currency = 'usd' then o.amount_total_cents\r\n        else pa.gross_total_amount_cents\r\n      end as total_amount_cents,\r\n      pa.gross_tax_amount_cents,\r\n      pa.gross_amount_cents,\r\n      pa.gross_shipping_amount_cents\r\n    from o\r\n\r\n    left join d\r\n      on d.order_id = o.order_id\r\n\r\n    left join fo\r\n      on o.user_id = fo.user_id\r\n\r\n    left join a \r\n      on a.order_id = o.order_id\r\n\r\n    left join pa\r\n      on pa.order_id = o.order_id\r\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- import cte's\n\n/*\n\nstep notes:\n\npull out source tables into cte's\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\nextract cte's we found in query:\n    `dbt-public.interview_task.orders` o\n    `dbt-public.interview_task.devices` d\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\n    `dbt-public.interview_task.addresses` oa \n    `dbt-public.interview_task.payments`\n\na couple of errors that were resolved in the set up:\n  data type `int64` to `float`\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\n  transform to lower case (using command pallet -- F1)\n  changed `oa` to `a` for standarization\n    \n*/\n\nwith \no as (select * from raw.interview_sample_data.interview_orders),\nd as (select * from raw.interview_sample_data.interview_devices),\na as (select * from raw.interview_sample_data.interview_addresses),\np as (select * from raw.interview_sample_data.interview_payments),\n\n-- logical cte's\n\n/*\n\nthere are a lot of left join sub-queries, here is where we will try to simplify those\n\n*/\n\nd as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n),\n\nfo as (\n  select\n    fo.user_id,\n    min(fo.order_id) as first_order_id\n  from o as fo\n  where fo.status != 'cancelled'\n  group by fo.user_id\n),\n\npa as (\n  select\n    order_id,\n  sum(case\n        when status = 'completed' then tax_amount_cents else 0\n      end\n    ) as gross_tax_amount_cents,\n  sum(case\n        when status = 'completed' then amount_cents else 0\n      end\n    ) as gross_amount_cents,\n  sum(case\n        when status = 'completed' then amount_shipping_cents else 0\n      end\n    ) as gross_shipping_amount_cents,\n  sum(case\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\n      end\n    ) as gross_total_amount_cents\n  from p\n  group by order_id\n)\n\n\n\n\n\n-- final cte's\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \n\nfrom (\n    \n    select\n      o.order_id,\n      o.user_id,\n      o.created_at,\n      o.updated_at,\n      o.shipped_at,\n      o.currency,\n      o.status as order_status,\n      case\n        when o.status in (\n          'paid',\n          'completed',\n          'shipped'\n        ) then 'completed'\n        else o.status\n      end as order_status_category,\n      case\n        when a.country_code is null then 'null country'\n        when a.country_code = 'us' then 'us'\n        when a.country_code != 'us' then 'international'\n      end as country_type,\n      o.shipping_method,\n      case\n        when d.device = 'web' then 'desktop'\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\n        when nullif(d.device, '') is null then 'unknown'\n        else 'error'\n      end as purchase_device_type,\n      d.device as purchase_device,\n      case\n        when fo.first_order_id = o.order_id then 'new'\n        else 'repeat'\n      end as user_type,\n      o.amount_total_cents,\n      pa.gross_total_amount_cents,\n      case\n        when o.currency = 'usd' then o.amount_total_cents\n        else pa.gross_total_amount_cents\n      end as total_amount_cents,\n      pa.gross_tax_amount_cents,\n      pa.gross_amount_cents,\n      pa.gross_shipping_amount_cents\n    from o\n\n    left join d\n      on d.order_id = o.order_id\n\n    left join fo\n      on o.user_id = fo.user_id\n\n    left join a \n      on a.order_id = o.order_id\n\n    left join pa\n      on pa.order_id = o.order_id\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  000904 (42000): SQL compilation error: error line 125 at position 9\n  invalid identifier 'D.ORDER_ID'", 'raw_sql': "-- import cte's\r\n\r\n/*\r\n\r\nstep notes:\r\n\r\npull out source tables into cte's\r\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\r\nextract cte's we found in query:\r\n    `dbt-public.interview_task.orders` o\r\n    `dbt-public.interview_task.devices` d\r\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\r\n    `dbt-public.interview_task.addresses` oa \r\n    `dbt-public.interview_task.payments`\r\n\r\na couple of errors that were resolved in the set up:\r\n  data type `int64` to `float`\r\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\r\n  transform to lower case (using command pallet -- F1)\r\n  changed `oa` to `a` for standarization\r\n    \r\n*/\r\n\r\nwith \r\no as (select * from {{ source('interview_sample_data', 'interview_orders') }}),\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\na as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),\r\np as (select * from {{ source('interview_sample_data', 'interview_payments')}}),\r\n\r\n-- logical cte's\r\n\r\n/*\r\n\r\nthere are a lot of left join sub-queries, here is where we will try to simplify those\r\n\r\n*/\r\n\r\nd as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n),\r\n\r\nfo as (\r\n  select\r\n    fo.user_id,\r\n    min(fo.order_id) as first_order_id\r\n  from o as fo\r\n  where fo.status != 'cancelled'\r\n  group by fo.user_id\r\n),\r\n\r\npa as (\r\n  select\r\n    order_id,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents else 0\r\n      end\r\n    ) as gross_tax_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_cents else 0\r\n      end\r\n    ) as gross_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_shipping_cents else 0\r\n      end\r\n    ) as gross_shipping_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\r\n      end\r\n    ) as gross_total_amount_cents\r\n  from p\r\n  group by order_id\r\n)\r\n\r\n\r\n\r\n\r\n\r\n-- final cte's\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \r\n\r\nfrom (\r\n    \r\n    select\r\n      o.order_id,\r\n      o.user_id,\r\n      o.created_at,\r\n      o.updated_at,\r\n      o.shipped_at,\r\n      o.currency,\r\n      o.status as order_status,\r\n      case\r\n        when o.status in (\r\n          'paid',\r\n          'completed',\r\n          'shipped'\r\n        ) then 'completed'\r\n        else o.status\r\n      end as order_status_category,\r\n      case\r\n        when a.country_code is null then 'null country'\r\n        when a.country_code = 'us' then 'us'\r\n        when a.country_code != 'us' then 'international'\r\n      end as country_type,\r\n      o.shipping_method,\r\n      case\r\n        when d.device = 'web' then 'desktop'\r\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\r\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\r\n        when nullif(d.device, '') is null then 'unknown'\r\n        else 'error'\r\n      end as purchase_device_type,\r\n      d.device as purchase_device,\r\n      case\r\n        when fo.first_order_id = o.order_id then 'new'\r\n        else 'repeat'\r\n      end as user_type,\r\n      o.amount_total_cents,\r\n      pa.gross_total_amount_cents,\r\n      case\r\n        when o.currency = 'usd' then o.amount_total_cents\r\n        else pa.gross_total_amount_cents\r\n      end as total_amount_cents,\r\n      pa.gross_tax_amount_cents,\r\n      pa.gross_amount_cents,\r\n      pa.gross_shipping_amount_cents\r\n    from o\r\n\r\n    left join d\r\n      on d.order_id = o.order_id\r\n\r\n    left join fo\r\n      on o.user_id = fo.user_id\r\n\r\n    left join a \r\n      on a.order_id = o.order_id\r\n\r\n    left join pa\r\n      on pa.order_id = o.order_id\r\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- import cte's\n\n/*\n\nstep notes:\n\npull out source tables into cte's\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\nextract cte's we found in query:\n    `dbt-public.interview_task.orders` o\n    `dbt-public.interview_task.devices` d\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\n    `dbt-public.interview_task.addresses` oa \n    `dbt-public.interview_task.payments`\n\na couple of errors that were resolved in the set up:\n  data type `int64` to `float`\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\n  transform to lower case (using command pallet -- F1)\n  changed `oa` to `a` for standarization\n    \n*/\n\nwith \no as (select * from raw.interview_sample_data.interview_orders),\nd as (select * from raw.interview_sample_data.interview_devices),\na as (select * from raw.interview_sample_data.interview_addresses),\np as (select * from raw.interview_sample_data.interview_payments),\n\n-- logical cte's\n\n/*\n\nthere are a lot of left join sub-queries, here is where we will try to simplify those\n\n*/\n\nd as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n),\n\nfo as (\n  select\n    fo.user_id,\n    min(fo.order_id) as first_order_id\n  from o as fo\n  where fo.status != 'cancelled'\n  group by fo.user_id\n),\n\npa as (\n  select\n    order_id,\n  sum(case\n        when status = 'completed' then tax_amount_cents else 0\n      end\n    ) as gross_tax_amount_cents,\n  sum(case\n        when status = 'completed' then amount_cents else 0\n      end\n    ) as gross_amount_cents,\n  sum(case\n        when status = 'completed' then amount_shipping_cents else 0\n      end\n    ) as gross_shipping_amount_cents,\n  sum(case\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\n      end\n    ) as gross_total_amount_cents\n  from p\n  group by order_id\n)\n\n\n\n\n\n-- final cte's\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \n\nfrom (\n    \n    select\n      o.order_id,\n      o.user_id,\n      o.created_at,\n      o.updated_at,\n      o.shipped_at,\n      o.currency,\n      o.status as order_status,\n      case\n        when o.status in (\n          'paid',\n          'completed',\n          'shipped'\n        ) then 'completed'\n        else o.status\n      end as order_status_category,\n      case\n        when a.country_code is null then 'null country'\n        when a.country_code = 'us' then 'us'\n        when a.country_code != 'us' then 'international'\n      end as country_type,\n      o.shipping_method,\n      case\n        when d.device = 'web' then 'desktop'\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\n        when nullif(d.device, '') is null then 'unknown'\n        else 'error'\n      end as purchase_device_type,\n      d.device as purchase_device,\n      case\n        when fo.first_order_id = o.order_id then 'new'\n        else 'repeat'\n      end as user_type,\n      o.amount_total_cents,\n      pa.gross_total_amount_cents,\n      case\n        when o.currency = 'usd' then o.amount_total_cents\n        else pa.gross_total_amount_cents\n      end as total_amount_cents,\n      pa.gross_tax_amount_cents,\n      pa.gross_amount_cents,\n      pa.gross_shipping_amount_cents\n    from o\n\n    left join d\n      on d.order_id = o.order_id\n\n    left join fo\n      on o.user_id = fo.user_id\n\n    left join a \n      on a.order_id = o.order_id\n\n    left join pa\n      on pa.order_id = o.order_id\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-21 23:37:05.453768 (Thread-52): handling poll request
+2022-04-21 23:37:05.454160 (Thread-52): 23:37:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1cb86a0>]}
+2022-04-21 23:37:05.454956 (Thread-52): sending response (<Response 41283 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:38:35.127374 (Thread-53): handling status request
+2022-04-21 23:38:35.129171 (Thread-53): 23:38:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1cbf6d0>]}
+2022-04-21 23:38:35.129699 (Thread-53): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:38:35.487135 (Thread-54): handling compile_sql request
+2022-04-21 23:38:35.487549 (Thread-54): 23:38:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1cbfc70>]}
+2022-04-21 23:38:37.997187 (Thread-54): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:38:38.026612 (MainThread): 23:38:38  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71f22049-adf9-4ea4-a3c0-6f58af78ac40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c009abc40>]}
+2022-04-21 23:38:38.027138 (MainThread): 23:38:38  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:38:38.027712 (Thread-1): 23:38:38  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:38:38.027843 (Thread-1): 23:38:38  Began compiling node rpc.my_new_project.request
+2022-04-21 23:38:38.027933 (Thread-1): 23:38:38  Compiling rpc.my_new_project.request
+2022-04-21 23:38:38.031347 (Thread-1): 23:38:38  finished collecting timing info
+2022-04-21 23:38:38.031493 (Thread-1): 23:38:38  Began executing node rpc.my_new_project.request
+2022-04-21 23:38:38.031595 (Thread-1): 23:38:38  finished collecting timing info
+2022-04-21 23:38:38.360759 (Thread-55): handling poll request
+2022-04-21 23:38:38.361230 (Thread-55): 23:38:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6cefaf0>]}
+2022-04-21 23:38:38.362517 (Thread-55): sending response (<Response 23032 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:57:42.640597 (Thread-56): 23:57:42  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-21 23:57:42.642543 (Thread-56): 23:57:42  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-21 23:57:42.646919 (Thread-56): 23:57:42  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-21 23:57:42.693653 (Thread-56): 23:57:42  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55d670>]}
+2022-04-21 23:57:43.290161 (Thread-57): handling status request
+2022-04-21 23:57:43.290597 (Thread-57): 23:57:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf532c70>]}
+2022-04-21 23:57:43.291098 (Thread-57): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:57:43.480137 (Thread-58): handling status request
+2022-04-21 23:57:43.480524 (Thread-58): 23:57:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf532f40>]}
+2022-04-21 23:57:43.480976 (Thread-58): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:57:44.856139 (Thread-59): handling status request
+2022-04-21 23:57:44.856574 (Thread-59): 23:57:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6cbf940>]}
+2022-04-21 23:57:44.857028 (Thread-59): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:57:45.205225 (Thread-60): handling run_sql request
+2022-04-21 23:57:45.205622 (Thread-60): 23:57:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf532af0>]}
+2022-04-21 23:57:47.688048 (Thread-60): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:57:47.714800 (MainThread): 23:57:47  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8146f5ea-f0de-4981-a0a1-c086316ebdf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16534a4d30>]}
+2022-04-21 23:57:47.715341 (MainThread): 23:57:47  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:57:47.715928 (Thread-1): 23:57:47  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:57:47.716060 (Thread-1): 23:57:47  Began compiling node rpc.my_new_project.request
+2022-04-21 23:57:47.716152 (Thread-1): 23:57:47  Compiling rpc.my_new_project.request
+2022-04-21 23:57:47.719595 (Thread-1): 23:57:47  finished collecting timing info
+2022-04-21 23:57:47.719724 (Thread-1): 23:57:47  Began executing node rpc.my_new_project.request
+2022-04-21 23:57:47.723236 (Thread-1): 23:57:47  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:57:47.723334 (Thread-1): 23:57:47  On rpc.my_new_project.request: -- import cte's
+
+/*
+
+step notes:
+
+pull out source tables into cte's
+create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
+extract cte's we found in query:
+    `dbt-public.interview_task.orders` o
+    `dbt-public.interview_task.devices` d
+    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order
+    `dbt-public.interview_task.addresses` oa 
+    `dbt-public.interview_task.payments`
+
+a couple of errors that were resolved in the set up:
+  data type `int64` to `float`
+  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  transform to lower case (using command pallet -- F1)
+  changed `oa` to `a` for standarization
+    
+*/
+
+with 
+o as (select * from raw.interview_sample_data.interview_orders),
+d as (select * from raw.interview_sample_data.interview_devices),
+a as (select * from raw.interview_sample_data.interview_addresses),
+p as (select * from raw.interview_sample_data.interview_payments),
+
+-- logical cte's
+
+/*
+
+there are a lot of left join sub-queries, here is where we will try to simplify those
+
+*/
+
+do as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+),
+
+fo as (
+  select
+    fo.user_id,
+    min(fo.order_id) as first_order_id
+  from o as fo
+  where fo.status != 'cancelled'
+  group by fo.user_id
+),
+
+pa as (
+  select
+    order_id,
+  sum(case
+        when status = 'completed' then tax_amount_cents else 0
+      end
+    ) as gross_tax_amount_cents,
+  sum(case
+        when status = 'completed' then amount_cents else 0
+      end
+    ) as gross_amount_cents,
+  sum(case
+        when status = 'completed' then amount_shipping_cents else 0
+      end
+    ) as gross_shipping_amount_cents,
+  sum(case
+        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
+      end
+    ) as gross_total_amount_cents
+  from p
+  group by order_id
+)
+
+
+
+
+
+-- final cte's
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount 
+
+from (
+    
+    select
+      o.order_id,
+      o.user_id,
+      o.created_at,
+      o.updated_at,
+      o.shipped_at,
+      o.currency,
+      o.status as order_status,
+      case
+        when o.status in (
+          'paid',
+          'completed',
+          'shipped'
+        ) then 'completed'
+        else o.status
+      end as order_status_category,
+      case
+        when a.country_code is null then 'null country'
+        when a.country_code = 'us' then 'us'
+        when a.country_code != 'us' then 'international'
+      end as country_type,
+      o.shipping_method,
+      case
+        when d.device = 'web' then 'desktop'
+        when d.device in ('ios-app', 'android-app') then 'mobile-app'
+        when d.device in ('mobile', 'tablet') then 'mobile-web'
+        when nullif(d.device, '') is null then 'unknown'
+        else 'error'
+      end as purchase_device_type,
+      d.device as purchase_device,
+      case
+        when fo.first_order_id = o.order_id then 'new'
+        else 'repeat'
+      end as user_type,
+      o.amount_total_cents,
+      pa.gross_total_amount_cents,
+      case
+        when o.currency = 'usd' then o.amount_total_cents
+        else pa.gross_total_amount_cents
+      end as total_amount_cents,
+      pa.gross_tax_amount_cents,
+      pa.gross_amount_cents,
+      pa.gross_shipping_amount_cents
+    from o
+
+    left join d
+      on d.order_id = o.order_id
+
+    left join fo
+      on o.user_id = fo.user_id
+
+    left join a 
+      on a.order_id = o.order_id
+
+    left join pa
+      on pa.order_id = o.order_id
+  )
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 23:57:47.723415 (Thread-1): 23:57:47  Opening a new connection, currently in state init
+2022-04-21 23:57:48.022239 (Thread-61): handling poll request
+2022-04-21 23:57:48.022722 (Thread-61): 23:57:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf5ad3d0>]}
+2022-04-21 23:57:48.023845 (Thread-61): sending response (<Response 7897 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:57:48.684092 (Thread-1): 23:57:48  Snowflake adapter: Snowflake query id: 01a3c3fd-0501-6083-0004-7d8304883686
+2022-04-21 23:57:48.684317 (Thread-1): 23:57:48  Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 125 at position 9
+invalid identifier 'D.ORDER_ID'
+2022-04-21 23:57:48.684514 (Thread-1): 23:57:48  finished collecting timing info
+2022-04-21 23:57:48.684713 (Thread-1): 23:57:48  On rpc.my_new_project.request: Close
+2022-04-21 23:57:48.878098 (Thread-1): Got an exception: Database Error
+  000904 (42000): SQL compilation error: error line 125 at position 9
+  invalid identifier 'D.ORDER_ID'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 125 at position 9
+invalid identifier 'D.ORDER_ID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  000904 (42000): SQL compilation error: error line 125 at position 9
+  invalid identifier 'D.ORDER_ID'
+2022-04-21 23:57:48.879214 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  000904 (42000): SQL compilation error: error line 125 at position 9\n  invalid identifier 'D.ORDER_ID'", 'raw_sql': "-- import cte's\r\n\r\n/*\r\n\r\nstep notes:\r\n\r\npull out source tables into cte's\r\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\r\nextract cte's we found in query:\r\n    `dbt-public.interview_task.orders` o\r\n    `dbt-public.interview_task.devices` d\r\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\r\n    `dbt-public.interview_task.addresses` oa \r\n    `dbt-public.interview_task.payments`\r\n\r\na couple of errors that were resolved in the set up:\r\n  data type `int64` to `float`\r\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\r\n  transform to lower case (using command pallet -- F1)\r\n  changed `oa` to `a` for standarization\r\n    \r\n*/\r\n\r\nwith \r\no as (select * from {{ source('interview_sample_data', 'interview_orders') }}),\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\na as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),\r\np as (select * from {{ source('interview_sample_data', 'interview_payments')}}),\r\n\r\n-- logical cte's\r\n\r\n/*\r\n\r\nthere are a lot of left join sub-queries, here is where we will try to simplify those\r\n\r\n*/\r\n\r\ndo as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n),\r\n\r\nfo as (\r\n  select\r\n    fo.user_id,\r\n    min(fo.order_id) as first_order_id\r\n  from o as fo\r\n  where fo.status != 'cancelled'\r\n  group by fo.user_id\r\n),\r\n\r\npa as (\r\n  select\r\n    order_id,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents else 0\r\n      end\r\n    ) as gross_tax_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_cents else 0\r\n      end\r\n    ) as gross_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_shipping_cents else 0\r\n      end\r\n    ) as gross_shipping_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\r\n      end\r\n    ) as gross_total_amount_cents\r\n  from p\r\n  group by order_id\r\n)\r\n\r\n\r\n\r\n\r\n\r\n-- final cte's\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \r\n\r\nfrom (\r\n    \r\n    select\r\n      o.order_id,\r\n      o.user_id,\r\n      o.created_at,\r\n      o.updated_at,\r\n      o.shipped_at,\r\n      o.currency,\r\n      o.status as order_status,\r\n      case\r\n        when o.status in (\r\n          'paid',\r\n          'completed',\r\n          'shipped'\r\n        ) then 'completed'\r\n        else o.status\r\n      end as order_status_category,\r\n      case\r\n        when a.country_code is null then 'null country'\r\n        when a.country_code = 'us' then 'us'\r\n        when a.country_code != 'us' then 'international'\r\n      end as country_type,\r\n      o.shipping_method,\r\n      case\r\n        when d.device = 'web' then 'desktop'\r\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\r\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\r\n        when nullif(d.device, '') is null then 'unknown'\r\n        else 'error'\r\n      end as purchase_device_type,\r\n      d.device as purchase_device,\r\n      case\r\n        when fo.first_order_id = o.order_id then 'new'\r\n        else 'repeat'\r\n      end as user_type,\r\n      o.amount_total_cents,\r\n      pa.gross_total_amount_cents,\r\n      case\r\n        when o.currency = 'usd' then o.amount_total_cents\r\n        else pa.gross_total_amount_cents\r\n      end as total_amount_cents,\r\n      pa.gross_tax_amount_cents,\r\n      pa.gross_amount_cents,\r\n      pa.gross_shipping_amount_cents\r\n    from o\r\n\r\n    left join d\r\n      on d.order_id = o.order_id\r\n\r\n    left join fo\r\n      on o.user_id = fo.user_id\r\n\r\n    left join a \r\n      on a.order_id = o.order_id\r\n\r\n    left join pa\r\n      on pa.order_id = o.order_id\r\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- import cte's\n\n/*\n\nstep notes:\n\npull out source tables into cte's\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\nextract cte's we found in query:\n    `dbt-public.interview_task.orders` o\n    `dbt-public.interview_task.devices` d\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\n    `dbt-public.interview_task.addresses` oa \n    `dbt-public.interview_task.payments`\n\na couple of errors that were resolved in the set up:\n  data type `int64` to `float`\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\n  transform to lower case (using command pallet -- F1)\n  changed `oa` to `a` for standarization\n    \n*/\n\nwith \no as (select * from raw.interview_sample_data.interview_orders),\nd as (select * from raw.interview_sample_data.interview_devices),\na as (select * from raw.interview_sample_data.interview_addresses),\np as (select * from raw.interview_sample_data.interview_payments),\n\n-- logical cte's\n\n/*\n\nthere are a lot of left join sub-queries, here is where we will try to simplify those\n\n*/\n\ndo as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n),\n\nfo as (\n  select\n    fo.user_id,\n    min(fo.order_id) as first_order_id\n  from o as fo\n  where fo.status != 'cancelled'\n  group by fo.user_id\n),\n\npa as (\n  select\n    order_id,\n  sum(case\n        when status = 'completed' then tax_amount_cents else 0\n      end\n    ) as gross_tax_amount_cents,\n  sum(case\n        when status = 'completed' then amount_cents else 0\n      end\n    ) as gross_amount_cents,\n  sum(case\n        when status = 'completed' then amount_shipping_cents else 0\n      end\n    ) as gross_shipping_amount_cents,\n  sum(case\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\n      end\n    ) as gross_total_amount_cents\n  from p\n  group by order_id\n)\n\n\n\n\n\n-- final cte's\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \n\nfrom (\n    \n    select\n      o.order_id,\n      o.user_id,\n      o.created_at,\n      o.updated_at,\n      o.shipped_at,\n      o.currency,\n      o.status as order_status,\n      case\n        when o.status in (\n          'paid',\n          'completed',\n          'shipped'\n        ) then 'completed'\n        else o.status\n      end as order_status_category,\n      case\n        when a.country_code is null then 'null country'\n        when a.country_code = 'us' then 'us'\n        when a.country_code != 'us' then 'international'\n      end as country_type,\n      o.shipping_method,\n      case\n        when d.device = 'web' then 'desktop'\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\n        when nullif(d.device, '') is null then 'unknown'\n        else 'error'\n      end as purchase_device_type,\n      d.device as purchase_device,\n      case\n        when fo.first_order_id = o.order_id then 'new'\n        else 'repeat'\n      end as user_type,\n      o.amount_total_cents,\n      pa.gross_total_amount_cents,\n      case\n        when o.currency = 'usd' then o.amount_total_cents\n        else pa.gross_total_amount_cents\n      end as total_amount_cents,\n      pa.gross_tax_amount_cents,\n      pa.gross_amount_cents,\n      pa.gross_shipping_amount_cents\n    from o\n\n    left join d\n      on d.order_id = o.order_id\n\n    left join fo\n      on o.user_id = fo.user_id\n\n    left join a \n      on a.order_id = o.order_id\n\n    left join pa\n      on pa.order_id = o.order_id\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  000904 (42000): SQL compilation error: error line 125 at position 9\n  invalid identifier 'D.ORDER_ID'", 'raw_sql': "-- import cte's\r\n\r\n/*\r\n\r\nstep notes:\r\n\r\npull out source tables into cte's\r\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\r\nextract cte's we found in query:\r\n    `dbt-public.interview_task.orders` o\r\n    `dbt-public.interview_task.devices` d\r\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\r\n    `dbt-public.interview_task.addresses` oa \r\n    `dbt-public.interview_task.payments`\r\n\r\na couple of errors that were resolved in the set up:\r\n  data type `int64` to `float`\r\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\r\n  transform to lower case (using command pallet -- F1)\r\n  changed `oa` to `a` for standarization\r\n    \r\n*/\r\n\r\nwith \r\no as (select * from {{ source('interview_sample_data', 'interview_orders') }}),\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\na as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),\r\np as (select * from {{ source('interview_sample_data', 'interview_payments')}}),\r\n\r\n-- logical cte's\r\n\r\n/*\r\n\r\nthere are a lot of left join sub-queries, here is where we will try to simplify those\r\n\r\n*/\r\n\r\ndo as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n),\r\n\r\nfo as (\r\n  select\r\n    fo.user_id,\r\n    min(fo.order_id) as first_order_id\r\n  from o as fo\r\n  where fo.status != 'cancelled'\r\n  group by fo.user_id\r\n),\r\n\r\npa as (\r\n  select\r\n    order_id,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents else 0\r\n      end\r\n    ) as gross_tax_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_cents else 0\r\n      end\r\n    ) as gross_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_shipping_cents else 0\r\n      end\r\n    ) as gross_shipping_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\r\n      end\r\n    ) as gross_total_amount_cents\r\n  from p\r\n  group by order_id\r\n)\r\n\r\n\r\n\r\n\r\n\r\n-- final cte's\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \r\n\r\nfrom (\r\n    \r\n    select\r\n      o.order_id,\r\n      o.user_id,\r\n      o.created_at,\r\n      o.updated_at,\r\n      o.shipped_at,\r\n      o.currency,\r\n      o.status as order_status,\r\n      case\r\n        when o.status in (\r\n          'paid',\r\n          'completed',\r\n          'shipped'\r\n        ) then 'completed'\r\n        else o.status\r\n      end as order_status_category,\r\n      case\r\n        when a.country_code is null then 'null country'\r\n        when a.country_code = 'us' then 'us'\r\n        when a.country_code != 'us' then 'international'\r\n      end as country_type,\r\n      o.shipping_method,\r\n      case\r\n        when d.device = 'web' then 'desktop'\r\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\r\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\r\n        when nullif(d.device, '') is null then 'unknown'\r\n        else 'error'\r\n      end as purchase_device_type,\r\n      d.device as purchase_device,\r\n      case\r\n        when fo.first_order_id = o.order_id then 'new'\r\n        else 'repeat'\r\n      end as user_type,\r\n      o.amount_total_cents,\r\n      pa.gross_total_amount_cents,\r\n      case\r\n        when o.currency = 'usd' then o.amount_total_cents\r\n        else pa.gross_total_amount_cents\r\n      end as total_amount_cents,\r\n      pa.gross_tax_amount_cents,\r\n      pa.gross_amount_cents,\r\n      pa.gross_shipping_amount_cents\r\n    from o\r\n\r\n    left join d\r\n      on d.order_id = o.order_id\r\n\r\n    left join fo\r\n      on o.user_id = fo.user_id\r\n\r\n    left join a \r\n      on a.order_id = o.order_id\r\n\r\n    left join pa\r\n      on pa.order_id = o.order_id\r\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- import cte's\n\n/*\n\nstep notes:\n\npull out source tables into cte's\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\nextract cte's we found in query:\n    `dbt-public.interview_task.orders` o\n    `dbt-public.interview_task.devices` d\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\n    `dbt-public.interview_task.addresses` oa \n    `dbt-public.interview_task.payments`\n\na couple of errors that were resolved in the set up:\n  data type `int64` to `float`\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\n  transform to lower case (using command pallet -- F1)\n  changed `oa` to `a` for standarization\n    \n*/\n\nwith \no as (select * from raw.interview_sample_data.interview_orders),\nd as (select * from raw.interview_sample_data.interview_devices),\na as (select * from raw.interview_sample_data.interview_addresses),\np as (select * from raw.interview_sample_data.interview_payments),\n\n-- logical cte's\n\n/*\n\nthere are a lot of left join sub-queries, here is where we will try to simplify those\n\n*/\n\ndo as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n),\n\nfo as (\n  select\n    fo.user_id,\n    min(fo.order_id) as first_order_id\n  from o as fo\n  where fo.status != 'cancelled'\n  group by fo.user_id\n),\n\npa as (\n  select\n    order_id,\n  sum(case\n        when status = 'completed' then tax_amount_cents else 0\n      end\n    ) as gross_tax_amount_cents,\n  sum(case\n        when status = 'completed' then amount_cents else 0\n      end\n    ) as gross_amount_cents,\n  sum(case\n        when status = 'completed' then amount_shipping_cents else 0\n      end\n    ) as gross_shipping_amount_cents,\n  sum(case\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\n      end\n    ) as gross_total_amount_cents\n  from p\n  group by order_id\n)\n\n\n\n\n\n-- final cte's\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \n\nfrom (\n    \n    select\n      o.order_id,\n      o.user_id,\n      o.created_at,\n      o.updated_at,\n      o.shipped_at,\n      o.currency,\n      o.status as order_status,\n      case\n        when o.status in (\n          'paid',\n          'completed',\n          'shipped'\n        ) then 'completed'\n        else o.status\n      end as order_status_category,\n      case\n        when a.country_code is null then 'null country'\n        when a.country_code = 'us' then 'us'\n        when a.country_code != 'us' then 'international'\n      end as country_type,\n      o.shipping_method,\n      case\n        when d.device = 'web' then 'desktop'\n        when d.device in ('ios-app', 'android-app') then 'mobile-app'\n        when d.device in ('mobile', 'tablet') then 'mobile-web'\n        when nullif(d.device, '') is null then 'unknown'\n        else 'error'\n      end as purchase_device_type,\n      d.device as purchase_device,\n      case\n        when fo.first_order_id = o.order_id then 'new'\n        else 'repeat'\n      end as user_type,\n      o.amount_total_cents,\n      pa.gross_total_amount_cents,\n      case\n        when o.currency = 'usd' then o.amount_total_cents\n        else pa.gross_total_amount_cents\n      end as total_amount_cents,\n      pa.gross_tax_amount_cents,\n      pa.gross_amount_cents,\n      pa.gross_shipping_amount_cents\n    from o\n\n    left join d\n      on d.order_id = o.order_id\n\n    left join fo\n      on o.user_id = fo.user_id\n\n    left join a \n      on a.order_id = o.order_id\n\n    left join pa\n      on pa.order_id = o.order_id\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-21 23:57:49.337686 (Thread-62): handling poll request
+2022-04-21 23:57:49.338104 (Thread-62): 23:57:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6cb6cd0>]}
+2022-04-21 23:57:49.338877 (Thread-62): sending response (<Response 41290 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:20.818012 (Thread-63): handling status request
+2022-04-21 23:59:20.820038 (Thread-63): 23:59:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab453fc70>]}
+2022-04-21 23:59:20.820539 (Thread-63): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:21.137025 (Thread-64): handling run_sql request
+2022-04-21 23:59:21.137419 (Thread-64): 23:59:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab453f250>]}
+2022-04-21 23:59:23.598250 (Thread-64): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:23.626949 (MainThread): 23:59:23  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3e12f91b-c8ac-4a11-811b-9da8899fe9c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f950e0e0ca0>]}
+2022-04-21 23:59:23.627667 (MainThread): 23:59:23  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:59:23.628112 (Thread-1): 23:59:23  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:59:23.628243 (Thread-1): 23:59:23  Began compiling node rpc.my_new_project.request
+2022-04-21 23:59:23.628350 (Thread-1): 23:59:23  Compiling rpc.my_new_project.request
+2022-04-21 23:59:23.630943 (Thread-1): 23:59:23  finished collecting timing info
+2022-04-21 23:59:23.631072 (Thread-1): 23:59:23  Began executing node rpc.my_new_project.request
+2022-04-21 23:59:23.631885 (Thread-1): 23:59:23  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:59:23.631973 (Thread-1): 23:59:23  On rpc.my_new_project.request: -- list tables
+
+
+
+
+d as (select * from raw.interview_sample_data.interview_devices),
+
+
+do as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+)
+
+select * from do
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 23:59:23.632053 (Thread-1): 23:59:23  Opening a new connection, currently in state init
+2022-04-21 23:59:23.922000 (Thread-65): handling poll request
+2022-04-21 23:59:23.922472 (Thread-65): 23:59:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55a6a0>]}
+2022-04-21 23:59:23.923340 (Thread-65): sending response (<Response 4118 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:24.532477 (Thread-1): 23:59:24  Snowflake adapter: Snowflake query id: 01a3c3ff-0501-5fd8-0004-7d8304880d06
+2022-04-21 23:59:24.532724 (Thread-1): 23:59:24  Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'd'.
+2022-04-21 23:59:24.532930 (Thread-1): 23:59:24  finished collecting timing info
+2022-04-21 23:59:24.533128 (Thread-1): 23:59:24  On rpc.my_new_project.request: Close
+2022-04-21 23:59:24.724096 (Thread-1): Got an exception: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'd'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'd'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'd'.
+2022-04-21 23:59:24.725104 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'd'.", 'raw_sql': "-- list tables\r\n{% set tables = ['orders', 'devices', 'orders', 'addresses', 'payments'] %}\r\n\r\n{#\r\n\r\n-- basic test\r\n{% for t in tables %}\r\n    table name is: raw.interview_sample_data.interview_{{t}}\r\n{% endfor %}\r\n\r\n-- testing tables\r\n{%- for t in tables %}\r\n    {{t}} as ( select * from raw.interview_sample_data.interview_{{t}} ),\r\n{%- endfor %}\r\n\r\n\r\n\r\n{%- for t in tables %}\r\n    {{t}} as select * from { source('interview_sample_data', 'interview_'{{t}}) }\r\n{%- endfor %}\r\n\r\n#}\r\n\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\n\r\n\r\ndo as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n)\r\n\r\nselect * from do\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- list tables\n\n\n\n\nd as (select * from raw.interview_sample_data.interview_devices),\n\n\ndo as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n)\n\nselect * from do\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'd'.", 'raw_sql': "-- list tables\r\n{% set tables = ['orders', 'devices', 'orders', 'addresses', 'payments'] %}\r\n\r\n{#\r\n\r\n-- basic test\r\n{% for t in tables %}\r\n    table name is: raw.interview_sample_data.interview_{{t}}\r\n{% endfor %}\r\n\r\n-- testing tables\r\n{%- for t in tables %}\r\n    {{t}} as ( select * from raw.interview_sample_data.interview_{{t}} ),\r\n{%- endfor %}\r\n\r\n\r\n\r\n{%- for t in tables %}\r\n    {{t}} as select * from { source('interview_sample_data', 'interview_'{{t}}) }\r\n{%- endfor %}\r\n\r\n#}\r\n\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\n\r\n\r\ndo as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n)\r\n\r\nselect * from do\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- list tables\n\n\n\n\nd as (select * from raw.interview_sample_data.interview_devices),\n\n\ndo as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n)\n\nselect * from do\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-21 23:59:25.274434 (Thread-66): handling poll request
+2022-04-21 23:59:25.274838 (Thread-66): 23:59:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55a7c0>]}
+2022-04-21 23:59:25.275465 (Thread-66): sending response (<Response 14565 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:32.602590 (Thread-67): handling status request
+2022-04-21 23:59:32.603000 (Thread-67): 23:59:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55ad60>]}
+2022-04-21 23:59:32.603516 (Thread-67): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:33.101581 (Thread-68): handling run_sql request
+2022-04-21 23:59:33.101977 (Thread-68): 23:59:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55af40>]}
+2022-04-21 23:59:35.599776 (Thread-68): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:35.626048 (MainThread): 23:59:35  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b022402b-a109-4041-8e79-fd09abf0b47a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadd6a29c70>]}
+2022-04-21 23:59:35.626707 (MainThread): 23:59:35  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-21 23:59:35.627342 (Thread-1): 23:59:35  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:59:35.627471 (Thread-1): 23:59:35  Began compiling node rpc.my_new_project.request
+2022-04-21 23:59:35.627620 (Thread-1): 23:59:35  Compiling rpc.my_new_project.request
+2022-04-21 23:59:35.630241 (Thread-1): 23:59:35  finished collecting timing info
+2022-04-21 23:59:35.630396 (Thread-1): 23:59:35  Began executing node rpc.my_new_project.request
+2022-04-21 23:59:35.631272 (Thread-1): 23:59:35  Using snowflake connection "rpc.my_new_project.request"
+2022-04-21 23:59:35.631364 (Thread-1): 23:59:35  On rpc.my_new_project.request: -- list tables
+
+
+
+with 
+d as (select * from raw.interview_sample_data.interview_devices),
+
+
+do as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+)
+
+select * from do
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-21 23:59:35.631444 (Thread-1): 23:59:35  Opening a new connection, currently in state init
+2022-04-21 23:59:35.903266 (Thread-69): handling poll request
+2022-04-21 23:59:35.903746 (Thread-69): 23:59:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55d8e0>]}
+2022-04-21 23:59:35.928406 (Thread-69): sending response (<Response 4123 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:37.235279 (Thread-70): handling poll request
+2022-04-21 23:59:37.235667 (Thread-70): 23:59:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf55dd00>]}
+2022-04-21 23:59:37.236131 (Thread-70): sending response (<Response 391 bytes [200 OK]>) to 10.0.2.37
+2022-04-21 23:59:37.316883 (Thread-1): 23:59:37  SQL status: SUCCESS 500 in 1.69 seconds
+2022-04-21 23:59:37.323810 (Thread-1): 23:59:37  finished collecting timing info
+2022-04-21 23:59:37.324070 (Thread-1): 23:59:37  On rpc.my_new_project.request: Close
+2022-04-21 23:59:38.560162 (Thread-71): handling poll request
+2022-04-21 23:59:38.560587 (Thread-71): 23:59:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf5ad190>]}
+2022-04-21 23:59:38.562114 (Thread-71): sending response (<Response 16296 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:00:37.596411 (Thread-72): handling status request
+2022-04-22 00:00:37.596817 (Thread-72): 00:00:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf4fcf10>]}
+2022-04-22 00:00:37.597328 (Thread-72): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:00:37.934612 (Thread-73): handling run_sql request
+2022-04-22 00:00:37.935024 (Thread-73): 00:00:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf501130>]}
+2022-04-22 00:00:40.487216 (Thread-73): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:00:40.515591 (MainThread): 00:00:40  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9412c393-02bb-4880-b47f-9b0977f8bb4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf6311ad60>]}
+2022-04-22 00:00:40.516130 (MainThread): 00:00:40  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 00:00:40.516735 (Thread-1): 00:00:40  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 00:00:40.516869 (Thread-1): 00:00:40  Began compiling node rpc.my_new_project.request
+2022-04-22 00:00:40.516963 (Thread-1): 00:00:40  Compiling rpc.my_new_project.request
+2022-04-22 00:00:40.520419 (Thread-1): 00:00:40  finished collecting timing info
+2022-04-22 00:00:40.520553 (Thread-1): 00:00:40  Began executing node rpc.my_new_project.request
+2022-04-22 00:00:40.524195 (Thread-1): 00:00:40  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 00:00:40.524297 (Thread-1): 00:00:40  On rpc.my_new_project.request: -- import cte's
+
+/*
+
+step notes:
+
+pull out source tables into cte's
+create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
+extract cte's we found in query:
+    `dbt-public.interview_task.orders` o
+    `dbt-public.interview_task.devices` d
+    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order
+    `dbt-public.interview_task.addresses` oa 
+    `dbt-public.interview_task.payments`
+
+a couple of errors that were resolved in the set up:
+  data type `int64` to `float`
+  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  transform to lower case (using command pallet -- F1)
+  changed `oa` to `a` for standarization
+    
+*/
+
+with 
+o as (select * from raw.interview_sample_data.interview_orders),
+d as (select * from raw.interview_sample_data.interview_devices),
+a as (select * from raw.interview_sample_data.interview_addresses),
+p as (select * from raw.interview_sample_data.interview_payments),
+
+-- logical cte's
+
+/*
+
+there are a lot of left join sub-queries, here is where we will try to simplify those
+
+*/
+
+do as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+),
+
+fo as (
+  select
+    fo.user_id,
+    min(fo.order_id) as first_order_id
+  from o as fo
+  where fo.status != 'cancelled'
+  group by fo.user_id
+),
+
+pa as (
+  select
+    order_id,
+  sum(case
+        when status = 'completed' then tax_amount_cents else 0
+      end
+    ) as gross_tax_amount_cents,
+  sum(case
+        when status = 'completed' then amount_cents else 0
+      end
+    ) as gross_amount_cents,
+  sum(case
+        when status = 'completed' then amount_shipping_cents else 0
+      end
+    ) as gross_shipping_amount_cents,
+  sum(case
+        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
+      end
+    ) as gross_total_amount_cents
+  from p
+  group by order_id
+)
+
+
+
+
+
+-- final cte's
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount 
+
+from (
+    
+    select
+      o.order_id,
+      o.user_id,
+      o.created_at,
+      o.updated_at,
+      o.shipped_at,
+      o.currency,
+      o.status as order_status,
+      case
+        when o.status in (
+          'paid',
+          'completed',
+          'shipped'
+        ) then 'completed'
+        else o.status
+      end as order_status_category,
+      case
+        when a.country_code is null then 'null country'
+        when a.country_code = 'us' then 'us'
+        when a.country_code != 'us' then 'international'
+      end as country_type,
+      o.shipping_method,
+      case
+        when do.device = 'web' then 'desktop'
+        when do.device in ('ios-app', 'android-app') then 'mobile-app'
+        when do.device in ('mobile', 'tablet') then 'mobile-web'
+        when nullif(d.device, '') is null then 'unknown'
+        else 'error'
+      end as purchase_device_type,
+      do.device as purchase_device,
+      case
+        when fo.first_order_id = o.order_id then 'new'
+        else 'repeat'
+      end as user_type,
+      o.amount_total_cents,
+      pa.gross_total_amount_cents,
+      case
+        when o.currency = 'usd' then o.amount_total_cents
+        else pa.gross_total_amount_cents
+      end as total_amount_cents,
+      pa.gross_tax_amount_cents,
+      pa.gross_amount_cents,
+      pa.gross_shipping_amount_cents
+    from o
+
+    left join do
+      on do.order_id = o.order_id
+
+    left join fo
+      on o.user_id = fo.user_id
+
+    left join a 
+      on a.order_id = o.order_id
+
+    left join pa
+      on pa.order_id = o.order_id
+  )
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 00:00:40.524377 (Thread-1): 00:00:40  Opening a new connection, currently in state init
+2022-04-22 00:00:40.800440 (Thread-74): handling poll request
+2022-04-22 00:00:40.800906 (Thread-74): 00:00:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf540520>]}
+2022-04-22 00:00:40.801790 (Thread-74): sending response (<Response 7902 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:00:41.610235 (Thread-1): 00:00:41  Snowflake adapter: Snowflake query id: 01a3c400-0501-6083-0004-7d83048836c2
+2022-04-22 00:00:41.610509 (Thread-1): 00:00:41  Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 105 at position 20
+invalid identifier 'D.DEVICE'
+2022-04-22 00:00:41.610703 (Thread-1): 00:00:41  finished collecting timing info
+2022-04-22 00:00:41.610903 (Thread-1): 00:00:41  On rpc.my_new_project.request: Close
+2022-04-22 00:00:41.847899 (Thread-1): Got an exception: Database Error
+  000904 (42000): SQL compilation error: error line 105 at position 20
+  invalid identifier 'D.DEVICE'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 105 at position 20
+invalid identifier 'D.DEVICE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  000904 (42000): SQL compilation error: error line 105 at position 20
+  invalid identifier 'D.DEVICE'
+2022-04-22 00:00:41.848948 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  000904 (42000): SQL compilation error: error line 105 at position 20\n  invalid identifier 'D.DEVICE'", 'raw_sql': "-- import cte's\r\n\r\n/*\r\n\r\nstep notes:\r\n\r\npull out source tables into cte's\r\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\r\nextract cte's we found in query:\r\n    `dbt-public.interview_task.orders` o\r\n    `dbt-public.interview_task.devices` d\r\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\r\n    `dbt-public.interview_task.addresses` oa \r\n    `dbt-public.interview_task.payments`\r\n\r\na couple of errors that were resolved in the set up:\r\n  data type `int64` to `float`\r\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\r\n  transform to lower case (using command pallet -- F1)\r\n  changed `oa` to `a` for standarization\r\n    \r\n*/\r\n\r\nwith \r\no as (select * from {{ source('interview_sample_data', 'interview_orders') }}),\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\na as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),\r\np as (select * from {{ source('interview_sample_data', 'interview_payments')}}),\r\n\r\n-- logical cte's\r\n\r\n/*\r\n\r\nthere are a lot of left join sub-queries, here is where we will try to simplify those\r\n\r\n*/\r\n\r\ndo as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n),\r\n\r\nfo as (\r\n  select\r\n    fo.user_id,\r\n    min(fo.order_id) as first_order_id\r\n  from o as fo\r\n  where fo.status != 'cancelled'\r\n  group by fo.user_id\r\n),\r\n\r\npa as (\r\n  select\r\n    order_id,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents else 0\r\n      end\r\n    ) as gross_tax_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_cents else 0\r\n      end\r\n    ) as gross_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_shipping_cents else 0\r\n      end\r\n    ) as gross_shipping_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\r\n      end\r\n    ) as gross_total_amount_cents\r\n  from p\r\n  group by order_id\r\n)\r\n\r\n\r\n\r\n\r\n\r\n-- final cte's\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \r\n\r\nfrom (\r\n    \r\n    select\r\n      o.order_id,\r\n      o.user_id,\r\n      o.created_at,\r\n      o.updated_at,\r\n      o.shipped_at,\r\n      o.currency,\r\n      o.status as order_status,\r\n      case\r\n        when o.status in (\r\n          'paid',\r\n          'completed',\r\n          'shipped'\r\n        ) then 'completed'\r\n        else o.status\r\n      end as order_status_category,\r\n      case\r\n        when a.country_code is null then 'null country'\r\n        when a.country_code = 'us' then 'us'\r\n        when a.country_code != 'us' then 'international'\r\n      end as country_type,\r\n      o.shipping_method,\r\n      case\r\n        when do.device = 'web' then 'desktop'\r\n        when do.device in ('ios-app', 'android-app') then 'mobile-app'\r\n        when do.device in ('mobile', 'tablet') then 'mobile-web'\r\n        when nullif(d.device, '') is null then 'unknown'\r\n        else 'error'\r\n      end as purchase_device_type,\r\n      do.device as purchase_device,\r\n      case\r\n        when fo.first_order_id = o.order_id then 'new'\r\n        else 'repeat'\r\n      end as user_type,\r\n      o.amount_total_cents,\r\n      pa.gross_total_amount_cents,\r\n      case\r\n        when o.currency = 'usd' then o.amount_total_cents\r\n        else pa.gross_total_amount_cents\r\n      end as total_amount_cents,\r\n      pa.gross_tax_amount_cents,\r\n      pa.gross_amount_cents,\r\n      pa.gross_shipping_amount_cents\r\n    from o\r\n\r\n    left join do\r\n      on do.order_id = o.order_id\r\n\r\n    left join fo\r\n      on o.user_id = fo.user_id\r\n\r\n    left join a \r\n      on a.order_id = o.order_id\r\n\r\n    left join pa\r\n      on pa.order_id = o.order_id\r\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- import cte's\n\n/*\n\nstep notes:\n\npull out source tables into cte's\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\nextract cte's we found in query:\n    `dbt-public.interview_task.orders` o\n    `dbt-public.interview_task.devices` d\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\n    `dbt-public.interview_task.addresses` oa \n    `dbt-public.interview_task.payments`\n\na couple of errors that were resolved in the set up:\n  data type `int64` to `float`\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\n  transform to lower case (using command pallet -- F1)\n  changed `oa` to `a` for standarization\n    \n*/\n\nwith \no as (select * from raw.interview_sample_data.interview_orders),\nd as (select * from raw.interview_sample_data.interview_devices),\na as (select * from raw.interview_sample_data.interview_addresses),\np as (select * from raw.interview_sample_data.interview_payments),\n\n-- logical cte's\n\n/*\n\nthere are a lot of left join sub-queries, here is where we will try to simplify those\n\n*/\n\ndo as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n),\n\nfo as (\n  select\n    fo.user_id,\n    min(fo.order_id) as first_order_id\n  from o as fo\n  where fo.status != 'cancelled'\n  group by fo.user_id\n),\n\npa as (\n  select\n    order_id,\n  sum(case\n        when status = 'completed' then tax_amount_cents else 0\n      end\n    ) as gross_tax_amount_cents,\n  sum(case\n        when status = 'completed' then amount_cents else 0\n      end\n    ) as gross_amount_cents,\n  sum(case\n        when status = 'completed' then amount_shipping_cents else 0\n      end\n    ) as gross_shipping_amount_cents,\n  sum(case\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\n      end\n    ) as gross_total_amount_cents\n  from p\n  group by order_id\n)\n\n\n\n\n\n-- final cte's\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \n\nfrom (\n    \n    select\n      o.order_id,\n      o.user_id,\n      o.created_at,\n      o.updated_at,\n      o.shipped_at,\n      o.currency,\n      o.status as order_status,\n      case\n        when o.status in (\n          'paid',\n          'completed',\n          'shipped'\n        ) then 'completed'\n        else o.status\n      end as order_status_category,\n      case\n        when a.country_code is null then 'null country'\n        when a.country_code = 'us' then 'us'\n        when a.country_code != 'us' then 'international'\n      end as country_type,\n      o.shipping_method,\n      case\n        when do.device = 'web' then 'desktop'\n        when do.device in ('ios-app', 'android-app') then 'mobile-app'\n        when do.device in ('mobile', 'tablet') then 'mobile-web'\n        when nullif(d.device, '') is null then 'unknown'\n        else 'error'\n      end as purchase_device_type,\n      do.device as purchase_device,\n      case\n        when fo.first_order_id = o.order_id then 'new'\n        else 'repeat'\n      end as user_type,\n      o.amount_total_cents,\n      pa.gross_total_amount_cents,\n      case\n        when o.currency = 'usd' then o.amount_total_cents\n        else pa.gross_total_amount_cents\n      end as total_amount_cents,\n      pa.gross_tax_amount_cents,\n      pa.gross_amount_cents,\n      pa.gross_shipping_amount_cents\n    from o\n\n    left join do\n      on do.order_id = o.order_id\n\n    left join fo\n      on o.user_id = fo.user_id\n\n    left join a \n      on a.order_id = o.order_id\n\n    left join pa\n      on pa.order_id = o.order_id\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  000904 (42000): SQL compilation error: error line 105 at position 20\n  invalid identifier 'D.DEVICE'", 'raw_sql': "-- import cte's\r\n\r\n/*\r\n\r\nstep notes:\r\n\r\npull out source tables into cte's\r\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\r\nextract cte's we found in query:\r\n    `dbt-public.interview_task.orders` o\r\n    `dbt-public.interview_task.devices` d\r\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\r\n    `dbt-public.interview_task.addresses` oa \r\n    `dbt-public.interview_task.payments`\r\n\r\na couple of errors that were resolved in the set up:\r\n  data type `int64` to `float`\r\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\r\n  transform to lower case (using command pallet -- F1)\r\n  changed `oa` to `a` for standarization\r\n    \r\n*/\r\n\r\nwith \r\no as (select * from {{ source('interview_sample_data', 'interview_orders') }}),\r\nd as (select * from {{ source('interview_sample_data', 'interview_devices') }}),\r\na as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),\r\np as (select * from {{ source('interview_sample_data', 'interview_payments')}}),\r\n\r\n-- logical cte's\r\n\r\n/*\r\n\r\nthere are a lot of left join sub-queries, here is where we will try to simplify those\r\n\r\n*/\r\n\r\ndo as (\r\n  select distinct\r\n    cast(d.type_id as float) as order_id,\r\n    first_value(d.device) over (\r\n      partition by d.type_id\r\n      order by\r\n      d.created_at rows between unbounded preceding\r\n      and unbounded following\r\n      ) as device\r\n  from d\r\n  where d.type = 'order'\r\n),\r\n\r\nfo as (\r\n  select\r\n    fo.user_id,\r\n    min(fo.order_id) as first_order_id\r\n  from o as fo\r\n  where fo.status != 'cancelled'\r\n  group by fo.user_id\r\n),\r\n\r\npa as (\r\n  select\r\n    order_id,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents else 0\r\n      end\r\n    ) as gross_tax_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_cents else 0\r\n      end\r\n    ) as gross_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then amount_shipping_cents else 0\r\n      end\r\n    ) as gross_shipping_amount_cents,\r\n  sum(case\r\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\r\n      end\r\n    ) as gross_total_amount_cents\r\n  from p\r\n  group by order_id\r\n)\r\n\r\n\r\n\r\n\r\n\r\n-- final cte's\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \r\n\r\nfrom (\r\n    \r\n    select\r\n      o.order_id,\r\n      o.user_id,\r\n      o.created_at,\r\n      o.updated_at,\r\n      o.shipped_at,\r\n      o.currency,\r\n      o.status as order_status,\r\n      case\r\n        when o.status in (\r\n          'paid',\r\n          'completed',\r\n          'shipped'\r\n        ) then 'completed'\r\n        else o.status\r\n      end as order_status_category,\r\n      case\r\n        when a.country_code is null then 'null country'\r\n        when a.country_code = 'us' then 'us'\r\n        when a.country_code != 'us' then 'international'\r\n      end as country_type,\r\n      o.shipping_method,\r\n      case\r\n        when do.device = 'web' then 'desktop'\r\n        when do.device in ('ios-app', 'android-app') then 'mobile-app'\r\n        when do.device in ('mobile', 'tablet') then 'mobile-web'\r\n        when nullif(d.device, '') is null then 'unknown'\r\n        else 'error'\r\n      end as purchase_device_type,\r\n      do.device as purchase_device,\r\n      case\r\n        when fo.first_order_id = o.order_id then 'new'\r\n        else 'repeat'\r\n      end as user_type,\r\n      o.amount_total_cents,\r\n      pa.gross_total_amount_cents,\r\n      case\r\n        when o.currency = 'usd' then o.amount_total_cents\r\n        else pa.gross_total_amount_cents\r\n      end as total_amount_cents,\r\n      pa.gross_tax_amount_cents,\r\n      pa.gross_amount_cents,\r\n      pa.gross_shipping_amount_cents\r\n    from o\r\n\r\n    left join do\r\n      on do.order_id = o.order_id\r\n\r\n    left join fo\r\n      on o.user_id = fo.user_id\r\n\r\n    left join a \r\n      on a.order_id = o.order_id\r\n\r\n    left join pa\r\n      on pa.order_id = o.order_id\r\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "-- import cte's\n\n/*\n\nstep notes:\n\npull out source tables into cte's\ncreate a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)\nextract cte's we found in query:\n    `dbt-public.interview_task.orders` o\n    `dbt-public.interview_task.devices` d\n    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order\n    `dbt-public.interview_task.addresses` oa \n    `dbt-public.interview_task.payments`\n\na couple of errors that were resolved in the set up:\n  data type `int64` to `float`\n  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`\n  transform to lower case (using command pallet -- F1)\n  changed `oa` to `a` for standarization\n    \n*/\n\nwith \no as (select * from raw.interview_sample_data.interview_orders),\nd as (select * from raw.interview_sample_data.interview_devices),\na as (select * from raw.interview_sample_data.interview_addresses),\np as (select * from raw.interview_sample_data.interview_payments),\n\n-- logical cte's\n\n/*\n\nthere are a lot of left join sub-queries, here is where we will try to simplify those\n\n*/\n\ndo as (\n  select distinct\n    cast(d.type_id as float) as order_id,\n    first_value(d.device) over (\n      partition by d.type_id\n      order by\n      d.created_at rows between unbounded preceding\n      and unbounded following\n      ) as device\n  from d\n  where d.type = 'order'\n),\n\nfo as (\n  select\n    fo.user_id,\n    min(fo.order_id) as first_order_id\n  from o as fo\n  where fo.status != 'cancelled'\n  group by fo.user_id\n),\n\npa as (\n  select\n    order_id,\n  sum(case\n        when status = 'completed' then tax_amount_cents else 0\n      end\n    ) as gross_tax_amount_cents,\n  sum(case\n        when status = 'completed' then amount_cents else 0\n      end\n    ) as gross_amount_cents,\n  sum(case\n        when status = 'completed' then amount_shipping_cents else 0\n      end\n    ) as gross_shipping_amount_cents,\n  sum(case\n        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0\n      end\n    ) as gross_total_amount_cents\n  from p\n  group by order_id\n)\n\n\n\n\n\n-- final cte's\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount \n\nfrom (\n    \n    select\n      o.order_id,\n      o.user_id,\n      o.created_at,\n      o.updated_at,\n      o.shipped_at,\n      o.currency,\n      o.status as order_status,\n      case\n        when o.status in (\n          'paid',\n          'completed',\n          'shipped'\n        ) then 'completed'\n        else o.status\n      end as order_status_category,\n      case\n        when a.country_code is null then 'null country'\n        when a.country_code = 'us' then 'us'\n        when a.country_code != 'us' then 'international'\n      end as country_type,\n      o.shipping_method,\n      case\n        when do.device = 'web' then 'desktop'\n        when do.device in ('ios-app', 'android-app') then 'mobile-app'\n        when do.device in ('mobile', 'tablet') then 'mobile-web'\n        when nullif(d.device, '') is null then 'unknown'\n        else 'error'\n      end as purchase_device_type,\n      do.device as purchase_device,\n      case\n        when fo.first_order_id = o.order_id then 'new'\n        else 'repeat'\n      end as user_type,\n      o.amount_total_cents,\n      pa.gross_total_amount_cents,\n      case\n        when o.currency = 'usd' then o.amount_total_cents\n        else pa.gross_total_amount_cents\n      end as total_amount_cents,\n      pa.gross_tax_amount_cents,\n      pa.gross_amount_cents,\n      pa.gross_shipping_amount_cents\n    from o\n\n    left join do\n      on do.order_id = o.order_id\n\n    left join fo\n      on o.user_id = fo.user_id\n\n    left join a \n      on a.order_id = o.order_id\n\n    left join pa\n      on pa.order_id = o.order_id\n  )\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-22 00:00:42.130940 (Thread-75): handling poll request
+2022-04-22 00:00:42.131357 (Thread-75): 00:00:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf540700>]}
+2022-04-22 00:00:42.132099 (Thread-75): sending response (<Response 41325 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:27.917691 (Thread-76): handling status request
+2022-04-22 00:01:27.918115 (Thread-76): 00:01:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf53bb80>]}
+2022-04-22 00:01:27.918675 (Thread-76): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:28.263894 (Thread-77): handling run_sql request
+2022-04-22 00:01:28.264283 (Thread-77): 00:01:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf53b040>]}
+2022-04-22 00:01:30.769536 (Thread-77): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:30.796455 (MainThread): 00:01:30  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9b542c0-2e8b-4431-93b9-b8270a85d3c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e74096d00>]}
+2022-04-22 00:01:30.796991 (MainThread): 00:01:30  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 00:01:30.797584 (Thread-1): 00:01:30  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 00:01:30.797731 (Thread-1): 00:01:30  Began compiling node rpc.my_new_project.request
+2022-04-22 00:01:30.797824 (Thread-1): 00:01:30  Compiling rpc.my_new_project.request
+2022-04-22 00:01:30.801312 (Thread-1): 00:01:30  finished collecting timing info
+2022-04-22 00:01:30.801445 (Thread-1): 00:01:30  Began executing node rpc.my_new_project.request
+2022-04-22 00:01:30.804935 (Thread-1): 00:01:30  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 00:01:30.805057 (Thread-1): 00:01:30  On rpc.my_new_project.request: -- import cte's
+
+/*
+
+step notes:
+
+pull out source tables into cte's
+create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
+extract cte's we found in query:
+    `dbt-public.interview_task.orders` o
+    `dbt-public.interview_task.devices` d
+    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order
+    `dbt-public.interview_task.addresses` oa 
+    `dbt-public.interview_task.payments`
+
+a couple of errors that were resolved in the set up:
+  data type `int64` to `float`
+  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  transform to lower case (using command pallet -- F1)
+  changed `oa` to `a` for standarization
+    
+*/
+
+with 
+o as (select * from raw.interview_sample_data.interview_orders),
+d as (select * from raw.interview_sample_data.interview_devices),
+a as (select * from raw.interview_sample_data.interview_addresses),
+p as (select * from raw.interview_sample_data.interview_payments),
+
+-- logical cte's
+
+/*
+
+there are a lot of left join sub-queries, here is where we will try to simplify those
+
+*/
+
+do as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+),
+
+fo as (
+  select
+    fo.user_id,
+    min(fo.order_id) as first_order_id
+  from o as fo
+  where fo.status != 'cancelled'
+  group by fo.user_id
+),
+
+pa as (
+  select
+    order_id,
+  sum(case
+        when status = 'completed' then tax_amount_cents else 0
+      end
+    ) as gross_tax_amount_cents,
+  sum(case
+        when status = 'completed' then amount_cents else 0
+      end
+    ) as gross_amount_cents,
+  sum(case
+        when status = 'completed' then amount_shipping_cents else 0
+      end
+    ) as gross_shipping_amount_cents,
+  sum(case
+        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
+      end
+    ) as gross_total_amount_cents
+  from p
+  group by order_id
+)
+
+
+
+
+
+-- final cte's
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount 
+
+from (
+    
+    select
+      o.order_id,
+      o.user_id,
+      o.created_at,
+      o.updated_at,
+      o.shipped_at,
+      o.currency,
+      o.status as order_status,
+      case
+        when o.status in (
+          'paid',
+          'completed',
+          'shipped'
+        ) then 'completed'
+        else o.status
+      end as order_status_category,
+      case
+        when a.country_code is null then 'null country'
+        when a.country_code = 'us' then 'us'
+        when a.country_code != 'us' then 'international'
+      end as country_type,
+      o.shipping_method,
+      case
+        when do.device = 'web' then 'desktop'
+        when do.device in ('ios-app', 'android-app') then 'mobile-app'
+        when do.device in ('mobile', 'tablet') then 'mobile-web'
+        when nullif(do.device, '') is null then 'unknown'
+        else 'error'
+      end as purchase_device_type,
+      do.device as purchase_device,
+      case
+        when fo.first_order_id = o.order_id then 'new'
+        else 'repeat'
+      end as user_type,
+      o.amount_total_cents,
+      pa.gross_total_amount_cents,
+      case
+        when o.currency = 'usd' then o.amount_total_cents
+        else pa.gross_total_amount_cents
+      end as total_amount_cents,
+      pa.gross_tax_amount_cents,
+      pa.gross_amount_cents,
+      pa.gross_shipping_amount_cents
+    from o
+
+    left join do
+      on do.order_id = o.order_id
+
+    left join fo
+      on o.user_id = fo.user_id
+
+    left join a 
+      on a.order_id = o.order_id
+
+    left join pa
+      on pa.order_id = o.order_id
+  )
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 00:01:30.805160 (Thread-1): 00:01:30  Opening a new connection, currently in state init
+2022-04-22 00:01:31.188940 (Thread-78): handling poll request
+2022-04-22 00:01:31.189459 (Thread-78): 00:01:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf5365b0>]}
+2022-04-22 00:01:31.190388 (Thread-78): sending response (<Response 7904 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:32.661348 (Thread-79): handling poll request
+2022-04-22 00:01:32.661732 (Thread-79): 00:01:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf536160>]}
+2022-04-22 00:01:32.662186 (Thread-79): sending response (<Response 391 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:33.396596 (Thread-1): 00:01:33  SQL status: SUCCESS 500 in 2.59 seconds
+2022-04-22 00:01:33.961517 (Thread-80): handling poll request
+2022-04-22 00:01:33.961950 (Thread-80): 00:01:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf536ca0>]}
+2022-04-22 00:01:33.962467 (Thread-80): sending response (<Response 670 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:33.964315 (Thread-1): 00:01:33  finished collecting timing info
+2022-04-22 00:01:33.964596 (Thread-1): 00:01:33  On rpc.my_new_project.request: Close
+2022-04-22 00:01:35.256522 (Thread-81): handling poll request
+2022-04-22 00:01:35.256951 (Thread-81): 00:01:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf5fb730>]}
+2022-04-22 00:01:35.265888 (Thread-81): sending response (<Response 154383 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:40.441298 (Thread-82): 00:01:40  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 00:01:40.441768 (Thread-82): 00:01:40  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-22 00:01:40.446470 (Thread-82): 00:01:40  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-22 00:01:40.489008 (Thread-82): 00:01:40  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aacce2490>]}
+2022-04-22 00:01:41.337202 (Thread-83): handling status request
+2022-04-22 00:01:41.337795 (Thread-83): 00:01:41  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaccd0a00>]}
+2022-04-22 00:01:41.338253 (Thread-84): handling status request
+2022-04-22 00:01:41.338864 (Thread-83): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:01:41.339169 (Thread-84): 00:01:41  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaf540190>]}
+2022-04-22 00:01:41.339886 (Thread-84): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:32.916725 (Thread-85): handling status request
+2022-04-22 00:29:32.918419 (Thread-85): 00:29:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaccd0fa0>]}
+2022-04-22 00:29:32.918908 (Thread-85): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:33.301865 (Thread-86): handling run_sql request
+2022-04-22 00:29:33.302244 (Thread-86): 00:29:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aaccd0b80>]}
+2022-04-22 00:29:35.789685 (Thread-86): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:35.819314 (MainThread): 00:29:35  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '525a3076-7fb3-47db-bcf0-00e8cd7e8178', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5a48bdcd60>]}
+2022-04-22 00:29:35.819825 (MainThread): 00:29:35  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 00:29:35.820398 (Thread-1): 00:29:35  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 00:29:35.820583 (Thread-1): 00:29:35  Began compiling node rpc.my_new_project.request
+2022-04-22 00:29:35.820683 (Thread-1): 00:29:35  Compiling rpc.my_new_project.request
+2022-04-22 00:29:35.824117 (Thread-1): 00:29:35  finished collecting timing info
+2022-04-22 00:29:35.824245 (Thread-1): 00:29:35  Began executing node rpc.my_new_project.request
+2022-04-22 00:29:35.827726 (Thread-1): 00:29:35  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 00:29:35.827825 (Thread-1): 00:29:35  On rpc.my_new_project.request: -- import cte's
+
+/*
+
+step notes:
+
+pull out source tables into cte's
+create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
+extract cte's we found in query:
+    `dbt-public.interview_task.orders` o
+    `dbt-public.interview_task.devices` d
+    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order
+    `dbt-public.interview_task.addresses` oa 
+    `dbt-public.interview_task.payments`
+
+a couple of errors that were resolved in the set up:
+  data type `int64` to `float`
+  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  transform to lower case (using command pallet -- F1)
+  changed `oa` to `a` for standarization
+    
+*/
+
+with 
+o as (select * from raw.interview_sample_data.interview_orders),
+d as (select * from raw.interview_sample_data.interview_devices),
+a as (select * from raw.interview_sample_data.interview_addresses),
+p as (select * from raw.interview_sample_data.interview_payments),
+
+-- logical cte's
+
+/*
+
+there are a lot of left join sub-queries, here is where we will try to simplify those
+
+*/
+
+do as (
+  select distinct
+    cast(d.type_id as float) as order_id,
+    first_value(d.device) over (
+      partition by d.type_id
+      order by
+      d.created_at rows between unbounded preceding
+      and unbounded following
+      ) as device
+  from d
+  where d.type = 'order'
+),
+
+fo as (
+  select
+    fo.user_id,
+    min(fo.order_id) as first_order_id
+  from o as fo
+  where fo.status != 'cancelled'
+  group by fo.user_id
+),
+
+pa as (
+  select
+    order_id,
+  sum(case
+        when status = 'completed' then tax_amount_cents else 0
+      end
+    ) as gross_tax_amount_cents,
+  sum(case
+        when status = 'completed' then amount_cents else 0
+      end
+    ) as gross_amount_cents,
+  sum(case
+        when status = 'completed' then amount_shipping_cents else 0
+      end
+    ) as gross_shipping_amount_cents,
+  sum(case
+        when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
+      end
+    ) as gross_total_amount_cents
+  from p
+  group by order_id
+),
+
+-- final cte's
+
+final as (
+
+  select
+      o.order_id,
+      o.user_id,
+      o.created_at,
+      o.updated_at,
+      o.shipped_at,
+      o.currency,
+      o.status as order_status,
+      case
+        when o.status in (
+          'paid',
+          'completed',
+          'shipped'
+        ) then 'completed'
+        else o.status
+      end as order_status_category,
+
+      case
+        when a.country_code is null then 'null country'
+        when a.country_code = 'us' then 'us'
+        when a.country_code != 'us' then 'international'
+      end as country_type,
+      o.shipping_method,
+      case
+        when do.device = 'web' then 'desktop'
+        when do.device in ('ios-app', 'android-app') then 'mobile-app'
+        when do.device in ('mobile', 'tablet') then 'mobile-web'
+        when nullif(do.device, '') is null then 'unknown'
+        else 'error'
+      end as purchase_device_type,
+      do.device as purchase_device,
+      case
+        when fo.first_order_id = o.order_id then 'new'
+        else 'repeat'
+      end as user_type,
+      o.amount_total_cents,
+      pa.gross_total_amount_cents,
+      case
+        when o.currency = 'usd' then o.amount_total_cents
+        else pa.gross_total_amount_cents
+      end as total_amount_cents,
+      pa.gross_tax_amount_cents,
+      pa.gross_amount_cents,
+      pa.gross_shipping_amount_cents
+    from o
+
+    left join do
+      on do.order_id = o.order_id
+
+    left join fo
+      on o.user_id = fo.user_id
+
+    left join a 
+      on a.order_id = o.order_id
+
+    left join pa
+      on pa.order_id = o.order_id
+)
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount 
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 00:29:35.827907 (Thread-1): 00:29:35  Opening a new connection, currently in state init
+2022-04-22 00:29:36.135547 (Thread-87): handling poll request
+2022-04-22 00:29:36.136017 (Thread-87): 00:29:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1de1e50>]}
+2022-04-22 00:29:36.136967 (Thread-87): sending response (<Response 7911 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:37.440787 (Thread-88): handling poll request
+2022-04-22 00:29:37.441213 (Thread-88): 00:29:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1de1910>]}
+2022-04-22 00:29:37.441707 (Thread-88): sending response (<Response 390 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:38.792410 (Thread-89): handling poll request
+2022-04-22 00:29:38.792846 (Thread-89): 00:29:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab1de1eb0>]}
+2022-04-22 00:29:38.793364 (Thread-89): sending response (<Response 391 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:38.867715 (Thread-1): 00:29:38  SQL status: SUCCESS 500 in 3.04 seconds
+2022-04-22 00:29:39.404786 (Thread-1): 00:29:39  finished collecting timing info
+2022-04-22 00:29:39.405076 (Thread-1): 00:29:39  On rpc.my_new_project.request: Close
+2022-04-22 00:29:40.185709 (Thread-90): handling poll request
+2022-04-22 00:29:40.186096 (Thread-90): 00:29:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2aacca6460>]}
+2022-04-22 00:29:40.195102 (Thread-90): sending response (<Response 153907 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:44.815759 (Thread-91): 00:29:44  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 00:29:44.816200 (Thread-91): 00:29:44  Partial parsing: updated file: my_new_project://models/_archive/stg_query.sql
+2022-04-22 00:29:44.820601 (Thread-91): 00:29:44  1699: static parser successfully parsed _archive/stg_query.sql
+2022-04-22 00:29:44.861030 (Thread-91): 00:29:44  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9409bac0>]}
+2022-04-22 00:29:45.869694 (Thread-92): handling status request
+2022-04-22 00:29:45.870079 (Thread-92): 00:29:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9408a760>]}
+2022-04-22 00:29:45.870613 (Thread-92): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:46.275665 (Thread-93): handling status request
+2022-04-22 00:29:46.276055 (Thread-93): 00:29:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ab6cefd90>]}
+2022-04-22 00:29:46.276512 (Thread-93): sending response (<Response 1562 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:55.114261 (Thread-94): 00:29:55  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 00:29:55.114685 (Thread-94): 00:29:55  Partial parsing: updated file: my_new_project://models/_archive/test_loop.sql
+2022-04-22 00:29:55.118350 (Thread-94): 00:29:55  1603: static parser failed on _archive/test_loop.sql
+2022-04-22 00:29:55.121629 (Thread-94): 00:29:55  1602: parser fallback to jinja rendering on _archive/test_loop.sql
+2022-04-22 00:29:55.168207 (Thread-94): 00:29:55  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a741907c0>]}
+2022-04-22 00:29:55.814094 (Thread-95): handling status request
+2022-04-22 00:29:55.814508 (Thread-95): 00:29:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9408a430>]}
+2022-04-22 00:29:55.814997 (Thread-95): sending response (<Response 1859 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:29:56.171432 (Thread-96): handling status request
+2022-04-22 00:29:56.171856 (Thread-96): 00:29:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9408a070>]}
+2022-04-22 00:29:56.172355 (Thread-96): sending response (<Response 1859 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:30:45.506883 (Thread-97): 00:30:45  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 00:30:45.507103 (Thread-97): 00:30:45  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 00:30:45.512196 (Thread-97): 00:30:45  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a740d88b0>]}
+2022-04-22 00:30:46.286894 (Thread-98): handling status request
+2022-04-22 00:30:46.287338 (Thread-98): 00:30:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a74169220>]}
+2022-04-22 00:30:46.287816 (Thread-98): sending response (<Response 1241 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:30:46.523301 (Thread-99): handling status request
+2022-04-22 00:30:46.523692 (Thread-99): 00:30:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7415ed60>]}
+2022-04-22 00:30:46.547753 (Thread-99): sending response (<Response 1241 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:32:54.013343 (Thread-100): handling status request
+2022-04-22 00:32:54.015138 (Thread-100): 00:32:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7415ec70>]}
+2022-04-22 00:32:54.015633 (Thread-100): sending response (<Response 1219 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:32:54.022244 (Thread-101): handling list request
+2022-04-22 00:32:54.022543 (Thread-101): 00:32:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7415e9a0>]}
+2022-04-22 00:32:54.025893 (Thread-102): handling status request
+2022-04-22 00:32:54.026613 (Thread-102): 00:32:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9408d640>]}
+2022-04-22 00:32:54.027810 (Thread-102): sending response (<Response 1219 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:32:54.062512 (Thread-101): 00:32:54  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a9408de50>]}
+2022-04-22 00:32:54.035901 (Thread-103): handling list request
+2022-04-22 00:32:54.062808 (Thread-101): 00:32:54  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 00:32:54.036067 (Thread-103): 00:32:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7417f100>]}
+2022-04-22 00:32:54.063670 (Thread-103): 00:32:54  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a94091bb0>]}
+2022-04-22 00:32:54.074368 (Thread-101): sending response (<Response 4003 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:32:54.063928 (Thread-103): 00:32:54  Found 6 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 00:32:54.075278 (Thread-103): sending response (<Response 2952 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:33:44.131920 (Thread-104): 00:33:44  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 00:33:44.132165 (Thread-104): 00:33:44  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 00:33:44.138030 (Thread-104): 00:33:44  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7406d7f0>]}
+2022-04-22 00:33:44.905512 (Thread-105): handling status request
+2022-04-22 00:33:44.905916 (Thread-105): 00:33:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a740a9310>]}
+2022-04-22 00:33:44.906416 (Thread-105): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:33:45.344054 (Thread-106): handling status request
+2022-04-22 00:33:45.344440 (Thread-106): 00:33:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a740a9460>]}
+2022-04-22 00:33:45.344910 (Thread-106): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 00:34:06.086198 (Thread-107): handling status request
+2022-04-22 00:34:06.086613 (Thread-107): 00:34:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a740a9040>]}
+2022-04-22 00:34:06.087055 (Thread-107): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
