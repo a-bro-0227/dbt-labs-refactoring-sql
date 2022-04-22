@@ -21,3 +21,5 @@
 {%- endfor %}
 
 #}
+
+select * from {{ source('interview_sample_data', 'interview_devices') }}
