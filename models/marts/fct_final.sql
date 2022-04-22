@@ -1,10 +1,10 @@
 
 with
-  o as (select * from {{ source('interview_sample_data', 'interview_orders') }}),
+  o as ( select * from {{ ref('stg_orders') }} ),
   do as ( select * from {{ ref('stg_device_orders') }} ),
-  fo as ( {{ ref('stg_first_order') }} ),
-  pa as ( {{ ref('stg_payments') }} ),
-  ct as ( {{ ref('stg_ctry_type') }} ),
+  fo as ( select * from {{ ref('stg_first_order') }} ),
+  pa as ( select * from {{ ref('stg_payments') }} ),
+  ct as ( select * from {{ ref('stg_ctry_type') }} ),
 
   -- final cte's
 
