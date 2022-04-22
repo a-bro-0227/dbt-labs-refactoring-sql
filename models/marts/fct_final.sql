@@ -1,7 +1,8 @@
 
 with
-  do as ( {{ ref('stg_device_orders') }} ),
-  fo as ( {{ ref('stg_first_order') }}),
+  o as (select * from {{ source('interview_sample_data', 'interview_orders') }}),
+  do as ( select * from {{ ref('stg_device_orders') }} ),
+  fo as ( {{ ref('stg_first_order') }} ),
   pa as ( {{ ref('stg_payments') }} ),
   ct as ( {{ ref('stg_ctry_type') }} ),
 
