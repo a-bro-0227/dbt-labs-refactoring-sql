@@ -8463,3 +8463,662 @@ limit 500
 2022-04-22 02:12:05.698084 (Thread-311): handling status request
 2022-04-22 02:12:05.700023 (Thread-311): 02:12:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a65aaf310>]}
 2022-04-22 02:12:05.700523 (Thread-311): sending response (<Response 1570 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:12:08.504390 (Thread-312): 02:12:08  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 02:12:08.504611 (Thread-312): 02:12:08  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 02:12:08.510557 (Thread-312): 02:12:08  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a386bf340>]}
+2022-04-22 02:12:09.239037 (Thread-313): handling status request
+2022-04-22 02:12:09.239444 (Thread-313): 02:12:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38f67d60>]}
+2022-04-22 02:12:09.239936 (Thread-313): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:12:09.304202 (Thread-314): handling status request
+2022-04-22 02:12:09.304634 (Thread-314): 02:12:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a386a43a0>]}
+2022-04-22 02:12:09.305091 (Thread-314): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:12:53.400221 (Thread-315): 02:12:53  Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+2022-04-22 02:12:53.400605 (Thread-315): 02:12:53  Partial parsing: added file: my_new_project://models/marts/fct_final.sql
+2022-04-22 02:12:53.404302 (Thread-315): 02:12:53  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 02:12:53.446334 (Thread-315): 02:12:53  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38a32610>]}
+2022-04-22 02:12:54.502980 (Thread-316): handling status request
+2022-04-22 02:12:54.503373 (Thread-316): 02:12:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a385f4610>]}
+2022-04-22 02:12:54.503868 (Thread-316): sending response (<Response 1558 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:12:54.538690 (Thread-317): handling status request
+2022-04-22 02:12:54.539006 (Thread-317): 02:12:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a385f4430>]}
+2022-04-22 02:12:54.539456 (Thread-317): sending response (<Response 1558 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:17:39.385591 (Thread-318): 02:17:39  Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+2022-04-22 02:17:39.387765 (Thread-318): 02:17:39  Partial parsing: added file: my_new_project://models/staging/stg_first_order.sql
+2022-04-22 02:17:39.387932 (Thread-318): 02:17:39  Partial parsing: deleted file: my_new_project://models/staging/stg_orders.sql
+2022-04-22 02:17:39.392647 (Thread-318): 02:17:39  1699: static parser successfully parsed staging/stg_first_order.sql
+2022-04-22 02:17:39.436207 (Thread-318): 02:17:39  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a385f0fa0>]}
+2022-04-22 02:17:40.254099 (Thread-319): handling status request
+2022-04-22 02:17:40.254549 (Thread-319): 02:17:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a386c5880>]}
+2022-04-22 02:17:40.255086 (Thread-319): sending response (<Response 1893 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:17:40.289138 (Thread-320): handling status request
+2022-04-22 02:17:40.289540 (Thread-320): 02:17:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a386c5af0>]}
+2022-04-22 02:17:40.290028 (Thread-320): sending response (<Response 1893 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:18:19.384348 (Thread-321): 02:18:19  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 02:18:19.384788 (Thread-321): 02:18:19  Partial parsing: updated file: my_new_project://models/staging/stg_first_order.sql
+2022-04-22 02:18:19.388574 (Thread-321): 02:18:19  1699: static parser successfully parsed staging/stg_first_order.sql
+2022-04-22 02:18:19.430663 (Thread-321): 02:18:19  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a385a76a0>]}
+2022-04-22 02:18:20.031407 (Thread-322): handling status request
+2022-04-22 02:18:20.031811 (Thread-322): 02:18:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a3866aaf0>]}
+2022-04-22 02:18:20.032311 (Thread-322): sending response (<Response 1576 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:18:20.221409 (Thread-323): handling status request
+2022-04-22 02:18:20.221809 (Thread-323): 02:18:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a3866afd0>]}
+2022-04-22 02:18:20.222315 (Thread-323): sending response (<Response 1576 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:20:02.982170 (Thread-324): 02:20:02  Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+2022-04-22 02:20:02.984055 (Thread-324): 02:20:02  Partial parsing: added file: my_new_project://models/staging/stg_device_orders.sql
+2022-04-22 02:20:02.984234 (Thread-324): 02:20:02  Partial parsing: deleted file: my_new_project://models/staging/stg_devices.sql
+2022-04-22 02:20:02.988033 (Thread-324): 02:20:02  1699: static parser successfully parsed staging/stg_device_orders.sql
+2022-04-22 02:20:03.034298 (Thread-324): 02:20:03  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38531f40>]}
+2022-04-22 02:20:03.624355 (Thread-325): handling status request
+2022-04-22 02:20:03.624746 (Thread-325): 02:20:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38607ca0>]}
+2022-04-22 02:20:03.625233 (Thread-325): sending response (<Response 1898 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:20:03.767650 (Thread-326): handling status request
+2022-04-22 02:20:03.768039 (Thread-326): 02:20:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38607c40>]}
+2022-04-22 02:20:03.768504 (Thread-326): sending response (<Response 1898 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:20:25.911965 (Thread-327): 02:20:25  Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+2022-04-22 02:20:25.912381 (Thread-327): 02:20:25  Partial parsing: added file: my_new_project://models/staging/stg_ctry_type.sql
+2022-04-22 02:20:25.912530 (Thread-327): 02:20:25  Partial parsing: deleted file: my_new_project://models/staging/stg_addresses.sql
+2022-04-22 02:20:25.916438 (Thread-327): 02:20:25  1699: static parser successfully parsed staging/stg_ctry_type.sql
+2022-04-22 02:20:25.959953 (Thread-327): 02:20:25  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384a0580>]}
+2022-04-22 02:20:26.482176 (Thread-328): handling status request
+2022-04-22 02:20:26.482636 (Thread-328): 02:20:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38510400>]}
+2022-04-22 02:20:26.483159 (Thread-328): sending response (<Response 1892 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:20:26.708483 (Thread-329): handling status request
+2022-04-22 02:20:26.708908 (Thread-329): 02:20:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38510220>]}
+2022-04-22 02:20:26.709419 (Thread-329): sending response (<Response 1892 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:20:28.393362 (Thread-330): 02:20:28  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 02:20:28.393567 (Thread-330): 02:20:28  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 02:20:28.398850 (Thread-330): 02:20:28  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38459550>]}
+2022-04-22 02:20:29.152260 (Thread-331): handling status request
+2022-04-22 02:20:29.152665 (Thread-331): 02:20:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384eae20>]}
+2022-04-22 02:20:29.153171 (Thread-331): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:20:29.194252 (Thread-332): handling status request
+2022-04-22 02:20:29.194680 (Thread-332): 02:20:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384eab20>]}
+2022-04-22 02:20:29.195161 (Thread-332): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:21:45.328910 (Thread-333): handling status request
+2022-04-22 02:21:45.330095 (Thread-333): 02:21:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384eafd0>]}
+2022-04-22 02:21:45.330629 (Thread-333): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:21:45.667887 (Thread-334): handling run_sql request
+2022-04-22 02:21:45.668278 (Thread-334): 02:21:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384eab50>]}
+2022-04-22 02:21:48.155721 (Thread-334): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:21:48.182207 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/task_handler.py", line 102, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 164, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 125, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 50, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1278, in process_node
+    _process_refs_for_node(manifest, config.project_name, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 1163, in _process_refs_for_node
+    invalid_ref_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 901, in invalid_ref_fail_unless_test
+    ref_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 620, in ref_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 454, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.my_new_project.request' (from remote system) depends on a node named 'stg_ctry_types' which was not found
+2022-04-22 02:21:48.460164 (Thread-335): handling poll request
+2022-04-22 02:21:48.460622 (Thread-335): 02:21:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384e1d60>]}
+2022-04-22 02:21:48.461370 (Thread-335): sending response (<Response 4399 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:22:18.982060 (Thread-336): 02:22:18  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 02:22:18.982594 (Thread-336): 02:22:18  Partial parsing: updated file: my_new_project://models/marts/fct_final.sql
+2022-04-22 02:22:18.987326 (Thread-336): 02:22:18  1699: static parser successfully parsed marts/fct_final.sql
+2022-04-22 02:22:19.031905 (Thread-336): 02:22:19  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383daa60>]}
+2022-04-22 02:22:19.659310 (Thread-337): handling status request
+2022-04-22 02:22:19.659722 (Thread-337): 02:22:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38429e20>]}
+2022-04-22 02:22:19.660217 (Thread-337): sending response (<Response 1560 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:22:19.680207 (Thread-338): handling status request
+2022-04-22 02:22:19.680492 (Thread-338): 02:22:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38429d00>]}
+2022-04-22 02:22:19.680907 (Thread-338): sending response (<Response 1560 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:22:20.471277 (Thread-339): handling status request
+2022-04-22 02:22:20.471670 (Thread-339): 02:22:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a384291c0>]}
+2022-04-22 02:22:20.472142 (Thread-339): sending response (<Response 1560 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:22:20.827338 (Thread-340): handling run_sql request
+2022-04-22 02:22:20.827730 (Thread-340): 02:22:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38429b20>]}
+2022-04-22 02:22:23.403584 (Thread-340): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:22:23.429941 (MainThread): 02:22:23  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e5ce713e-e0d1-40a8-b71d-f3f8c4e16d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5551f6d60>]}
+2022-04-22 02:22:23.430552 (MainThread): 02:22:23  Found 11 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 02:22:23.431169 (Thread-1): 02:22:23  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:22:23.431307 (Thread-1): 02:22:23  Began compiling node rpc.my_new_project.request
+2022-04-22 02:22:23.431408 (Thread-1): 02:22:23  Compiling rpc.my_new_project.request
+2022-04-22 02:22:23.434182 (Thread-1): 02:22:23  finished collecting timing info
+2022-04-22 02:22:23.434359 (Thread-1): 02:22:23  Began executing node rpc.my_new_project.request
+2022-04-22 02:22:23.436531 (Thread-1): 02:22:23  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:22:23.436629 (Thread-1): 02:22:23  On rpc.my_new_project.request: with
+  do as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),
+  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),
+  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),
+  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),
+
+  -- final cte's
+
+  final as (
+
+    select
+        o.order_id,
+        o.user_id,
+        o.created_at,
+        o.updated_at,
+        o.shipped_at,
+        o.currency,
+        o.status as order_status,
+        case
+          when o.status in (
+            'paid',
+            'completed',
+            'shipped'
+          ) then 'completed'
+          else o.status
+        end as order_status_category,
+        ct.country_type,
+        o.shipping_method,
+        do.purchase_device_type,
+        do.device as purchase_device,
+        case
+          when fo.first_order_id = o.order_id then 'new'
+          else 'repeat'
+        end as user_type,
+        o.amount_total_cents,
+        pa.gross_total_amount_cents,
+        case
+          when o.currency = 'usd' then o.amount_total_cents
+          else pa.gross_total_amount_cents
+        end as total_amount_cents,
+        pa.gross_tax_amount_cents,
+        pa.gross_amount_cents,
+        pa.gross_shipping_amount_cents
+      from o
+
+      left join do
+        on do.order_id = o.order_id
+
+      left join fo
+        on o.user_id = fo.user_id
+
+      left join ct 
+        on ct.order_id = o.order_id
+
+      left join pa
+        on pa.order_id = o.order_id
+  )
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 02:22:23.436711 (Thread-1): 02:22:23  Opening a new connection, currently in state init
+2022-04-22 02:22:23.715472 (Thread-341): handling poll request
+2022-04-22 02:22:23.715914 (Thread-341): 02:22:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383daf70>]}
+2022-04-22 02:22:23.716835 (Thread-341): sending response (<Response 5602 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:22:24.522791 (Thread-1): 02:22:24  Snowflake adapter: Snowflake query id: 01a3c48e-0501-5f4a-0004-7d830488a39a
+2022-04-22 02:22:24.523034 (Thread-1): 02:22:24  Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+2022-04-22 02:22:24.523229 (Thread-1): 02:22:24  finished collecting timing info
+2022-04-22 02:22:24.523435 (Thread-1): 02:22:24  On rpc.my_new_project.request: Close
+2022-04-22 02:22:24.714315 (Thread-1): Got an exception: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+2022-04-22 02:22:24.715367 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n  do as ( {{ ref('stg_device_orders') }} ),\r\n  fo as ( {{ ref('stg_first_order') }}),\r\n  pa as ( {{ ref('stg_payments') }} ),\r\n  ct as ( {{ ref('stg_ctry_type') }} ),\r\n\r\n  -- final cte's\r\n\r\n  final as (\r\n\r\n    select\r\n        o.order_id,\r\n        o.user_id,\r\n        o.created_at,\r\n        o.updated_at,\r\n        o.shipped_at,\r\n        o.currency,\r\n        o.status as order_status,\r\n        case\r\n          when o.status in (\r\n            'paid',\r\n            'completed',\r\n            'shipped'\r\n          ) then 'completed'\r\n          else o.status\r\n        end as order_status_category,\r\n        ct.country_type,\r\n        o.shipping_method,\r\n        do.purchase_device_type,\r\n        do.device as purchase_device,\r\n        case\r\n          when fo.first_order_id = o.order_id then 'new'\r\n          else 'repeat'\r\n        end as user_type,\r\n        o.amount_total_cents,\r\n        pa.gross_total_amount_cents,\r\n        case\r\n          when o.currency = 'usd' then o.amount_total_cents\r\n          else pa.gross_total_amount_cents\r\n        end as total_amount_cents,\r\n        pa.gross_tax_amount_cents,\r\n        pa.gross_amount_cents,\r\n        pa.gross_shipping_amount_cents\r\n      from o\r\n\r\n      left join do\r\n        on do.order_id = o.order_id\r\n\r\n      left join fo\r\n        on o.user_id = fo.user_id\r\n\r\n      left join ct \r\n        on ct.order_id = o.order_id\r\n\r\n      left join pa\r\n        on pa.order_id = o.order_id\r\n  )\r\n\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\r\n\r\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n  do as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),\n  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),\n  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),\n  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),\n\n  -- final cte's\n\n  final as (\n\n    select\n        o.order_id,\n        o.user_id,\n        o.created_at,\n        o.updated_at,\n        o.shipped_at,\n        o.currency,\n        o.status as order_status,\n        case\n          when o.status in (\n            'paid',\n            'completed',\n            'shipped'\n          ) then 'completed'\n          else o.status\n        end as order_status_category,\n        ct.country_type,\n        o.shipping_method,\n        do.purchase_device_type,\n        do.device as purchase_device,\n        case\n          when fo.first_order_id = o.order_id then 'new'\n          else 'repeat'\n        end as user_type,\n        o.amount_total_cents,\n        pa.gross_total_amount_cents,\n        case\n          when o.currency = 'usd' then o.amount_total_cents\n          else pa.gross_total_amount_cents\n        end as total_amount_cents,\n        pa.gross_tax_amount_cents,\n        pa.gross_amount_cents,\n        pa.gross_shipping_amount_cents\n      from o\n\n      left join do\n        on do.order_id = o.order_id\n\n      left join fo\n        on o.user_id = fo.user_id\n\n      left join ct \n        on ct.order_id = o.order_id\n\n      left join pa\n        on pa.order_id = o.order_id\n  )\n\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\n\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n  do as ( {{ ref('stg_device_orders') }} ),\r\n  fo as ( {{ ref('stg_first_order') }}),\r\n  pa as ( {{ ref('stg_payments') }} ),\r\n  ct as ( {{ ref('stg_ctry_type') }} ),\r\n\r\n  -- final cte's\r\n\r\n  final as (\r\n\r\n    select\r\n        o.order_id,\r\n        o.user_id,\r\n        o.created_at,\r\n        o.updated_at,\r\n        o.shipped_at,\r\n        o.currency,\r\n        o.status as order_status,\r\n        case\r\n          when o.status in (\r\n            'paid',\r\n            'completed',\r\n            'shipped'\r\n          ) then 'completed'\r\n          else o.status\r\n        end as order_status_category,\r\n        ct.country_type,\r\n        o.shipping_method,\r\n        do.purchase_device_type,\r\n        do.device as purchase_device,\r\n        case\r\n          when fo.first_order_id = o.order_id then 'new'\r\n          else 'repeat'\r\n        end as user_type,\r\n        o.amount_total_cents,\r\n        pa.gross_total_amount_cents,\r\n        case\r\n          when o.currency = 'usd' then o.amount_total_cents\r\n          else pa.gross_total_amount_cents\r\n        end as total_amount_cents,\r\n        pa.gross_tax_amount_cents,\r\n        pa.gross_amount_cents,\r\n        pa.gross_shipping_amount_cents\r\n      from o\r\n\r\n      left join do\r\n        on do.order_id = o.order_id\r\n\r\n      left join fo\r\n        on o.user_id = fo.user_id\r\n\r\n      left join ct \r\n        on ct.order_id = o.order_id\r\n\r\n      left join pa\r\n        on pa.order_id = o.order_id\r\n  )\r\n\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\r\n\r\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n  do as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),\n  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),\n  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),\n  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),\n\n  -- final cte's\n\n  final as (\n\n    select\n        o.order_id,\n        o.user_id,\n        o.created_at,\n        o.updated_at,\n        o.shipped_at,\n        o.currency,\n        o.status as order_status,\n        case\n          when o.status in (\n            'paid',\n            'completed',\n            'shipped'\n          ) then 'completed'\n          else o.status\n        end as order_status_category,\n        ct.country_type,\n        o.shipping_method,\n        do.purchase_device_type,\n        do.device as purchase_device,\n        case\n          when fo.first_order_id = o.order_id then 'new'\n          else 'repeat'\n        end as user_type,\n        o.amount_total_cents,\n        pa.gross_total_amount_cents,\n        case\n          when o.currency = 'usd' then o.amount_total_cents\n          else pa.gross_total_amount_cents\n        end as total_amount_cents,\n        pa.gross_tax_amount_cents,\n        pa.gross_amount_cents,\n        pa.gross_shipping_amount_cents\n      from o\n\n      left join do\n        on do.order_id = o.order_id\n\n      left join fo\n        on o.user_id = fo.user_id\n\n      left join ct \n        on ct.order_id = o.order_id\n\n      left join pa\n        on pa.order_id = o.order_id\n  )\n\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\n\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-22 02:22:25.072716 (Thread-342): handling poll request
+2022-04-22 02:22:25.073108 (Thread-342): 02:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383dabe0>]}
+2022-04-22 02:22:25.073849 (Thread-342): sending response (<Response 23577 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:23:17.625429 (Thread-343): 02:23:17  Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+2022-04-22 02:23:17.625909 (Thread-343): 02:23:17  Partial parsing: added file: my_new_project://models/staging/stg_orders.sql
+2022-04-22 02:23:17.630029 (Thread-343): 02:23:17  1699: static parser successfully parsed staging/stg_orders.sql
+2022-04-22 02:23:17.669881 (Thread-343): 02:23:17  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383be910>]}
+2022-04-22 02:23:18.460869 (Thread-344): handling status request
+2022-04-22 02:23:18.461256 (Thread-344): 02:23:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38358f40>]}
+2022-04-22 02:23:18.461746 (Thread-344): sending response (<Response 1564 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:23:18.556065 (Thread-345): handling status request
+2022-04-22 02:23:18.563540 (Thread-345): 02:23:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38358dc0>]}
+2022-04-22 02:23:18.564015 (Thread-345): sending response (<Response 1564 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:23:56.826839 (Thread-346): 02:23:56  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 02:23:56.827280 (Thread-346): 02:23:56  Partial parsing: updated file: my_new_project://models/staging/stg_orders.sql
+2022-04-22 02:23:56.831309 (Thread-346): 02:23:56  1699: static parser successfully parsed staging/stg_orders.sql
+2022-04-22 02:23:56.875470 (Thread-346): 02:23:56  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a382aa310>]}
+2022-04-22 02:23:57.519716 (Thread-347): handling status request
+2022-04-22 02:23:57.520111 (Thread-347): 02:23:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383584f0>]}
+2022-04-22 02:23:57.520592 (Thread-347): sending response (<Response 1566 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:23:57.602877 (Thread-348): handling status request
+2022-04-22 02:23:57.603261 (Thread-348): 02:23:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38358310>]}
+2022-04-22 02:23:57.603713 (Thread-348): sending response (<Response 1566 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:27.018776 (Thread-349): 02:24:27  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-04-22 02:24:27.019251 (Thread-349): 02:24:27  Partial parsing: updated file: my_new_project://models/staging/stg_first_order.sql
+2022-04-22 02:24:27.023305 (Thread-349): 02:24:27  1699: static parser successfully parsed staging/stg_first_order.sql
+2022-04-22 02:24:27.066319 (Thread-349): 02:24:27  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a3833bd60>]}
+2022-04-22 02:24:27.641803 (Thread-350): handling status request
+2022-04-22 02:24:27.642216 (Thread-350): 02:24:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38353fa0>]}
+2022-04-22 02:24:27.642718 (Thread-350): sending response (<Response 1576 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:27.792099 (Thread-351): handling status request
+2022-04-22 02:24:27.792495 (Thread-351): 02:24:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38353ee0>]}
+2022-04-22 02:24:27.792958 (Thread-351): sending response (<Response 1576 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:30.319656 (Thread-352): 02:24:30  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 02:24:30.319876 (Thread-352): 02:24:30  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 02:24:30.325085 (Thread-352): 02:24:30  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a381c0b50>]}
+2022-04-22 02:24:31.197368 (Thread-353): handling status request
+2022-04-22 02:24:31.197756 (Thread-353): 02:24:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38356af0>]}
+2022-04-22 02:24:31.198227 (Thread-353): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:31.208028 (Thread-354): handling status request
+2022-04-22 02:24:31.208297 (Thread-354): 02:24:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38356910>]}
+2022-04-22 02:24:31.208674 (Thread-354): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:35.867547 (Thread-355): handling status request
+2022-04-22 02:24:35.867947 (Thread-355): 02:24:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38356310>]}
+2022-04-22 02:24:35.868396 (Thread-355): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:36.176044 (Thread-356): handling run_sql request
+2022-04-22 02:24:36.176435 (Thread-356): 02:24:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38356130>]}
+2022-04-22 02:24:38.684256 (Thread-356): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:38.710593 (MainThread): 02:24:38  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bffdf697-9ff5-43f9-aca9-a072990070c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faacb328dc0>]}
+2022-04-22 02:24:38.711165 (MainThread): 02:24:38  Found 12 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 02:24:38.711759 (Thread-1): 02:24:38  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:24:38.711898 (Thread-1): 02:24:38  Began compiling node rpc.my_new_project.request
+2022-04-22 02:24:38.711994 (Thread-1): 02:24:38  Compiling rpc.my_new_project.request
+2022-04-22 02:24:38.714808 (Thread-1): 02:24:38  finished collecting timing info
+2022-04-22 02:24:38.714953 (Thread-1): 02:24:38  Began executing node rpc.my_new_project.request
+2022-04-22 02:24:38.717161 (Thread-1): 02:24:38  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:24:38.717258 (Thread-1): 02:24:38  On rpc.my_new_project.request: with
+  do as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),
+  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),
+  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),
+  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),
+
+  -- final cte's
+
+  final as (
+
+    select
+        o.order_id,
+        o.user_id,
+        o.created_at,
+        o.updated_at,
+        o.shipped_at,
+        o.currency,
+        o.status as order_status,
+        case
+          when o.status in (
+            'paid',
+            'completed',
+            'shipped'
+          ) then 'completed'
+          else o.status
+        end as order_status_category,
+        ct.country_type,
+        o.shipping_method,
+        do.purchase_device_type,
+        do.device as purchase_device,
+        case
+          when fo.first_order_id = o.order_id then 'new'
+          else 'repeat'
+        end as user_type,
+        o.amount_total_cents,
+        pa.gross_total_amount_cents,
+        case
+          when o.currency = 'usd' then o.amount_total_cents
+          else pa.gross_total_amount_cents
+        end as total_amount_cents,
+        pa.gross_tax_amount_cents,
+        pa.gross_amount_cents,
+        pa.gross_shipping_amount_cents
+      from o
+
+      left join do
+        on do.order_id = o.order_id
+
+      left join fo
+        on o.user_id = fo.user_id
+
+      left join ct 
+        on ct.order_id = o.order_id
+
+      left join pa
+        on pa.order_id = o.order_id
+  )
+
+-- select statement
+
+
+select
+  *,
+  amount_total_cents / 100 as amount_total,
+  gross_total_amount_cents/ 100 as gross_total_amount,
+  total_amount_cents/ 100 as total_amount,
+  gross_tax_amount_cents/ 100 as gross_tax_amount,
+  gross_amount_cents/ 100 as gross_amount,
+  gross_shipping_amount_cents/ 100 as gross_shipping_amount
+
+from final
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 02:24:38.717342 (Thread-1): 02:24:38  Opening a new connection, currently in state init
+2022-04-22 02:24:38.997653 (Thread-357): handling poll request
+2022-04-22 02:24:38.998110 (Thread-357): 02:24:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38ad5c10>]}
+2022-04-22 02:24:38.999118 (Thread-357): sending response (<Response 5602 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:39.616961 (Thread-1): 02:24:39  Snowflake adapter: Snowflake query id: 01a3c490-0501-6083-0004-7d830488e47e
+2022-04-22 02:24:39.617190 (Thread-1): 02:24:39  Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+2022-04-22 02:24:39.617382 (Thread-1): 02:24:39  finished collecting timing info
+2022-04-22 02:24:39.617572 (Thread-1): 02:24:39  On rpc.my_new_project.request: Close
+2022-04-22 02:24:39.820480 (Thread-1): Got an exception: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+2022-04-22 02:24:39.821537 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n  do as ( {{ ref('stg_device_orders') }} ),\r\n  fo as ( {{ ref('stg_first_order') }}),\r\n  pa as ( {{ ref('stg_payments') }} ),\r\n  ct as ( {{ ref('stg_ctry_type') }} ),\r\n\r\n  -- final cte's\r\n\r\n  final as (\r\n\r\n    select\r\n        o.order_id,\r\n        o.user_id,\r\n        o.created_at,\r\n        o.updated_at,\r\n        o.shipped_at,\r\n        o.currency,\r\n        o.status as order_status,\r\n        case\r\n          when o.status in (\r\n            'paid',\r\n            'completed',\r\n            'shipped'\r\n          ) then 'completed'\r\n          else o.status\r\n        end as order_status_category,\r\n        ct.country_type,\r\n        o.shipping_method,\r\n        do.purchase_device_type,\r\n        do.device as purchase_device,\r\n        case\r\n          when fo.first_order_id = o.order_id then 'new'\r\n          else 'repeat'\r\n        end as user_type,\r\n        o.amount_total_cents,\r\n        pa.gross_total_amount_cents,\r\n        case\r\n          when o.currency = 'usd' then o.amount_total_cents\r\n          else pa.gross_total_amount_cents\r\n        end as total_amount_cents,\r\n        pa.gross_tax_amount_cents,\r\n        pa.gross_amount_cents,\r\n        pa.gross_shipping_amount_cents\r\n      from o\r\n\r\n      left join do\r\n        on do.order_id = o.order_id\r\n\r\n      left join fo\r\n        on o.user_id = fo.user_id\r\n\r\n      left join ct \r\n        on ct.order_id = o.order_id\r\n\r\n      left join pa\r\n        on pa.order_id = o.order_id\r\n  )\r\n\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\r\n\r\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n  do as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),\n  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),\n  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),\n  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),\n\n  -- final cte's\n\n  final as (\n\n    select\n        o.order_id,\n        o.user_id,\n        o.created_at,\n        o.updated_at,\n        o.shipped_at,\n        o.currency,\n        o.status as order_status,\n        case\n          when o.status in (\n            'paid',\n            'completed',\n            'shipped'\n          ) then 'completed'\n          else o.status\n        end as order_status_category,\n        ct.country_type,\n        o.shipping_method,\n        do.purchase_device_type,\n        do.device as purchase_device,\n        case\n          when fo.first_order_id = o.order_id then 'new'\n          else 'repeat'\n        end as user_type,\n        o.amount_total_cents,\n        pa.gross_total_amount_cents,\n        case\n          when o.currency = 'usd' then o.amount_total_cents\n          else pa.gross_total_amount_cents\n        end as total_amount_cents,\n        pa.gross_tax_amount_cents,\n        pa.gross_amount_cents,\n        pa.gross_shipping_amount_cents\n      from o\n\n      left join do\n        on do.order_id = o.order_id\n\n      left join fo\n        on o.user_id = fo.user_id\n\n      left join ct \n        on ct.order_id = o.order_id\n\n      left join pa\n        on pa.order_id = o.order_id\n  )\n\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\n\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n  do as ( {{ ref('stg_device_orders') }} ),\r\n  fo as ( {{ ref('stg_first_order') }}),\r\n  pa as ( {{ ref('stg_payments') }} ),\r\n  ct as ( {{ ref('stg_ctry_type') }} ),\r\n\r\n  -- final cte's\r\n\r\n  final as (\r\n\r\n    select\r\n        o.order_id,\r\n        o.user_id,\r\n        o.created_at,\r\n        o.updated_at,\r\n        o.shipped_at,\r\n        o.currency,\r\n        o.status as order_status,\r\n        case\r\n          when o.status in (\r\n            'paid',\r\n            'completed',\r\n            'shipped'\r\n          ) then 'completed'\r\n          else o.status\r\n        end as order_status_category,\r\n        ct.country_type,\r\n        o.shipping_method,\r\n        do.purchase_device_type,\r\n        do.device as purchase_device,\r\n        case\r\n          when fo.first_order_id = o.order_id then 'new'\r\n          else 'repeat'\r\n        end as user_type,\r\n        o.amount_total_cents,\r\n        pa.gross_total_amount_cents,\r\n        case\r\n          when o.currency = 'usd' then o.amount_total_cents\r\n          else pa.gross_total_amount_cents\r\n        end as total_amount_cents,\r\n        pa.gross_tax_amount_cents,\r\n        pa.gross_amount_cents,\r\n        pa.gross_shipping_amount_cents\r\n      from o\r\n\r\n      left join do\r\n        on do.order_id = o.order_id\r\n\r\n      left join fo\r\n        on o.user_id = fo.user_id\r\n\r\n      left join ct \r\n        on ct.order_id = o.order_id\r\n\r\n      left join pa\r\n        on pa.order_id = o.order_id\r\n  )\r\n\r\n-- select statement\r\n\r\n\r\nselect\r\n  *,\r\n  amount_total_cents / 100 as amount_total,\r\n  gross_total_amount_cents/ 100 as gross_total_amount,\r\n  total_amount_cents/ 100 as total_amount,\r\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\r\n  gross_amount_cents/ 100 as gross_amount,\r\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\r\n\r\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n  do as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders ),\n  fo as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),\n  pa as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_payments ),\n  ct as ( PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type ),\n\n  -- final cte's\n\n  final as (\n\n    select\n        o.order_id,\n        o.user_id,\n        o.created_at,\n        o.updated_at,\n        o.shipped_at,\n        o.currency,\n        o.status as order_status,\n        case\n          when o.status in (\n            'paid',\n            'completed',\n            'shipped'\n          ) then 'completed'\n          else o.status\n        end as order_status_category,\n        ct.country_type,\n        o.shipping_method,\n        do.purchase_device_type,\n        do.device as purchase_device,\n        case\n          when fo.first_order_id = o.order_id then 'new'\n          else 'repeat'\n        end as user_type,\n        o.amount_total_cents,\n        pa.gross_total_amount_cents,\n        case\n          when o.currency = 'usd' then o.amount_total_cents\n          else pa.gross_total_amount_cents\n        end as total_amount_cents,\n        pa.gross_tax_amount_cents,\n        pa.gross_amount_cents,\n        pa.gross_shipping_amount_cents\n      from o\n\n      left join do\n        on do.order_id = o.order_id\n\n      left join fo\n        on o.user_id = fo.user_id\n\n      left join ct \n        on ct.order_id = o.order_id\n\n      left join pa\n        on pa.order_id = o.order_id\n  )\n\n-- select statement\n\n\nselect\n  *,\n  amount_total_cents / 100 as amount_total,\n  gross_total_amount_cents/ 100 as gross_total_amount,\n  total_amount_cents/ 100 as total_amount,\n  gross_tax_amount_cents/ 100 as gross_tax_amount,\n  gross_amount_cents/ 100 as gross_amount,\n  gross_shipping_amount_cents/ 100 as gross_shipping_amount\n\nfrom final\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-22 02:24:40.391535 (Thread-358): handling poll request
+2022-04-22 02:24:40.391941 (Thread-358): 02:24:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38578700>]}
+2022-04-22 02:24:40.392635 (Thread-358): sending response (<Response 23577 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:59.272265 (Thread-359): handling status request
+2022-04-22 02:24:59.272651 (Thread-359): 02:24:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383d85e0>]}
+2022-04-22 02:24:59.273128 (Thread-359): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:24:59.587742 (Thread-360): handling run_sql request
+2022-04-22 02:24:59.588138 (Thread-360): 02:24:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383d8160>]}
+2022-04-22 02:25:02.119170 (Thread-360): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:02.144024 (MainThread): 02:25:02  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aeeb7ed3-6f53-41e4-8f47-e160471727d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e12be9dc0>]}
+2022-04-22 02:25:02.144570 (MainThread): 02:25:02  Found 12 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 02:25:02.145169 (Thread-1): 02:25:02  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:25:02.145304 (Thread-1): 02:25:02  Began compiling node rpc.my_new_project.request
+2022-04-22 02:25:02.145399 (Thread-1): 02:25:02  Compiling rpc.my_new_project.request
+2022-04-22 02:25:02.147430 (Thread-1): 02:25:02  finished collecting timing info
+2022-04-22 02:25:02.147558 (Thread-1): 02:25:02  Began executing node rpc.my_new_project.request
+2022-04-22 02:25:02.148271 (Thread-1): 02:25:02  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:25:02.148359 (Thread-1): 02:25:02  On rpc.my_new_project.request: with
+    o as (PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+
+    fo as (
+        select
+            fo.user_id,
+            min(fo.order_id) as first_order_id
+        from o as fo
+        where fo.status != 'cancelled'
+        group by fo.user_id
+    )
+
+select * from fo
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 02:25:02.148440 (Thread-1): 02:25:02  Opening a new connection, currently in state init
+2022-04-22 02:25:02.457695 (Thread-361): handling poll request
+2022-04-22 02:25:02.458145 (Thread-361): 02:25:02  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a3826b220>]}
+2022-04-22 02:25:02.459074 (Thread-361): sending response (<Response 4014 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:03.083631 (Thread-1): 02:25:03  Snowflake adapter: Snowflake query id: 01a3c491-0501-6083-0004-7d830488e482
+2022-04-22 02:25:03.083861 (Thread-1): 02:25:03  Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+2022-04-22 02:25:03.084050 (Thread-1): 02:25:03  finished collecting timing info
+2022-04-22 02:25:03.084252 (Thread-1): 02:25:03  On rpc.my_new_project.request: Close
+2022-04-22 02:25:03.288968 (Thread-1): Got an exception: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+2022-04-22 02:25:03.289963 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n    o as ({{ ref('stg_orders') }}),\r\n\r\n    fo as (\r\n        select\r\n            fo.user_id,\r\n            min(fo.order_id) as first_order_id\r\n        from o as fo\r\n        where fo.status != 'cancelled'\r\n        group by fo.user_id\r\n    )\r\n\r\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n    o as (PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),\n\n    fo as (\n        select\n            fo.user_id,\n            min(fo.order_id) as first_order_id\n        from o as fo\n        where fo.status != 'cancelled'\n        group by fo.user_id\n    )\n\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n    o as ({{ ref('stg_orders') }}),\r\n\r\n    fo as (\r\n        select\r\n            fo.user_id,\r\n            min(fo.order_id) as first_order_id\r\n        from o as fo\r\n        where fo.status != 'cancelled'\r\n        group by fo.user_id\r\n    )\r\n\r\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n    o as (PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),\n\n    fo as (\n        select\n            fo.user_id,\n            min(fo.order_id) as first_order_id\n        from o as fo\n        where fo.status != 'cancelled'\n        group by fo.user_id\n    )\n\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-22 02:25:03.783067 (Thread-362): handling poll request
+2022-04-22 02:25:03.783464 (Thread-362): 02:25:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a383b79d0>]}
+2022-04-22 02:25:03.784132 (Thread-362): sending response (<Response 11924 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:15.437125 (Thread-363): 02:25:15  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 02:25:15.437354 (Thread-363): 02:25:15  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 02:25:15.443313 (Thread-363): 02:25:15  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38139850>]}
+2022-04-22 02:25:16.217926 (Thread-364): handling status request
+2022-04-22 02:25:16.218361 (Thread-364): 02:25:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a381d8280>]}
+2022-04-22 02:25:16.218860 (Thread-364): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:16.298505 (Thread-365): handling status request
+2022-04-22 02:25:16.298940 (Thread-365): 02:25:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a381d80d0>]}
+2022-04-22 02:25:16.299382 (Thread-365): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:26.747343 (Thread-366): handling status request
+2022-04-22 02:25:26.747731 (Thread-366): 02:25:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a381d8460>]}
+2022-04-22 02:25:26.771436 (Thread-366): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:27.068728 (Thread-367): handling run_sql request
+2022-04-22 02:25:27.069116 (Thread-367): 02:25:27  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a381d8310>]}
+2022-04-22 02:25:29.571918 (Thread-367): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:29.596568 (MainThread): 02:25:29  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7f379930-21e7-454a-aee6-4e51c1c8ca8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8561451dc0>]}
+2022-04-22 02:25:29.597111 (MainThread): 02:25:29  Found 12 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2022-04-22 02:25:29.597710 (Thread-1): 02:25:29  Acquiring new snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:25:29.597853 (Thread-1): 02:25:29  Began compiling node rpc.my_new_project.request
+2022-04-22 02:25:29.597952 (Thread-1): 02:25:29  Compiling rpc.my_new_project.request
+2022-04-22 02:25:29.599936 (Thread-1): 02:25:29  finished collecting timing info
+2022-04-22 02:25:29.600067 (Thread-1): 02:25:29  Began executing node rpc.my_new_project.request
+2022-04-22 02:25:29.600764 (Thread-1): 02:25:29  Using snowflake connection "rpc.my_new_project.request"
+2022-04-22 02:25:29.600855 (Thread-1): 02:25:29  On rpc.my_new_project.request: with
+    o as (PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
+
+    fo as (
+        select
+            fo.user_id,
+            min(fo.order_id) as first_order_id
+        from o as fo
+        where fo.status != 'cancelled'
+        group by fo.user_id
+    )
+
+select * from fo
+limit 500
+/* limit added automatically by dbt cloud */
+2022-04-22 02:25:29.600935 (Thread-1): 02:25:29  Opening a new connection, currently in state init
+2022-04-22 02:25:29.877077 (Thread-368): handling poll request
+2022-04-22 02:25:29.877510 (Thread-368): 02:25:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a38139670>]}
+2022-04-22 02:25:29.878483 (Thread-368): sending response (<Response 4014 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:30.450054 (Thread-1): 02:25:30  Snowflake adapter: Snowflake query id: 01a3c491-0501-5f4a-0004-7d830488a3fa
+2022-04-22 02:25:30.450327 (Thread-1): 02:25:30  Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+2022-04-22 02:25:30.450541 (Thread-1): 02:25:30  finished collecting timing info
+2022-04-22 02:25:30.450749 (Thread-1): 02:25:30  On rpc.my_new_project.request: Close
+2022-04-22 02:25:30.622210 (Thread-1): Got an exception: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 206, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 789, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 273, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 328, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 207, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'O' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 433, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 223, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'O' does not exist or not authorized.
+2022-04-22 02:25:30.623263 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n    o as ({{ ref('stg_orders') }}),\r\n\r\n    fo as (\r\n        select\r\n            fo.user_id,\r\n            min(fo.order_id) as first_order_id\r\n        from o as fo\r\n        where fo.status != 'cancelled'\r\n        group by fo.user_id\r\n    )\r\n\r\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n    o as (PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),\n\n    fo as (\n        select\n            fo.user_id,\n            min(fo.order_id) as first_order_id\n        from o as fo\n        where fo.status != 'cancelled'\n        group by fo.user_id\n    )\n\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'O' does not exist or not authorized.", 'raw_sql': "with\r\n    o as ({{ ref('stg_orders') }}),\r\n\r\n    fo as (\r\n        select\r\n            fo.user_id,\r\n            min(fo.order_id) as first_order_id\r\n        from o as fo\r\n        where fo.status != 'cancelled'\r\n        group by fo.user_id\r\n    )\r\n\r\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': "with\n    o as (PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),\n\n    fo as (\n        select\n            fo.user_id,\n            min(fo.order_id) as first_order_id\n        from o as fo\n        where fo.status != 'cancelled'\n        group by fo.user_id\n    )\n\nselect * from fo\nlimit 500\n/* limit added automatically by dbt cloud */", 'tags': None}, None)
+2022-04-22 02:25:31.186758 (Thread-369): handling poll request
+2022-04-22 02:25:31.187190 (Thread-369): 02:25:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a3813c130>]}
+2022-04-22 02:25:31.187843 (Thread-369): sending response (<Response 11924 bytes [200 OK]>) to 10.0.2.37
+2022-04-22 02:25:58.923822 (Thread-370): handling status request
+2022-04-22 02:25:58.924186 (Thread-370): 02:25:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5ce8a185-c08d-44a4-a4f2-ae4ad553881f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a3813c6d0>]}
+2022-04-22 02:25:58.924651 (Thread-370): sending response (<Response 1244 bytes [200 OK]>) to 10.0.2.37
