@@ -1,15 +1,22 @@
 with
     d as ((select * from {{ ref('stg_devices') }})),
 
-    do as (
+    d1 as (
         select distinct
-            cast(d.type_id as float) as order_id,
+            d.order_id,
             first_value(d.device) over (
-            partition by d.type_id
-            order by
-            d.created_at rows between unbounded preceding
-            and unbounded following
-            ) as device,
+                partition by d.type_id
+                order by
+                d.created_at rows between unbounded preceding
+                and unbounded following
+            ) as device
+        from d
+    ),
+
+    do as (
+        select
+            d.*,
+            d1.device,
             case
                 when d.device = 'web' then 'desktop'
                 when d.device in ('ios-app', 'android-app') then 'mobile-app'
@@ -18,7 +25,9 @@ with
                 else 'error'
             end as purchase_device_type
         from d
-        where d.type = 'order'
-        )
+        left join d1
+            on d.order_id = d1.order_id
+        
+    )
 
 select * from do

@@ -8,7 +8,6 @@ with
     p1 as (
     select
         p.order_id,
-        p.status,
 
         {%- for c in cols %}
             round(sum(case when status = 'completed' then p.{{c}}_cents else 0 end) / 100, 2) as gross_{{c}}
@@ -18,25 +17,19 @@ with
         {%- endfor %}
 
     from p
-    group by order_id, p.status
+    group by order_id
     ),
 
     p2 as (
         select
             p1.*,
-            case
-                when
-                    p1.status = 'completed' then
-                        round(
-                            p1.gross_tax_amount +
-                            p1.gross_amount +
-                            p1.gross_amount_shipping,
-                            2)
-                else 0
-            end as gross_total_amount
+            round(
+                p1.gross_tax_amount +
+                p1.gross_amount +
+                p1.gross_amount_shipping,
+                2) as gross_total_amount
             
         from p1
-
     ),
     
     pa as (
@@ -48,7 +41,7 @@ with
             p2.gross_amount_shipping,
 
             case
-                when o.currency = 'usd' then round(o.amount_total_cents / 100, 2)
+                when lower(o.currency) = 'usd' then round(o.amount_total_cents / 100, 2)
                 else p2.gross_total_amount
             end as gross_total_amount
             

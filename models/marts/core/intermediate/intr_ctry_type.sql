@@ -7,8 +7,8 @@
         a.order_id,
         case
             when a.country_code is null then 'null country'
-            when a.country_code = 'us' then 'us'
-            when a.country_code != 'us' then 'international'
+            when lower(a.country_code) = 'us' then 'us'
+            when lower(a.country_code) != 'us' then 'international'
         end as country_type
         from a
     )
