@@ -1,6 +1,6 @@
 with
     o as (select * from {{ ref('stg_orders') }}),
-    fo as (select * from {{ ref('stg_first_order') }}),
+    fo as (select * from {{ ref('intr_first_order') }}),
     ut as (
         select
             o.order_id,

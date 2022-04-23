@@ -1,10 +1,10 @@
 
 with
   o  as (select * from {{ ref('stg_orders') }}),
-  do as (select * from {{ ref('stg_device_orders') }}),
-  ct as (select * from {{ ref('stg_ctry_type') }}),
-  pa as (select * from {{ ref('int_payments') }}),
-  ut as (select * from {{ ref('int_user_type')}}),
+  do as (select * from {{ ref('intr_device_orders') }}),
+  ct as (select * from {{ ref('intr_ctry_type') }}),
+  pa as (select * from {{ ref('intr_payments') }}),
+  ut as (select * from {{ ref('intr_user_type')}}),
 
   final as (
 

@@ -4,13 +4,10 @@
    as (
     with
   o  as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_orders),
-  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_device_orders),
-  fo as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_first_order),
-  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.stg_ctry_type),
-  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_payments),
-  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.int_user_type),
-
-  -- final cte's
+  do as (select * from PE_ALEXANDER_B.abrown_dbt_interview.intr_device_orders),
+  ct as (select * from PE_ALEXANDER_B.abrown_dbt_interview.intr_ctry_type),
+  pa as (select * from PE_ALEXANDER_B.abrown_dbt_interview.intr_payments),
+  ut as (select * from PE_ALEXANDER_B.abrown_dbt_interview.intr_user_type),
 
   final as (
 
