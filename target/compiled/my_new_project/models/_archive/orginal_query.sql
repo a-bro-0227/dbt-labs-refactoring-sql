@@ -108,5 +108,3 @@ FROM (
         GROUP BY order_id
     ) pa ON pa.order_id = o.order_id
   )
-
-limit 100000

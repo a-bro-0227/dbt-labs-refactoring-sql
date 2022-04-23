@@ -20,7 +20,6 @@
     do as (
         select
             d.*,
-            d1.device,
             case
                 when d.device = 'web' then 'desktop'
                 when d.device in ('ios-app', 'android-app') then 'mobile-app'
