@@ -5,6 +5,13 @@ sources:
     database: raw
     tables:
         - name: interview_orders
+          description: raw orders table.
+
         - name: interview_devices
+          description: raw devices table filtered down to orders only.
+
         - name: interview_addresses
+          description: raw addresses table.
+
         - name: interview_payments
+          description: raw payments table.
