@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_addresses
+    description: This table is sourced from the `interview_addresses` table form the Snowfalke `PE_ALEXANDER_B` database.
+
+  - name: stg_devices
+    description: This table is sourced from the `interview_devices` table form the Snowfalke `PE_ALEXANDER_B` database. It is filtered down where only the device `type` is `order`.
+    columns:
+      - name: order_id
+        description: Transformed to a type `float` from the devices `type` varible.
+
+  - name: stg_orders
+    description: This table is sourced from the `interview_orders` table form the Snowfalke `PE_ALEXANDER_B` database.
+    columns:
+      - name: order_status_category
+        description: This column groups the orders `status` variables 'paid', 'completed', 'shipped' to `completed`.
+
+  - name: stg_payments
+    description: This table is sourced from the `interview_payments` table form the Snowfalke `PE_ALEXANDER_B` database.
+    
