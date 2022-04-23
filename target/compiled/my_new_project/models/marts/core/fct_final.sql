@@ -22,11 +22,11 @@ with
         do.device as purchase_device,
         ut.user_type,
         o.amount_total_cents,
-        pa.gross_total_amount_cents,
-        pa.total_amount_cents,
-        pa.gross_tax_amount_cents,
-        pa.gross_amount_cents,
-        pa.gross_amount_shipping_cents
+        pa.gross_tax_amount,
+        pa.gross_amount,
+        pa.gross_amount_shipping,
+        pa.gross_total_amount
+
       from o
 
       left join do
@@ -42,16 +42,4 @@ with
         on pa.order_id = o.order_id
   )
 
--- select statement
-
-
-select
-  *,
-  amount_total_cents / 100 as amount_total,
-  gross_total_amount_cents/ 100 as gross_total_amount,
-  total_amount_cents/ 100 as total_amount,
-  gross_tax_amount_cents/ 100 as gross_tax_amount,
-  gross_amount_cents/ 100 as gross_amount,
-  gross_amount_shipping_cents/ 100 as gross_shipping_amount
-
-from final
+select * from final

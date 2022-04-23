@@ -23,7 +23,11 @@ with
         do.device as purchase_device,
         ut.user_type,
         o.amount_total_cents,
-        pa.*
+        pa.gross_tax_amount,
+        pa.gross_amount,
+        pa.gross_amount_shipping,
+        pa.gross_total_amount
+
       from o
 
       left join do

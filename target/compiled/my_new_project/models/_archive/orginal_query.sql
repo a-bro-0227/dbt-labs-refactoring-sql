@@ -52,30 +52,30 @@ FROM (
       pa.gross_tax_amount_cents,
       pa.gross_amount_cents,
       pa.gross_shipping_amount_cents
-    FROM `dbt-public.interview_task.orders` o
+    FROM raw.interview_sample_data.interview_orders o
     LEFT JOIN (
         SELECT
-          DISTINCT cast(d.type_id as int64) as order_id,
+          DISTINCT cast(d.type_id as double) as order_id,
           FIRST_VALUE(d.device) OVER (
             PARTITION BY d.type_id
             ORDER BY
               d.created_at ROWS BETWEEN UNBOUNDED PRECEDING
               AND UNBOUNDED FOLLOWING
           ) AS device
-        FROM `dbt-public.interview_task.devices` d
+        FROM raw.interview_sample_data.interview_devices d
         WHERE d.type = 'order'
     ) d ON d.order_id = o.order_id
     LEFT JOIN (
         SELECT
           fo.user_id,
           MIN(fo.order_id) as first_order_id
-        FROM `dbt-public.interview_task.orders` as fo
+        FROM raw.interview_sample_data.interview_orders as fo
         WHERE
           fo.status != 'cancelled'
         GROUP BY
           fo.user_id
       ) fo ON o.user_id = fo.user_id
-    left join `dbt-public.interview_task.addresses` oa 
+    left join raw.interview_sample_data.interview_addresses oa 
       ON oa.order_id = o.order_id
     LEFT JOIN (
         select
@@ -104,7 +104,7 @@ FROM (
               ELSE 0
             END
           ) as gross_total_amount_cents
-        FROM `dbt-public.interview_task.payments`
+        FROM raw.interview_sample_data.interview_payments
         GROUP BY order_id
     ) pa ON pa.order_id = o.order_id
   )
