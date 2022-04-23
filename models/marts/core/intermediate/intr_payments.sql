@@ -1,37 +1,60 @@
 
-{% set cols = ['tax_amount_cents', 'amount_cents', 'amount_shipping_cents'] %}
+{% set cols = ['tax_amount', 'amount', 'amount_shipping'] %}
 
 with
     o as (select * from {{ ref('stg_orders') }} ),
-    p as (select * from {{ source('interview_sample_data', 'interview_payments') }}),
+    p as (select * from {{ ref('stg_payments') }}),
 
     p1 as (
     select
-        order_id,
+        p.order_id,
+        p.status,
 
         {%- for c in cols %}
-            sum(case when status = 'completed' then {{c}} else 0 end) as gross_{{c}},
+            round(sum(case when status = 'completed' then p.{{c}}_cents else 0 end) / 100, 2) as gross_{{c}}
+            {%- if not loop.last %}
+                ,
+            {%- endif %}
         {%- endfor %}
 
-        sum(case
-            when status = 'completed' then tax_amount_cents + amount_cents + amount_shipping_cents else 0
-            end
-            ) as gross_total_amount_cents
     from p
-    group by order_id
+    group by order_id, p.status
     ),
 
-    pa as (
-
+    p2 as (
         select
             p1.*,
             case
-                when o.currency = 'usd' then o.amount_total_cents
-                else p1.gross_total_amount_cents
-            end as total_amount_cents
-        from o
-        left join p1
-        on o.order_id = p1.order_id
+                when
+                    p1.status = 'completed' then
+                        round(
+                            p1.gross_tax_amount +
+                            p1.gross_amount +
+                            p1.gross_amount_shipping,
+                            2)
+                else 0
+            end as gross_total_amount
+            
+        from p1
+
+    ),
+    
+    pa as (
+
+        select
+            p2.order_id,
+            p2.gross_tax_amount,
+            p2.gross_amount,
+            p2.gross_amount_shipping,
+
+            case
+                when o.currency = 'usd' then round(o.amount_total_cents / 100, 2)
+                else p2.gross_total_amount
+            end as gross_total_amount
+            
+        from p2
+        left join o
+        on p2.order_id = o.order_id
     )
 
 select * from pa
