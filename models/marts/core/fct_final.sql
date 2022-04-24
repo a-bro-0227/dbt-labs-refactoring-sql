@@ -44,4 +44,3 @@ with
   )
 
 select * from final
-limit 10000
