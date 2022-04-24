@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: fct_final
+    description: This is the final model of the data set. It utilizes all the prior models built which can be seen in the DAG with orders being the base model.
+    columns:
+      - name: order_id
+        tests:
+          - unique
