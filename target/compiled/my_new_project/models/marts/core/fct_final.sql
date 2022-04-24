@@ -30,17 +30,16 @@ with
       from o
 
       left join do
-        on do.order_id = o.order_id
+        on o.order_id = do.order_id
 
       left join ut
         on o.order_id = ut.order_id
 
       left join ct 
-        on ct.order_id = o.order_id
+        on o.order_id = ct.order_id
 
       left join pa
-        on pa.order_id = o.order_id
+        on o.order_id = pa.order_id
   )
 
 select * from final
-limit 10000

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: intr_ctry_type
+    description: This table identifies the country code for each `order_id`.
+
+  - name: intr_device_orders
+    description: This table identies what device the order was purchased from (app, desktop, etc.).
+
+  - name : intr_first_order
+    description: This table identifies if the order placed was the first order of a user.
+
+  - name: intr_payments
+    description: This table aggregates and calucates the payment information for each order in dollar units.
+
+  - name: intr_user_type
+    description: This table uses the first order table/model to identify the `order_id` is associated with a users first order or if they are a repeat order.

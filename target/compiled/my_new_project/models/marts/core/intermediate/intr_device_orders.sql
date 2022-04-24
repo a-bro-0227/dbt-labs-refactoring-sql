@@ -18,22 +18,6 @@ with
                 else 'error'
             end as purchase_device_type
         from d
-    )--,
-
-    -- do as (
-    --     select
-    --         d1.*,
-    --         case
-    --             when d.device = 'web' then 'desktop'
-    --             when d.device in ('ios-app', 'android-app') then 'mobile-app'
-    --             when d.device in ('mobile', 'tablet') then 'mobile-web'
-    --             when nullif(d.device, '') is null then 'unknown'
-    --             else 'error'
-    --         end as purchase_device_type
-    --     from d
-    --     left join d1
-    --         on d.order_id = d1.order_id
-        
-    -- )
-
+    )
+    
 select * from do
