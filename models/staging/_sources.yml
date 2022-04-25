@@ -6,6 +6,12 @@ sources:
     tables:
         - name: interview_orders
           description: raw orders table.
+          columns:
+          - name: order_id
+            description: primary key of the orders table
+            tests:
+              - unique
+              - not_null
 
         - name: interview_devices
           description: raw devices table filtered down to orders only.
