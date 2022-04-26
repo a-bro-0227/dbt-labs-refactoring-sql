@@ -5,7 +5,7 @@ with a as (
 select
     "ORDER_ID", "USER_ID", "CREATED_AT", "UPDATED_AT", "SHIPPED_AT", "CURRENCY", "ORDER_STATUS", "ORDER_STATUS_CATEGORY", lower(COUNTRY_TYPE) as "COUNTRY_TYPE", "SHIPPING_METHOD", lower(PURCHASE_DEVICE_TYPE) as "PURCHASE_DEVICE_TYPE", "PURCHASE_DEVICE", "USER_TYPE", "AMOUNT_TOTAL_CENTS"
 
-from PE_ALEXANDER_B.abrown_dbt_interview.orginal_query
+from PE_ALEXANDER_B.abrown_dbt_interview.original_query
 
 
 ),

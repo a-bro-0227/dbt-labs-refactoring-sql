@@ -19,35 +19,27 @@ with
     from p
     group by order_id
     ),
-
-    p2 as (
-        select
-            p1.*,
-            round(
-                p1.gross_tax_amount +
-                p1.gross_amount +
-                p1.gross_amount_shipping,
-                2) as gross_total_amount
-            
-        from p1
-    ),
-    
+   
     pa as (
 
         select
-            p2.order_id,
-            p2.gross_tax_amount,
-            p2.gross_amount,
-            p2.gross_amount_shipping,
+            p1.order_id,
+            p1.gross_tax_amount,
+            p1.gross_amount,
+            p1.gross_amount_shipping,
 
             case
                 when lower(o.currency) = 'usd' then round(o.amount_total_cents / 100, 2)
-                else p2.gross_total_amount
+                else round(
+                    p1.gross_tax_amount +
+                    p1.gross_amount +
+                    p1.gross_amount_shipping,
+                    2)
             end as gross_total_amount
             
-        from p2
+        from p1
         left join o
-        on p2.order_id = o.order_id
+        on p1.order_id = o.order_id
     )
 
 select * from pa
