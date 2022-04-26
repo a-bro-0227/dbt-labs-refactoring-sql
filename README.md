@@ -46,4 +46,4 @@ In this query I use the `ref` function to call my staging models [`stg_orders`](
 
 *Notices how I also use the `ref` function to call my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model.*
 
-#### jinjia statement![image](https://user-images.githubusercontent.com/34726812/165382842-1553a61e-3cce-4aef-930f-57d3bd59e716.png)
+#### jinjia statement
