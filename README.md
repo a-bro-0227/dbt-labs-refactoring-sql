@@ -44,6 +44,6 @@ Here is an example of one of the more complex intermediate models: [`intr_paymen
 
 In this query I use the `ref` function to call my staging models [`stg_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_orders.sql) and [`stg_payments`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_payments.sql) and a `jinja` function to compile the same statement on multiple columns. I then aggregate those fields into the CTE `p1`. With those aggregated columns, I create the variable `gross_total_amount` and my final model where I join my orders table and use a case statement to calculated the field `gross_total_amount`.
 
-*Notices how I also use the `ref` function to call my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model.*
+*Notice how I also use the `ref` function to call `stg_orders` in my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model too!*
 
 #### jinjia statement
