@@ -48,5 +48,17 @@ In this query I use the `ref` function to call my staging model [`stg_orders`](h
 
 #### jinjia statement
 
+#### jinjia statement
+
+In my `stg_payments` model, I use a `jinja` function to write my SQL statement on multiple columns. I loop through a list of columns to write the same sql statement (shown below).
+
+*code coming*
+
+When working with for loops, it is best to here is the process I used for that
+
+*coming soon*
+
+### final model
+
 
 
