@@ -42,11 +42,9 @@ After the initial staging, I use [intermediate models](https://github.com/alexb5
 
 Here is an example of one of the more complex intermediate models: [`intr_payments.sql`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_payments.sql)
 
-In this query I use the `ref` function to call my staging model [`stg_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_orders.sql) and [`stg_payments`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_payments.sql) and a `jinja` function to compile the same statement on multiple columns. I then aggregate those fields into the CTE `p1`. With those aggregated columns, I create the variable `gross_total_amount` and my final model where I join my orders table and use a case statement to calculated the field `gross_total_amount`.
+In this query I use the `{{ ref }}` function to call my staging model [`stg_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_orders.sql) and [`stg_payments`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_payments.sql) and a `jinja` function to compile the same statement on multiple columns. I then aggregate those fields into the CTE `p1`. With those aggregated columns, I create the variable `gross_total_amount` and my final model where I join my orders table and use a case statement to calculated the field `gross_total_amount`.
 
-*Notice how I also use the `ref` function to call `stg_orders` in my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model.*
-
-#### jinjia statement
+*Notice how I also use the `{{ ref }}` function to call `stg_orders` in my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model. The `{{ ref }}` functions is how you reference one model within another. It allows us to build a model once and then reference it many times.*
 
 #### jinjia statement
 
@@ -60,5 +58,8 @@ When working with for loops, it is best to here is the process I used for that
 
 ### final model
 
+After creating all of my staging and intermediate models, it is easy to join them together in our [final model](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/fct_final.sql). This is the table that our reporting tools and end users will consume. Therefore, we will materialize it as a table.
+
+ 
 
 
