@@ -34,16 +34,19 @@ creates a dependency between the model and the source table. Tables sourced from
 
 *picture coming*
 
-After the `_sources.yml` is set up, I create [`staging` models](https://github.com/alexb523/dbt-labs-refactoring-sql/tree/main/models/staging) to *load* tables from the data warehouse. Very minor manipulations and standardizing are done at this step.
+After the `_sources.yml` is set up, I create [staging models](https://github.com/alexb523/dbt-labs-refactoring-sql/tree/main/models/staging) to *load* tables from the data warehouse. Very minor manipulations and standardizing are done at this step.
 
 ### intermediate
 
-After the initial staging, I use [`intermediate` models](https://github.com/alexb523/dbt-labs-refactoring-sql/tree/main/models/marts/core/intermediate) to create more complex models/CTE's.
+After the initial staging, I use [intermediate models](https://github.com/alexb523/dbt-labs-refactoring-sql/tree/main/models/marts/core/intermediate) to create more complex models/CTE's.
 
 Here is an example of one of the more complex intermediate models: [`intr_payments.sql`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_payments.sql)
 
-In this query I use the `ref` function to call my staging models [`stg_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_orders.sql) and [`stg_payments`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_payments.sql) and a `jinja` function to compile the same statement on multiple columns. I then aggregate those fields into the CTE `p1`. With those aggregated columns, I create the variable `gross_total_amount` and my final model where I join my orders table and use a case statement to calculated the field `gross_total_amount`.
+In this query I use the `ref` function to call my staging model [`stg_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_orders.sql) and [`stg_payments`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/stg_payments.sql) and a `jinja` function to compile the same statement on multiple columns. I then aggregate those fields into the CTE `p1`. With those aggregated columns, I create the variable `gross_total_amount` and my final model where I join my orders table and use a case statement to calculated the field `gross_total_amount`.
 
-*Notice how I also use the `ref` function to call `stg_orders` in my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model too!*
+*Notice how I also use the `ref` function to call `stg_orders` in my [`intr_first_orders`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/marts/core/intermediate/intr_first_order.sql) model.*
 
 #### jinjia statement
+
+
+
