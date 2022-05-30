@@ -1,12 +1,10 @@
-# dbt Labs - Partner Engineer - Interview Project - refactoring-sql
+# dbt project - refactoring-sql
 
 ## overview
 
 Hi There,
 
-My name is Alex Brown and in this repo is my project for dbt Labs Partner Engineering position.
-
-In this `readme` I am going to go over the importance and process for refactoring the [original query provided]( https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/_archive/orginal_query.sql) into a modularized ecosystem of sql models and jinja using dbt.
+My name is Alex Brown and in this `readme` I am going to go over the importance and process for refactoring the [original query provided]( https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/_archive/orginal_query.sql) into a modularized ecosystem of sql models and jinja using dbt.
 
 The original query provided is long, complex, and hard to read. This type of coding I like to refer to as a "vertical landscape" (with peaks and valleys). When programming, it is best practice to modularize your code so it is easier to understand and troubleshoot. Breaking it out into separate models, macros, and functions with dbt allows you to create linage graphs, write easier to read syntax, test assumptions about data, and easily create documentation all in easy to use interface.
 
