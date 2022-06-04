@@ -1,4 +1,4 @@
-# dbt project - refactoring-sql
+# dbt examle project - refactoring-sql
 
 ## overview
 
@@ -17,13 +17,13 @@ The first step I take when refactoring a code is to copy-pasting to a new sql fi
 After copy-pasting to a new sql file, I always start with finding the source tables in the SQL query I am going to refactor. These can usually be identified by the `from` and `join` clauses. The source tables I identified in the original query are as follows:
 
 ```
-`dbt-public.interview_task.orders`
-`dbt-public.interview_task.devices`
-`dbt-public.interview_task.addresses`
-`dbt-public.interview_task.payments`
+`dbt-public.example_task.orders`
+`dbt-public.example_task.devices`
+`dbt-public.example_task.addresses`
+`dbt-public.example_task.payments`
 ```
 
-The tables identified actually have the wrong `db.info_schema`. That can be changed through the dbt interface by clicking `ctrl + h` which brings up find and replace feature. I set my find to `dbt-public.interview_task.` and my replace to `dbt-public.interview_task_`. This allows me to successfully run the code.
+The tables identified actually have the wrong `db.info_schema`. That can be changed through the dbt interface by clicking `ctrl + h` which brings up find and replace feature. I set my find to `dbt-public.example_task.` and my replace to `dbt-public.example_task_`. This allows me to successfully run the code.
 
 After the source tables are identified, I stage the project to enable my-self to `source` the database tables throughout the project. This is done in the [`_sources.yml`](https://github.com/alexb523/dbt-labs-refactoring-sql/blob/main/models/staging/_sources.yml) file. In the `source.yml` file you can create documentation and tests associated with your source tables.
 
