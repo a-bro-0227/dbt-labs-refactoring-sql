@@ -8,15 +8,15 @@ step notes:
 pull out source tables into cte's
 create a _source.yml file in order to source those tables (which makes a pretty, more inuitive dag)
 extract cte's we found in query:
-    `dbt-public.interview_task.orders` o
-    `dbt-public.interview_task.devices` d
-    `dbt-public.interview_task.orders` as fo -- potentially redunant -- first order
-    `dbt-public.interview_task.addresses` oa 
-    `dbt-public.interview_task.payments`
+    `dbt-public.example_task.orders` o
+    `dbt-public.example_task.devices` d
+    `dbt-public.example_task.orders` as fo -- potentially redunant -- first order
+    `dbt-public.example_task.addresses` oa 
+    `dbt-public.example_task.payments`
 
 a couple of errors that were resolved in the set up:
   data type `int64` to `float`
-  rename raw source tables from `dbt-public.interview_` to: `raw.interview_sample_data.interview_`
+  rename raw source tables from `dbt-public.example_` to: `raw.example_sample_data.example_`
   transform to lower case (using command pallet -- F1)
   changed `oa` to `a` for standarization
     
@@ -24,10 +24,10 @@ a couple of errors that were resolved in the set up:
 
 with
 
-  o as (select * from {{ source('interview_sample_data', 'interview_orders') }}),
-  d as (select * from {{ source('interview_sample_data', 'interview_devices') }}),
-  a as (select * from {{ source('interview_sample_data', 'interview_addresses')}}),
-  p as (select * from {{ source('interview_sample_data', 'interview_payments')}}),
+  o as (select * from {{ source('example_sample_data', 'example_orders') }}),
+  d as (select * from {{ source('example_sample_data', 'example_devices') }}),
+  a as (select * from {{ source('example_sample_data', 'example_addresses')}}),
+  p as (select * from {{ source('example_sample_data', 'example_payments')}}),
 
   -- logical cte's
 

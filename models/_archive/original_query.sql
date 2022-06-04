@@ -52,7 +52,7 @@ FROM (
       pa.gross_tax_amount_cents,
       pa.gross_amount_cents,
       pa.gross_shipping_amount_cents
-    FROM raw.interview_sample_data.interview_orders o
+    FROM raw.example_sample_data.example_orders o
     LEFT JOIN (
         SELECT
           DISTINCT cast(d.type_id as double) as order_id,
@@ -62,20 +62,20 @@ FROM (
               d.created_at ROWS BETWEEN UNBOUNDED PRECEDING
               AND UNBOUNDED FOLLOWING
           ) AS device
-        FROM raw.interview_sample_data.interview_devices d
+        FROM raw.example_sample_data.example_devices d
         WHERE d.type = 'order'
     ) d ON d.order_id = o.order_id
     LEFT JOIN (
         SELECT
           fo.user_id,
           MIN(fo.order_id) as first_order_id
-        FROM raw.interview_sample_data.interview_orders as fo
+        FROM raw.example_sample_data.example_orders as fo
         WHERE
           fo.status != 'cancelled'
         GROUP BY
           fo.user_id
       ) fo ON o.user_id = fo.user_id
-    left join raw.interview_sample_data.interview_addresses oa 
+    left join raw.example_sample_data.example_addresses oa 
       ON oa.order_id = o.order_id
     LEFT JOIN (
         select
@@ -104,7 +104,7 @@ FROM (
               ELSE 0
             END
           ) as gross_total_amount_cents
-        FROM raw.interview_sample_data.interview_payments
+        FROM raw.example_sample_data.example_payments
         GROUP BY order_id
     ) pa ON pa.order_id = o.order_id
   )
